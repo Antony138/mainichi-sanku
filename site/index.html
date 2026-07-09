@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>每日三句</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="三句">
+<meta name="theme-color" content="#F4F6F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F4F6F3;
+    --card: #FFFFFF;
+    --ink: #20242B;
+    --muted: #6C7480;
+    --line: #E3E7E1;
+    --accent: #2D55D8;
+    --accent-ink: #2D55D8;
+    --wash: #EDF1FD;
+    --shadow: 0 1px 2px rgba(32,36,43,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #14161A;
+      --card: #1D2026;
+      --ink: #E9EBEE;
+      --muted: #99A1AD;
+      --line: #2B2F37;
+      --accent: #8FA6FF;
+      --accent-ink: #A9BAFF;
+      --wash: #242B40;
+      --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #14161A; --card: #1D2026; --ink: #E9EBEE; --muted: #99A1AD;
+    --line: #2B2F37; --accent: #8FA6FF; --accent-ink: #A9BAFF; --wash: #242B40; --shadow: none;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #F4F6F3; --card: #FFFFFF; --ink: #20242B; --muted: #6C7480;
+    --line: #E3E7E1; --accent: #2D55D8; --accent-ink: #2D55D8; --wash: #EDF1FD;
+    --shadow: 0 1px 2px rgba(32,36,43,.05);
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "PingFang SC", "Hiragino Sans", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: max(24px, env(safe-area-inset-top)) 18px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  header { padding: 0 4px 2px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 600; letter-spacing: .06em;
+    color: var(--muted); font-variant-numeric: tabular-nums;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .chip {
+    font-size: 10px; font-weight: 700; letter-spacing: .12em;
+    color: var(--accent-ink); background: var(--wash);
+    border-radius: 4px; padding: 1px 6px;
+  }
+  h1 { margin: 6px 0 2px; font-size: 23px; font-weight: 800; text-wrap: balance; }
+  .sub { margin: 0; font-size: 13.5px; color: var(--muted); }
+
+  .secTitle {
+    margin: 10px 4px 0;
+    font-size: 13px; font-weight: 700; letter-spacing: .06em; color: var(--muted);
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 6px 0 0;
+    overflow: hidden;
+  }
+  .card + .card { margin-top: 12px; }
+  .scene {
+    font-size: 12px; font-weight: 600; letter-spacing: .06em;
+    color: var(--muted); padding: 8px 16px 0;
+  }
+  .scene b { color: var(--accent-ink); font-weight: 700; }
+
+  .row {
+    display: flex; align-items: flex-start; gap: 12px;
+    width: 100%; text-align: left;
+    background: none; border: 0; padding: 12px 16px; margin: 0;
+    color: inherit; font: inherit; cursor: pointer;
+    transition: background .15s ease;
+  }
+  .row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .row + .row { border-top: 1px solid var(--line); }
+  .row.playing { background: var(--wash); }
+  .row.playing .txt { color: var(--accent-ink); }
+
+  .icon { flex: 0 0 20px; margin-top: 5px; color: var(--muted); }
+  .row.playing .icon { color: var(--accent-ink); }
+  .icon svg { display: block; }
+  .eq { display: none; gap: 2.5px; align-items: flex-end; height: 14px; width: 20px; padding-left: 2px; }
+  .eq i { width: 3px; background: currentColor; border-radius: 1px; animation: eq 1s ease-in-out infinite; }
+  .eq i:nth-child(1) { height: 60%; }
+  .eq i:nth-child(2) { height: 100%; animation-delay: .25s; }
+  .eq i:nth-child(3) { height: 45%; animation-delay: .5s; }
+  @keyframes eq { 0%,100% { transform: scaleY(.4);} 50% { transform: scaleY(1);} }
+  .row.playing .spk { display: none; }
+  .row.playing .eq { display: flex; }
+  @media (prefers-reduced-motion: reduce) { .eq i { animation: none; } }
+
+  .txt { flex: 1; min-width: 0; }
+  .ja {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", system-ui, sans-serif;
+    font-size: 20px; line-height: 2;
+  }
+  .ja rt { font-size: 10px; color: var(--muted); font-weight: 400; }
+  .row.playing .ja rt { color: var(--accent-ink); opacity: .75; }
+  .en {
+    font-family: ui-serif, Georgia, "Times New Roman", serif;
+    font-size: 19px; line-height: 1.55; padding-top: 3px;
+  }
+  .lang {
+    display: block;
+    font-family: system-ui, sans-serif;
+    font-size: 10px; font-weight: 700; letter-spacing: .14em;
+    color: var(--muted); margin-bottom: 1px;
+  }
+
+  .cn {
+    margin: 0; border-top: 1px solid var(--line);
+    padding: 10px 16px 12px;
+    font-size: 13.5px; color: var(--muted);
+    cursor: pointer; transition: filter .2s ease;
+  }
+  body.hidecn .cn:not(.peek) { filter: blur(5px); }
+
+  .compact .ja { font-size: 17px; line-height: 1.9; }
+  .compact .en { font-size: 16px; }
+  .compact .row { padding: 10px 16px; }
+  .compact .cn { font-size: 12.5px; }
+
+  .chips {
+    display: flex; gap: 8px; overflow-x: auto; padding: 4px;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .datechip {
+    flex: 0 0 auto;
+    border: 1px solid var(--line); border-radius: 16px;
+    background: var(--card); color: var(--muted);
+    font: 600 12.5px/1 system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+    padding: 8px 12px; cursor: pointer;
+  }
+  .datechip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .datechip.sel { border-color: var(--accent); color: var(--accent-ink); background: var(--wash); }
+
+  .bar {
+    position: sticky; bottom: 0; margin-top: 4px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: color-mix(in srgb, var(--bg) 80%, transparent);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    border-top: 1px solid var(--line);
+    display: flex; gap: 8px; justify-content: center;
+  }
+  .pill {
+    flex: 1; max-width: 150px; height: 40px; border-radius: 20px;
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    font: 600 13px/1 system-ui, sans-serif; cursor: pointer;
+    transition: all .15s ease;
+  }
+  .pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pill.on { border-color: var(--accent); color: var(--accent-ink); background: var(--wash); }
+
+  footer {
+    padding: 8px 22px calc(18px + env(safe-area-inset-bottom));
+    font-size: 12px; color: var(--muted); text-align: center; text-wrap: balance;
+  }
+  .loading { padding: 30px 0; text-align: center; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span id="dateLabel">—</span> <span class="chip" id="dayChip">今日</span></div>
+    <h1>今日三句</h1>
+    <p class="sub">中・日・英对照 — 点句子即发音，再点一次停</p>
+  </header>
+
+  <main id="main"><div class="loading">加载中…</div></main>
+
+  <section id="reviewSec" hidden>
+    <h2 class="secTitle">温故 · 间隔复习</h2>
+    <div id="reviewBox"></div>
+  </section>
+
+  <section id="histSec" hidden>
+    <h2 class="secTitle">历史</h2>
+    <div class="chips" id="histChips"></div>
+  </section>
+
+  <div class="bar">
+    <button class="pill" id="btnSlow" aria-pressed="false">0.75× 慢速</button>
+    <button class="pill" id="btnLoop" aria-pressed="false">单句循环</button>
+    <button class="pill" id="btnCn" aria-pressed="false">隐藏中文</button>
+  </div>
+
+  <footer>每天 6:00 (JST) 自动更新 · edge-tts 神经语音 · 听过的句子离线可用</footer>
+</div>
+
+<script>
+  const SPK = '<span class="spk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></span><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>';
+  const WD = ['周日','周一','周二','周三','周四','周五','周六'];
+
+  const player = new Audio();
+  player.preservesPitch = true;
+  if ('webkitPreservesPitch' in player) player.webkitPreservesPitch = true;
+
+  let rate = 1, loop = false, currentKey = null, currentRow = null, loopTimer = null;
+  const dayCache = new Map();
+  let dates = [], selected = null, latest = null;
+
+  const $ = (id) => document.getElementById(id);
+
+  function fmtDate(d) {
+    const [y, m, dd] = d.split('-').map(Number);
+    const wd = WD[new Date(y, m - 1, dd).getDay()];
+    return `${y}年${m}月${dd}日 · ${wd}`;
+  }
+  function shiftISO(d, days) {
+    const [y, m, dd] = d.split('-').map(Number);
+    const t = new Date(Date.UTC(y, m - 1, dd + days));
+    return t.toISOString().slice(0, 10);
+  }
+
+  async function fetchDay(d) {
+    if (dayCache.has(d)) return dayCache.get(d);
+    const res = await fetch(`data/${d}.json`);
+    if (!res.ok) throw new Error(d);
+    const j = await res.json();
+    dayCache.set(d, j);
+    return j;
+  }
+
+  function sentenceRow(s, which) {
+    const isJa = which === 'ja';
+    const key = s[isJa ? 'ja_audio' : 'en_audio'];
+    const langTag = isJa ? '日' : 'EN';
+    const cls = isJa ? 'ja' : 'en';
+    const body = isJa ? s.ruby : s.en;
+    const text = isJa ? s.ja : s.en;
+    return `<button class="row" data-key="${key}" data-text="${text.replace(/"/g, '&quot;')}" data-lang="${isJa ? 'ja-JP' : 'en-US'}">
+      <span class="icon">${SPK}</span>
+      <span class="txt ${cls}"><span class="lang">${langTag}</span>${body}</span>
+    </button>`;
+  }
+
+  function dayCards(day, tag) {
+    const hideOn = document.body.classList.contains('hidecn');
+    return day.scenes.map((s) => `
+      <section class="card">
+        <div class="scene">${tag ? `<b>${tag}</b> · ` : '场景 · '}${s.scene}</div>
+        ${sentenceRow(s, 'ja')}
+        ${sentenceRow(s, 'en')}
+        <p class="cn${hideOn ? ' masked' : ''}" title="点击显示/隐藏">${s.cn}</p>
+      </section>`).join('');
+  }
+
+  function stopAudio() {
+    clearTimeout(loopTimer);
+    player.pause();
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    currentKey = null;
+    if (currentRow) currentRow.classList.remove('playing');
+    currentRow = null;
+  }
+
+  function start(row) {
+    clearTimeout(loopTimer);
+    if (currentRow) currentRow.classList.remove('playing');
+    currentRow = row;
+    currentKey = row.dataset.key;
+    row.classList.add('playing');
+    player.src = row.dataset.key;
+    player.playbackRate = rate;
+    player.play().catch(() => {
+      if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(row.dataset.text);
+        u.lang = row.dataset.lang;
+        u.rate = rate === 1 ? 1 : 0.8;
+        u.onend = onEnded;
+        speechSynthesis.speak(u);
+      }
+    });
+  }
+
+  function onEnded() {
+    if (loop && currentRow) {
+      const row = currentRow;
+      loopTimer = setTimeout(() => start(row), 700);
+    } else {
+      stopAudio();
+    }
+  }
+  player.addEventListener('ended', onEnded);
+  player.addEventListener('play', () => { player.playbackRate = rate; });
+
+  document.addEventListener('click', (e) => {
+    const row = e.target.closest('.row');
+    if (row) {
+      if (currentKey === row.dataset.key) stopAudio();
+      else start(row);
+      return;
+    }
+    const cn = e.target.closest('.cn');
+    if (cn && document.body.classList.contains('hidecn')) cn.classList.toggle('peek');
+    const chipEl = e.target.closest('.datechip');
+    if (chipEl) select(chipEl.dataset.date);
+  });
+
+  $('btnSlow').addEventListener('click', () => {
+    rate = rate === 1 ? 0.75 : 1;
+    const on = rate !== 1;
+    $('btnSlow').classList.toggle('on', on);
+    $('btnSlow').setAttribute('aria-pressed', String(on));
+    player.playbackRate = rate;
+  });
+  $('btnLoop').addEventListener('click', () => {
+    loop = !loop;
+    $('btnLoop').classList.toggle('on', loop);
+    $('btnLoop').setAttribute('aria-pressed', String(loop));
+    if (!loop) clearTimeout(loopTimer);
+  });
+  $('btnCn').addEventListener('click', () => {
+    const on = document.body.classList.toggle('hidecn');
+    $('btnCn').classList.toggle('on', on);
+    $('btnCn').setAttribute('aria-pressed', String(on));
+    document.querySelectorAll('.cn').forEach((p) => p.classList.remove('peek'));
+  });
+
+  function renderChips() {
+    $('histChips').innerHTML = [...dates].reverse().map((d) => {
+      const [, m, dd] = d.split('-');
+      return `<button class="datechip${d === selected ? ' sel' : ''}" data-date="${d}">${+m}/${+dd}</button>`;
+    }).join('');
+    $('histSec').hidden = dates.length < 2;
+  }
+
+  async function renderReview() {
+    const box = $('reviewBox');
+    box.innerHTML = '';
+    let html = '';
+    for (const n of [3, 7]) {
+      const target = shiftISO(latest, -n);
+      if (!dates.includes(target)) continue;
+      try {
+        const day = await fetchDay(target);
+        html += `<div class="compact">${dayCards(day, `${n}天前`)}</div>`;
+      } catch {}
+    }
+    box.innerHTML = html;
+    $('reviewSec').hidden = !html;
+  }
+
+  async function select(d) {
+    stopAudio();
+    selected = d;
+    $('dateLabel').textContent = fmtDate(d);
+    $('dayChip').textContent = d === latest ? '今日' : '回看';
+    renderChips();
+    try {
+      const day = await fetchDay(d);
+      $('main').innerHTML = dayCards(day, '');
+    } catch {
+      $('main').innerHTML = '<div class="loading">这一天的内容加载失败</div>';
+    }
+    if (d === latest) renderReview();
+    else $('reviewSec').hidden = true;
+    window.scrollTo({ top: 0 });
+  }
+
+  (async function init() {
+    try {
+      const res = await fetch('data/index.json', { cache: 'no-cache' });
+      dates = await res.json();
+      latest = dates[dates.length - 1];
+      await select(latest);
+    } catch {
+      $('main').innerHTML = '<div class="loading">加载失败 — 请检查网络后刷新</div>';
+    }
+  })();
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+</script>
+</body>
+</html>

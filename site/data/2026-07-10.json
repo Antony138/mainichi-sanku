@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-10",
+ "scenes": [
+  {
+   "scene": "会议开场",
+   "ja": "本日はお時間をいただき、ありがとうございます。",
+   "ruby": "<ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございます。",
+   "en": "Thank you for taking the time to meet with me today.",
+   "cn": "感谢您今天抽出时间见面。",
+   "ja_audio": "audio/2026-07-10/ja1.mp3",
+   "en_audio": "audio/2026-07-10/en1.mp3"
+  },
+  {
+   "scene": "面试·经验",
+   "ja": "モバイル開発には約十年の経験があります。",
+   "ruby": "モバイル<ruby>開発<rt>かいはつ</rt></ruby>には<ruby>約<rt>やく</rt></ruby><ruby>十年<rt>じゅうねん</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby>があります。",
+   "en": "I have about ten years of experience in mobile development.",
+   "cn": "我在移动开发方面有大约十年的经验。",
+   "ja_audio": "audio/2026-07-10/ja2.mp3",
+   "en_audio": "audio/2026-07-10/en2.mp3"
+  },
+  {
+   "scene": "便利店",
+   "ja": "レジ袋は要りません。そのままで大丈夫です。",
+   "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>は<ruby>要<rt>い</rt></ruby>りません。そのままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+   "en": "I don't need a bag — it's fine as it is.",
+   "cn": "不需要塑料袋，就这样就好。",
+   "ja_audio": "audio/2026-07-10/ja3.mp3",
+   "en_audio": "audio/2026-07-10/en3.mp3"
+  }
+ ]
+}
