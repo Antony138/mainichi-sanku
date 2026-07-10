@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-11",
+ "scenes": [
+  {
+   "scene": "共享屏幕",
+   "ja": "画面、見えていますでしょうか。",
+   "ruby": "<ruby>画面<rt>がめん</rt></ruby>、<ruby>見<rt>み</rt></ruby>えていますでしょうか。",
+   "en": "Can everyone see my screen?",
+   "cn": "大家能看到我的屏幕吗？",
+   "ja_audio": "audio/2026-07-11/ja1.mp3",
+   "en_audio": "audio/2026-07-11/en1.mp3"
+  },
+  {
+   "scene": "面试·强项",
+   "ja": "私の強みは、拡張しやすいアプリ設計です。",
+   "ruby": "<ruby>私<rt>わたし</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>みは、<ruby>拡張<rt>かくちょう</rt></ruby>しやすいアプリ<ruby>設計<rt>せっけい</rt></ruby>です。",
+   "en": "My main strength is designing app architecture that scales.",
+   "cn": "我的主要优势是设计易于扩展的应用架构。",
+   "ja_audio": "audio/2026-07-11/ja2.mp3",
+   "en_audio": "audio/2026-07-11/en2.mp3"
+  },
+  {
+   "scene": "餐厅订位",
+   "ja": "二人ですが、席はありますか。",
+   "ruby": "<ruby>二人<rt>ふたり</rt></ruby>ですが、<ruby>席<rt>せき</rt></ruby>はありますか。",
+   "en": "Table for two — do you have any seats?",
+   "cn": "两位，请问有位子吗？",
+   "ja_audio": "audio/2026-07-11/ja3.mp3",
+   "en_audio": "audio/2026-07-11/en3.mp3"
+  }
+ ]
+}
