@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-12",
+ "scenes": [
+  {
+   "scene": "汇报进度",
+   "ja": "進捗ですが、予定通り進んでいます。",
+   "ruby": "<ruby>進捗<rt>しんちょく</rt></ruby>ですが、<ruby>予定通<rt>よていどお</rt></ruby>り<ruby>進<rt>すす</rt></ruby>んでいます。",
+   "en": "Progress-wise, everything is on track.",
+   "cn": "进度方面，一切按计划推进。",
+   "ja_audio": "audio/2026-07-12/ja1.mp3",
+   "en_audio": "audio/2026-07-12/en1.mp3"
+  },
+  {
+   "scene": "面试·动机",
+   "ja": "より技術的なチャレンジができる環境を探しています。",
+   "ruby": "より<ruby>技術的<rt>ぎじゅつてき</rt></ruby>なチャレンジができる<ruby>環境<rt>かんきょう</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しています。",
+   "en": "I'm looking for a role with more technical challenges.",
+   "cn": "我在寻找更有技术挑战的工作环境。",
+   "ja_audio": "audio/2026-07-12/ja2.mp3",
+   "en_audio": "audio/2026-07-12/en2.mp3"
+  },
+  {
+   "scene": "请店员推荐",
+   "ja": "おすすめは何ですか。",
+   "ruby": "おすすめは<ruby>何<rt>なん</rt></ruby>ですか。",
+   "en": "What do you recommend?",
+   "cn": "有什么推荐的吗？",
+   "ja_audio": "audio/2026-07-12/ja3.mp3",
+   "en_audio": "audio/2026-07-12/en3.mp3"
+  }
+ ]
+}
