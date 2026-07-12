@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-13",
+ "scenes": [
+  {
+   "scene": "进度延迟",
+   "ja": "少し遅れが出ていますが、今週中には追いつく見込みです。",
+   "ruby": "<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れが<ruby>出<rt>で</rt></ruby>ていますが、<ruby>今週中<rt>こんしゅうちゅう</rt></ruby>には<ruby>追<rt>お</rt></ruby>いつく<ruby>見込<rt>みこ</rt></ruby>みです。",
+   "en": "We're slightly behind, but we expect to catch up within the week.",
+   "cn": "进度略有延迟，但预计本周内能赶上。",
+   "ja_audio": "audio/2026-07-13/ja1.mp3",
+   "en_audio": "audio/2026-07-13/en1.mp3"
+  },
+  {
+   "scene": "面试·项目",
+   "ja": "大規模なコードベースのFlutter移行をリードしました。",
+   "ruby": "<ruby>大規模<rt>だいきぼ</rt></ruby>なコードベースのFlutter<ruby>移行<rt>いこう</rt></ruby>をリードしました。",
+   "en": "I led the migration of a large codebase to Flutter.",
+   "cn": "我主导了大型代码库向 Flutter 的迁移。",
+   "ja_audio": "audio/2026-07-13/ja2.mp3",
+   "en_audio": "audio/2026-07-13/en2.mp3"
+  },
+  {
+   "scene": "打包带走",
+   "ja": "これ、持ち帰りにできますか。",
+   "ruby": "これ、<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りにできますか。",
+   "en": "Can I get this to go?",
+   "cn": "这个可以打包带走吗？",
+   "ja_audio": "audio/2026-07-13/ja3.mp3",
+   "en_audio": "audio/2026-07-13/en3.mp3"
+  }
+ ]
+}
