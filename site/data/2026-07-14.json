@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-14",
+ "scenes": [
+  {
+   "scene": "请人确认",
+   "ja": "お手数ですが、こちらの資料をご確認いただけますか。",
+   "ruby": "お<ruby>手数<rt>てすう</rt></ruby>ですが、こちらの<ruby>資料<rt>しりょう</rt></ruby>をご<ruby>確認<rt>かくにん</rt></ruby>いただけますか。",
+   "en": "Sorry to trouble you, but could you review this document?",
+   "cn": "麻烦您确认一下这份资料可以吗？",
+   "ja_audio": "audio/2026-07-14/ja1.mp3",
+   "en_audio": "audio/2026-07-14/en1.mp3"
+  },
+  {
+   "scene": "面试·协作",
+   "ja": "デザイナーやバックエンドエンジニアと密に連携するのが好きです。",
+   "ruby": "デザイナーやバックエンドエンジニアと<ruby>密<rt>みつ</rt></ruby>に<ruby>連携<rt>れんけい</rt></ruby>するのが<ruby>好<rt>す</rt></ruby>きです。",
+   "en": "I enjoy working closely with designers and backend engineers.",
+   "cn": "我喜欢和设计师、后端工程师紧密协作。",
+   "ja_audio": "audio/2026-07-14/ja2.mp3",
+   "en_audio": "audio/2026-07-14/en2.mp3"
+  },
+  {
+   "scene": "车站问路",
+   "ja": "すみません、新宿方面のホームはどちらですか。",
+   "ruby": "すみません、<ruby>新宿方面<rt>しんじゅくほうめん</rt></ruby>のホームはどちらですか。",
+   "en": "Excuse me, which platform is for trains toward Shinjuku?",
+   "cn": "请问，去新宿方向的站台在哪边？",
+   "ja_audio": "audio/2026-07-14/ja3.mp3",
+   "en_audio": "audio/2026-07-14/en3.mp3"
+  }
+ ]
+}
