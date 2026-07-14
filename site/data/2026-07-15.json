@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-15",
+ "scenes": [
+  {
+   "scene": "举手提问",
+   "ja": "一点、質問してもよろしいでしょうか。",
+   "ruby": "<ruby>一点<rt>いってん</rt></ruby>、<ruby>質問<rt>しつもん</rt></ruby>してもよろしいでしょうか。",
+   "en": "May I ask one question?",
+   "cn": "我可以问一个问题吗？",
+   "ja_audio": "audio/2026-07-15/ja1.mp3",
+   "en_audio": "audio/2026-07-15/en1.mp3"
+  },
+  {
+   "scene": "面试·分歧",
+   "ja": "意見が分かれたときは、意見よりデータを重視するようにしています。",
+   "ruby": "<ruby>意見<rt>いけん</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かれたときは、<ruby>意見<rt>いけん</rt></ruby>よりデータを<ruby>重視<rt>じゅうし</rt></ruby>するようにしています。",
+   "en": "When we disagree, I try to focus on data rather than opinions.",
+   "cn": "出现分歧时，我会尽量看数据而不是各执己见。",
+   "ja_audio": "audio/2026-07-15/ja2.mp3",
+   "en_audio": "audio/2026-07-15/en2.mp3"
+  },
+  {
+   "scene": "诊所预约",
+   "ja": "今日の午後、予約を取りたいのですが。",
+   "ruby": "<ruby>今日<rt>きょう</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>、<ruby>予約<rt>よやく</rt></ruby>を<ruby>取<rt>と</rt></ruby>りたいのですが。",
+   "en": "I'd like to make an appointment for this afternoon.",
+   "cn": "我想预约今天下午。",
+   "ja_audio": "audio/2026-07-15/ja3.mp3",
+   "en_audio": "audio/2026-07-15/en3.mp3"
+  }
+ ]
+}
