@@ -1,0 +1,32 @@
+{
+ "date": "2026-07-16",
+ "scenes": [
+  {
+   "scene": "表达意见",
+   "ja": "私としては、この案がいいと思います。",
+   "ruby": "<ruby>私<rt>わたし</rt></ruby>としては、この<ruby>案<rt>あん</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>います。",
+   "en": "Personally, I think this option is the best.",
+   "cn": "就我个人而言，我觉得这个方案最好。",
+   "ja_audio": "audio/2026-07-16/ja1.mp3",
+   "en_audio": "audio/2026-07-16/en1.mp3"
+  },
+  {
+   "scene": "面试·复盘",
+   "ja": "そのプロジェクトから、早い段階でテストする大切さを学びました。",
+   "ruby": "そのプロジェクトから、<ruby>早<rt>はや</rt></ruby>い<ruby>段階<rt>だんかい</rt></ruby>でテストする<ruby>大切<rt>たいせつ</rt></ruby>さを<ruby>学<rt>まな</rt></ruby>びました。",
+   "en": "That project taught me the importance of testing early.",
+   "cn": "那个项目让我懂得了尽早测试的重要性。",
+   "ja_audio": "audio/2026-07-16/ja2.mp3",
+   "en_audio": "audio/2026-07-16/en2.mp3"
+  },
+  {
+   "scene": "描述症状",
+   "ja": "昨日から喉が痛くて、熱もあります。",
+   "ruby": "<ruby>昨日<rt>きのう</rt></ruby>から<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>熱<rt>ねつ</rt></ruby>もあります。",
+   "en": "My throat has been sore since yesterday, and I have a fever too.",
+   "cn": "从昨天开始嗓子疼，还发烧。",
+   "ja_audio": "audio/2026-07-16/ja3.mp3",
+   "en_audio": "audio/2026-07-16/en3.mp3"
+  }
+ ]
+}
