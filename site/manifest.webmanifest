@@ -1,14 +1,22 @@
 {
-  "name": "每日三句",
-  "short_name": "三句",
-  "description": "每天三句中日英对照，点句即读",
+  "name": "每日场景日语",
+  "short_name": "場面",
+  "description": "每天一个实用场景的日语对话，逐句点读、连播循环",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F4F6F3",
   "theme_color": "#2D55D8",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

@@ -2,14 +2,14 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>每日三句</title>
+<title>每日场景日语</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="三句">
+<meta name="apple-mobile-web-app-title" content="場面">
 <meta name="theme-color" content="#F4F6F3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)">
 <style>
@@ -101,6 +101,25 @@
     color: var(--muted); padding: 8px 16px 0;
   }
   .scene b { color: var(--accent-ink); font-weight: 700; }
+  .desc { margin: 2px 0 6px; padding: 0 16px; font-size: 12.5px; color: var(--muted); }
+
+  /* 场景对话（新格式）：每句 = 说话人 + 日语行 + 英语行 + 中文 */
+  .line { border-top: 1px solid var(--line); }
+  .who {
+    padding: 9px 16px 0;
+    font-size: 11px; font-weight: 700; letter-spacing: .08em;
+    color: var(--accent-ink); opacity: .85;
+  }
+  .line .row { padding: 4px 16px 6px; }
+  .line .row + .row { border-top: 0; padding-top: 0; }
+  .line .row .ja { line-height: 1.9; }
+  .row.sub .en { font-size: 15.5px; padding-top: 0; }
+  .cn.plain { border-top: 0; padding: 0 16px 10px; }
+  .tip {
+    margin: 0; border-top: 1px solid var(--line);
+    padding: 10px 16px 12px;
+    font-size: 12.5px; color: var(--muted);
+  }
 
   .row {
     display: flex; align-items: flex-start; gap: 12px;
@@ -202,8 +221,8 @@
 <div class="wrap">
   <header>
     <div class="eyebrow"><span id="dateLabel">—</span> <span class="chip" id="dayChip">今日</span></div>
-    <h1>今日三句</h1>
-    <p class="sub">中・日・英对照 — 点句子即发音，再点一次停</p>
+    <h1>今日の場面</h1>
+    <p class="sub">一天一个实用场景 — 点哪句读哪句，日语英语都能点</p>
   </header>
 
   <main id="main"><div class="loading">加载中…</div></main>
@@ -219,8 +238,9 @@
   </section>
 
   <div class="bar">
+    <button class="pill" id="btnPlay" aria-pressed="false">▶ 连播</button>
     <button class="pill" id="btnSlow" aria-pressed="false">0.75× 慢速</button>
-    <button class="pill" id="btnLoop" aria-pressed="false">单句循环</button>
+    <button class="pill" id="btnLoop" aria-pressed="false">循环</button>
     <button class="pill" id="btnCn" aria-pressed="false">隐藏中文</button>
   </div>
 
@@ -261,28 +281,52 @@
     return j;
   }
 
-  function sentenceRow(s, which) {
-    const isJa = which === 'ja';
-    const key = s[isJa ? 'ja_audio' : 'en_audio'];
-    const langTag = isJa ? '日' : 'EN';
-    const cls = isJa ? 'ja' : 'en';
-    const body = isJa ? s.ruby : s.en;
-    const text = isJa ? s.ja : s.en;
-    return `<button class="row" data-key="${key}" data-text="${text.replace(/"/g, '&quot;')}" data-lang="${isJa ? 'ja-JP' : 'en-US'}">
+  function rowBtn(key, text, lang, cls, langTag, body, extra = '') {
+    return `<button class="row${extra}" data-key="${key}" data-text="${text.replace(/"/g, '&quot;')}" data-lang="${lang}">
       <span class="icon">${SPK}</span>
       <span class="txt ${cls}"><span class="lang">${langTag}</span>${body}</span>
     </button>`;
   }
 
-  function dayCards(day, tag) {
-    const hideOn = document.body.classList.contains('hidecn');
+  // 新格式：一天 = 一个场景的连续对话
+  function scenarioCard(day, tag) {
+    const sc = day.scenario;
+    const lines = day.lines.map((l) => `
+      <div class="line">
+        <div class="who">${l.speaker}</div>
+        ${rowBtn(l.ja_audio, l.ja, 'ja-JP', 'ja', '日', l.ruby)}
+        ${rowBtn(l.en_audio, l.en, 'en-US', 'en', 'EN', l.en, ' sub')}
+        <p class="cn plain" title="点击显示/隐藏">${l.cn}</p>
+      </div>`).join('');
+    return `<section class="card">
+      <div class="scene">${tag ? `<b>${tag}</b> · ${sc.title_ja}` : `場面 · <b>${sc.title_ja}</b>`} · ${sc.title_cn}</div>
+      ${sc.desc ? `<p class="desc">${sc.desc}</p>` : ''}
+      ${lines}
+      ${sc.tip ? `<p class="tip">💡 ${sc.tip}</p>` : ''}
+    </section>`;
+  }
+
+  // 旧格式（2026-07-16 以前）：一天 = 3 个独立例句，保留可回看
+  function legacyCards(day, tag) {
     return day.scenes.map((s) => `
       <section class="card">
         <div class="scene">${tag ? `<b>${tag}</b> · ` : '场景 · '}${s.scene}</div>
-        ${sentenceRow(s, 'ja')}
-        ${sentenceRow(s, 'en')}
-        <p class="cn${hideOn ? ' masked' : ''}" title="点击显示/隐藏">${s.cn}</p>
+        ${rowBtn(s.ja_audio, s.ja, 'ja-JP', 'ja', '日', s.ruby)}
+        ${rowBtn(s.en_audio, s.en, 'en-US', 'en', 'EN', s.en)}
+        <p class="cn" title="点击显示/隐藏">${s.cn}</p>
       </section>`).join('');
+  }
+
+  function dayCards(day, tag) {
+    return day.lines ? scenarioCard(day, tag) : legacyCards(day, tag);
+  }
+
+  let queue = null, qi = 0;   // 连播队列（当天所有日语句）
+
+  function clearQueue() {
+    queue = null;
+    $('btnPlay').classList.remove('on');
+    $('btnPlay').setAttribute('aria-pressed', 'false');
   }
 
   function stopAudio() {
@@ -292,6 +336,7 @@
     currentKey = null;
     if (currentRow) currentRow.classList.remove('playing');
     currentRow = null;
+    clearQueue();
   }
 
   function start(row) {
@@ -300,6 +345,7 @@
     currentRow = row;
     currentKey = row.dataset.key;
     row.classList.add('playing');
+    if (queue) row.scrollIntoView({ block: 'center', behavior: 'smooth' });
     player.src = row.dataset.key;
     player.playbackRate = rate;
     player.play().catch(() => {
@@ -314,6 +360,18 @@
   }
 
   function onEnded() {
+    if (queue) {
+      if (qi + 1 < queue.length) {
+        qi += 1;
+        loopTimer = setTimeout(() => start(queue[qi]), 850);
+      } else if (loop) {
+        qi = 0;
+        loopTimer = setTimeout(() => start(queue[0]), 1500);
+      } else {
+        stopAudio();
+      }
+      return;
+    }
     if (loop && currentRow) {
       const row = currentRow;
       loopTimer = setTimeout(() => start(row), 700);
@@ -327,6 +385,8 @@
   document.addEventListener('click', (e) => {
     const row = e.target.closest('.row');
     if (row) {
+      if (queue && !queue.includes(row)) clearQueue();
+      else if (queue && currentKey !== row.dataset.key) { qi = queue.indexOf(row); }
       if (currentKey === row.dataset.key) stopAudio();
       else start(row);
       return;
@@ -335,6 +395,18 @@
     if (cn && document.body.classList.contains('hidecn')) cn.classList.toggle('peek');
     const chipEl = e.target.closest('.datechip');
     if (chipEl) select(chipEl.dataset.date);
+  });
+
+  $('btnPlay').addEventListener('click', () => {
+    if (queue) { stopAudio(); return; }
+    const rows = [...document.querySelectorAll('#main .row')].filter((r) => r.dataset.lang === 'ja-JP');
+    if (!rows.length) return;
+    stopAudio();
+    queue = rows;
+    qi = 0;
+    $('btnPlay').classList.add('on');
+    $('btnPlay').setAttribute('aria-pressed', 'true');
+    start(rows[0]);
   });
 
   $('btnSlow').addEventListener('click', () => {

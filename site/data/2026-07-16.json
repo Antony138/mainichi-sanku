@@ -1,32 +1,74 @@
 {
  "date": "2026-07-16",
- "scenes": [
+ "scenario": {
+  "title_ja": "コンビニで会計",
+  "title_cn": "便利店结账",
+  "desc": "在便利店买便当和饮料，店员问加热、袋子和支付方式",
+  "tip": "「温めますか」要加热答「お願いします」；不要袋子说「袋は大丈夫です」（大丈夫=婉拒万能词）"
+ },
+ "lines": [
   {
-   "scene": "表达意见",
-   "ja": "私としては、この案がいいと思います。",
-   "ruby": "<ruby>私<rt>わたし</rt></ruby>としては、この<ruby>案<rt>あん</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>います。",
-   "en": "Personally, I think this option is the best.",
-   "cn": "就我个人而言，我觉得这个方案最好。",
+   "speaker": "店員",
+   "ja": "いらっしゃいませ。お弁当、温めますか？",
+   "ruby": "いらっしゃいませ。お<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>温<rt>あたた</rt></ruby>めますか？",
+   "en": "Welcome! Would you like your bento heated?",
+   "cn": "欢迎光临。便当要加热吗？",
    "ja_audio": "audio/2026-07-16/ja1.mp3",
    "en_audio": "audio/2026-07-16/en1.mp3"
   },
   {
-   "scene": "面试·复盘",
-   "ja": "そのプロジェクトから、早い段階でテストする大切さを学びました。",
-   "ruby": "そのプロジェクトから、<ruby>早<rt>はや</rt></ruby>い<ruby>段階<rt>だんかい</rt></ruby>でテストする<ruby>大切<rt>たいせつ</rt></ruby>さを<ruby>学<rt>まな</rt></ruby>びました。",
-   "en": "That project taught me the importance of testing early.",
-   "cn": "那个项目让我懂得了尽早测试的重要性。",
+   "speaker": "客",
+   "ja": "はい、お願いします。",
+   "ruby": "はい、お<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Yes, please.",
+   "cn": "好的，麻烦你。",
    "ja_audio": "audio/2026-07-16/ja2.mp3",
    "en_audio": "audio/2026-07-16/en2.mp3"
   },
   {
-   "scene": "描述症状",
-   "ja": "昨日から喉が痛くて、熱もあります。",
-   "ruby": "<ruby>昨日<rt>きのう</rt></ruby>から<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>熱<rt>ねつ</rt></ruby>もあります。",
-   "en": "My throat has been sore since yesterday, and I have a fever too.",
-   "cn": "从昨天开始嗓子疼，还发烧。",
+   "speaker": "店員",
+   "ja": "レジ袋はご利用ですか？",
+   "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか？",
+   "en": "Would you like a plastic bag?",
+   "cn": "需要塑料袋吗？",
    "ja_audio": "audio/2026-07-16/ja3.mp3",
    "en_audio": "audio/2026-07-16/en3.mp3"
+  },
+  {
+   "speaker": "客",
+   "ja": "いえ、袋は大丈夫です。",
+   "ruby": "いえ、<ruby>袋<rt>ふくろ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+   "en": "No, I don't need a bag.",
+   "cn": "不用，袋子就不需要了。",
+   "ja_audio": "audio/2026-07-16/ja4.mp3",
+   "en_audio": "audio/2026-07-16/en4.mp3"
+  },
+  {
+   "speaker": "店員",
+   "ja": "お会計は六百八十円です。",
+   "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>六百八十円<rt>ろっぴゃくはちじゅうえん</rt></ruby>です。",
+   "en": "Your total is 680 yen.",
+   "cn": "一共是680日元。",
+   "ja_audio": "audio/2026-07-16/ja5.mp3",
+   "en_audio": "audio/2026-07-16/en5.mp3"
+  },
+  {
+   "speaker": "客",
+   "ja": "カードでお願いします。",
+   "ruby": "カードでお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "I'll pay by card.",
+   "cn": "刷卡，麻烦了。",
+   "ja_audio": "audio/2026-07-16/ja6.mp3",
+   "en_audio": "audio/2026-07-16/en6.mp3"
+  },
+  {
+   "speaker": "店員",
+   "ja": "ありがとうございました。",
+   "ruby": "ありがとうございました。",
+   "en": "Thank you very much!",
+   "cn": "谢谢惠顾。",
+   "ja_audio": "audio/2026-07-16/ja7.mp3",
+   "en_audio": "audio/2026-07-16/en7.mp3"
   }
  ]
 }

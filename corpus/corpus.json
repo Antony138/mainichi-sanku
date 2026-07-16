@@ -1,155 +1,1705 @@
 {
- "start": "2026-07-10",
+ "start": "2026-07-16",
  "days": [
-  {"scenes": [
-   {"scene": "会议开场", "ja": "本日はお時間をいただき、ありがとうございます。", "ruby": "<ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございます。", "en": "Thank you for taking the time to meet with me today.", "cn": "感谢您今天抽出时间见面。"},
-   {"scene": "面试·经验", "ja": "モバイル開発には約十年の経験があります。", "ruby": "モバイル<ruby>開発<rt>かいはつ</rt></ruby>には<ruby>約<rt>やく</rt></ruby><ruby>十年<rt>じゅうねん</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby>があります。", "en": "I have about ten years of experience in mobile development.", "cn": "我在移动开发方面有大约十年的经验。"},
-   {"scene": "便利店", "ja": "レジ袋は要りません。そのままで大丈夫です。", "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>は<ruby>要<rt>い</rt></ruby>りません。そのままで<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。", "en": "I don't need a bag — it's fine as it is.", "cn": "不需要塑料袋，就这样就好。"}
-  ]},
-  {"scenes": [
-   {"scene": "共享屏幕", "ja": "画面、見えていますでしょうか。", "ruby": "<ruby>画面<rt>がめん</rt></ruby>、<ruby>見<rt>み</rt></ruby>えていますでしょうか。", "en": "Can everyone see my screen?", "cn": "大家能看到我的屏幕吗？"},
-   {"scene": "面试·强项", "ja": "私の強みは、拡張しやすいアプリ設計です。", "ruby": "<ruby>私<rt>わたし</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>みは、<ruby>拡張<rt>かくちょう</rt></ruby>しやすいアプリ<ruby>設計<rt>せっけい</rt></ruby>です。", "en": "My main strength is designing app architecture that scales.", "cn": "我的主要优势是设计易于扩展的应用架构。"},
-   {"scene": "餐厅订位", "ja": "二人ですが、席はありますか。", "ruby": "<ruby>二人<rt>ふたり</rt></ruby>ですが、<ruby>席<rt>せき</rt></ruby>はありますか。", "en": "Table for two — do you have any seats?", "cn": "两位，请问有位子吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "汇报进度", "ja": "進捗ですが、予定通り進んでいます。", "ruby": "<ruby>進捗<rt>しんちょく</rt></ruby>ですが、<ruby>予定通<rt>よていどお</rt></ruby>り<ruby>進<rt>すす</rt></ruby>んでいます。", "en": "Progress-wise, everything is on track.", "cn": "进度方面，一切按计划推进。"},
-   {"scene": "面试·动机", "ja": "より技術的なチャレンジができる環境を探しています。", "ruby": "より<ruby>技術的<rt>ぎじゅつてき</rt></ruby>なチャレンジができる<ruby>環境<rt>かんきょう</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しています。", "en": "I'm looking for a role with more technical challenges.", "cn": "我在寻找更有技术挑战的工作环境。"},
-   {"scene": "请店员推荐", "ja": "おすすめは何ですか。", "ruby": "おすすめは<ruby>何<rt>なん</rt></ruby>ですか。", "en": "What do you recommend?", "cn": "有什么推荐的吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "进度延迟", "ja": "少し遅れが出ていますが、今週中には追いつく見込みです。", "ruby": "<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れが<ruby>出<rt>で</rt></ruby>ていますが、<ruby>今週中<rt>こんしゅうちゅう</rt></ruby>には<ruby>追<rt>お</rt></ruby>いつく<ruby>見込<rt>みこ</rt></ruby>みです。", "en": "We're slightly behind, but we expect to catch up within the week.", "cn": "进度略有延迟，但预计本周内能赶上。"},
-   {"scene": "面试·项目", "ja": "大規模なコードベースのFlutter移行をリードしました。", "ruby": "<ruby>大規模<rt>だいきぼ</rt></ruby>なコードベースのFlutter<ruby>移行<rt>いこう</rt></ruby>をリードしました。", "en": "I led the migration of a large codebase to Flutter.", "cn": "我主导了大型代码库向 Flutter 的迁移。"},
-   {"scene": "打包带走", "ja": "これ、持ち帰りにできますか。", "ruby": "これ、<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りにできますか。", "en": "Can I get this to go?", "cn": "这个可以打包带走吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "请人确认", "ja": "お手数ですが、こちらの資料をご確認いただけますか。", "ruby": "お<ruby>手数<rt>てすう</rt></ruby>ですが、こちらの<ruby>資料<rt>しりょう</rt></ruby>をご<ruby>確認<rt>かくにん</rt></ruby>いただけますか。", "en": "Sorry to trouble you, but could you review this document?", "cn": "麻烦您确认一下这份资料可以吗？"},
-   {"scene": "面试·协作", "ja": "デザイナーやバックエンドエンジニアと密に連携するのが好きです。", "ruby": "デザイナーやバックエンドエンジニアと<ruby>密<rt>みつ</rt></ruby>に<ruby>連携<rt>れんけい</rt></ruby>するのが<ruby>好<rt>す</rt></ruby>きです。", "en": "I enjoy working closely with designers and backend engineers.", "cn": "我喜欢和设计师、后端工程师紧密协作。"},
-   {"scene": "车站问路", "ja": "すみません、新宿方面のホームはどちらですか。", "ruby": "すみません、<ruby>新宿方面<rt>しんじゅくほうめん</rt></ruby>のホームはどちらですか。", "en": "Excuse me, which platform is for trains toward Shinjuku?", "cn": "请问，去新宿方向的站台在哪边？"}
-  ]},
-  {"scenes": [
-   {"scene": "举手提问", "ja": "一点、質問してもよろしいでしょうか。", "ruby": "<ruby>一点<rt>いってん</rt></ruby>、<ruby>質問<rt>しつもん</rt></ruby>してもよろしいでしょうか。", "en": "May I ask one question?", "cn": "我可以问一个问题吗？"},
-   {"scene": "面试·分歧", "ja": "意見が分かれたときは、意見よりデータを重視するようにしています。", "ruby": "<ruby>意見<rt>いけん</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かれたときは、<ruby>意見<rt>いけん</rt></ruby>よりデータを<ruby>重視<rt>じゅうし</rt></ruby>するようにしています。", "en": "When we disagree, I try to focus on data rather than opinions.", "cn": "出现分歧时，我会尽量看数据而不是各执己见。"},
-   {"scene": "诊所预约", "ja": "今日の午後、予約を取りたいのですが。", "ruby": "<ruby>今日<rt>きょう</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>、<ruby>予約<rt>よやく</rt></ruby>を<ruby>取<rt>と</rt></ruby>りたいのですが。", "en": "I'd like to make an appointment for this afternoon.", "cn": "我想预约今天下午。"}
-  ]},
-  {"scenes": [
-   {"scene": "表达意见", "ja": "私としては、この案がいいと思います。", "ruby": "<ruby>私<rt>わたし</rt></ruby>としては、この<ruby>案<rt>あん</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>います。", "en": "Personally, I think this option is the best.", "cn": "就我个人而言，我觉得这个方案最好。"},
-   {"scene": "面试·复盘", "ja": "そのプロジェクトから、早い段階でテストする大切さを学びました。", "ruby": "そのプロジェクトから、<ruby>早<rt>はや</rt></ruby>い<ruby>段階<rt>だんかい</rt></ruby>でテストする<ruby>大切<rt>たいせつ</rt></ruby>さを<ruby>学<rt>まな</rt></ruby>びました。", "en": "That project taught me the importance of testing early.", "cn": "那个项目让我懂得了尽早测试的重要性。"},
-   {"scene": "描述症状", "ja": "昨日から喉が痛くて、熱もあります。", "ruby": "<ruby>昨日<rt>きのう</rt></ruby>から<ruby>喉<rt>のど</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くて、<ruby>熱<rt>ねつ</rt></ruby>もあります。", "en": "My throat has been sore since yesterday, and I have a fever too.", "cn": "从昨天开始嗓子疼，还发烧。"}
-  ]},
-  {"scenes": [
-   {"scene": "暂缓回答", "ja": "すぐにはお答えできないので、確認して後ほど共有します。", "ruby": "すぐにはお<ruby>答<rt>こた</rt></ruby>えできないので、<ruby>確認<rt>かくにん</rt></ruby>して<ruby>後<rt>のち</rt></ruby>ほど<ruby>共有<rt>きょうゆう</rt></ruby>します。", "en": "I can't answer right away, so let me check and get back to you.", "cn": "我没法马上回答，确认后稍后同步给大家。"},
-   {"scene": "面试·反问", "ja": "チームの構成について、もう少し教えていただけますか。", "ruby": "チームの<ruby>構成<rt>こうせい</rt></ruby>について、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>教<rt>おし</rt></ruby>えていただけますか。", "en": "Could you tell me more about the team structure?", "cn": "能再多介绍一下团队构成吗？"},
-   {"scene": "药房问诊", "ja": "この薬は一日に何回飲めばいいですか。", "ruby": "この<ruby>薬<rt>くすり</rt></ruby>は<ruby>一日<rt>いちにち</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>飲<rt>の</rt></ruby>めばいいですか。", "en": "How many times a day should I take this medicine?", "cn": "这个药一天吃几次？"}
-  ]},
-  {"scenes": [
-   {"scene": "调整日程", "ja": "来週の打ち合わせ、日程を調整させていただけますか。", "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>打<rt>う</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせ、<ruby>日程<rt>にってい</rt></ruby>を<ruby>調整<rt>ちょうせい</rt></ruby>させていただけますか。", "en": "Could we reschedule next week's meeting?", "cn": "下周的会，可以调整一下时间吗？"},
-   {"scene": "面试·谈薪", "ja": "このポジションの報酬レンジについてお伺いできますか。", "ruby": "このポジションの<ruby>報酬<rt>ほうしゅう</rt></ruby>レンジについてお<ruby>伺<rt>うかが</rt></ruby>いできますか。", "en": "Could we discuss the compensation range for this position?", "cn": "方便聊聊这个职位的薪酬范围吗？"},
-   {"scene": "快递重送", "ja": "再配達をお願いしたいのですが。", "ruby": "<ruby>再配達<rt>さいはいたつ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いしたいのですが。", "en": "I'd like to request a redelivery.", "cn": "我想申请再次配送。"}
-  ]},
-  {"scenes": [
-   {"scene": "会议收尾", "ja": "本日はここまでにしましょう。お疲れさまでした。", "ruby": "<ruby>本日<rt>ほんじつ</rt></ruby>はここまでにしましょう。お<ruby>疲<rt>つか</rt></ruby>れさまでした。", "en": "Let's wrap up here for today. Thanks, everyone.", "cn": "今天就到这里吧，大家辛苦了。"},
-   {"scene": "面试·远程", "ja": "この職種はリモートやハイブリッド勤務も可能でしょうか。", "ruby": "この<ruby>職種<rt>しょくしゅ</rt></ruby>はリモートやハイブリッド<ruby>勤務<rt>きんむ</rt></ruby>も<ruby>可能<rt>かのう</rt></ruby>でしょうか。", "en": "Is this role open to remote or hybrid work?", "cn": "这个职位可以远程或混合办公吗？"},
-   {"scene": "理发", "ja": "全体的に少し短くしてください。", "ruby": "<ruby>全体的<rt>ぜんたいてき</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>し<ruby>短<rt>みじか</rt></ruby>くしてください。", "en": "Just a bit shorter overall, please.", "cn": "整体稍微剪短一点。"}
-  ]},
-  {"scenes": [
-   {"scene": "邮件提醒", "ja": "先ほどメールをお送りしましたので、ご確認ください。", "ruby": "<ruby>先<rt>さき</rt></ruby>ほどメールをお<ruby>送<rt>おく</rt></ruby>りしましたので、ご<ruby>確認<rt>かくにん</rt></ruby>ください。", "en": "I just sent you an email — please take a look.", "cn": "我刚发了邮件，请查收。"},
-   {"scene": "面试·意愿", "ja": "この機会をとても楽しみにしています。", "ruby": "この<ruby>機会<rt>きかい</rt></ruby>をとても<ruby>楽<rt>たの</rt></ruby>しみにしています。", "en": "I'm really excited about this opportunity.", "cn": "我非常期待这个机会。"},
-   {"scene": "市役所", "ja": "住民票を一通お願いします。", "ruby": "<ruby>住民票<rt>じゅうみんひょう</rt></ruby>を<ruby>一通<rt>いっつう</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします。", "en": "One copy of my residence certificate, please.", "cn": "请给我开一份住民票。"}
-  ]},
-  {"scenes": [
-   {"scene": "迟到道歉", "ja": "遅れてすみません、前の会議が長引いてしまって。", "ruby": "<ruby>遅<rt>おく</rt></ruby>れてすみません、<ruby>前<rt>まえ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>長引<rt>ながび</rt></ruby>いてしまって。", "en": "Sorry I'm late — my previous meeting ran over.", "cn": "抱歉迟到了，上一个会拖堂了。"},
-   {"scene": "站会汇报", "ja": "昨日はログインのバグを直して、今日は決済フローに取り組みます。", "ruby": "<ruby>昨日<rt>きのう</rt></ruby>はログインのバグを<ruby>直<rt>なお</rt></ruby>して、<ruby>今日<rt>きょう</rt></ruby>は<ruby>決済<rt>けっさい</rt></ruby>フローに<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>みます。", "en": "Yesterday I fixed the login bug, and today I'll work on the payment flow.", "cn": "昨天修复了登录的 bug，今天做支付流程。"},
-   {"scene": "银行开户", "ja": "口座を開設したいのですが、何が必要ですか。", "ruby": "<ruby>口座<rt>こうざ</rt></ruby>を<ruby>開設<rt>かいせつ</rt></ruby>したいのですが、<ruby>何<rt>なに</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>ですか。", "en": "I'd like to open an account — what do I need?", "cn": "我想开个账户，需要什么材料？"}
-  ]},
-  {"scenes": [
-   {"scene": "版本计划", "ja": "この機能は、次のリリースに入れる予定です。", "ruby": "この<ruby>機能<rt>きのう</rt></ruby>は、<ruby>次<rt>つぎ</rt></ruby>のリリースに<ruby>入<rt>い</rt></ruby>れる<ruby>予定<rt>よてい</rt></ruby>です。", "en": "We plan to include this feature in the next release.", "cn": "这个功能计划放进下个版本发布。"},
-   {"scene": "请看PR", "ja": "お時間のあるときに、私のプルリクエストを見ていただけますか。", "ruby": "お<ruby>時間<rt>じかん</rt></ruby>のあるときに、<ruby>私<rt>わたし</rt></ruby>のプルリクエストを<ruby>見<rt>み</rt></ruby>ていただけますか。", "en": "Could you take a look at my pull request when you have time?", "cn": "有空的时候能帮我看下 PR 吗？"},
-   {"scene": "手机套餐", "ja": "このプランの解約料はかかりますか。", "ruby": "このプランの<ruby>解約料<rt>かいやくりょう</rt></ruby>はかかりますか。", "en": "Is there a cancellation fee for this plan?", "cn": "这个套餐解约要收违约金吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "找人商量", "ja": "ちょっとご相談したいことがあるのですが、今お時間大丈夫ですか。", "ruby": "ちょっとご<ruby>相談<rt>そうだん</rt></ruby>したいことがあるのですが、<ruby>今<rt>いま</rt></ruby>お<ruby>時間<rt>じかん</rt></ruby><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。", "en": "There's something I'd like to discuss — do you have a moment?", "cn": "有件事想和您商量，现在方便吗？"},
-   {"scene": "被阻塞", "ja": "いま、API仕様待ちで作業が止まっています。", "ruby": "いま、API<ruby>仕様待<rt>しようま</rt></ruby>ちで<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっています。", "en": "I'm currently blocked waiting for the API specification.", "cn": "我现在卡在等 API 规格上，工作暂停了。"},
-   {"scene": "找房子", "ja": "駅から徒歩十分以内の物件を探しています。", "ruby": "<ruby>駅<rt>えき</rt></ruby>から<ruby>徒歩<rt>とほ</rt></ruby><ruby>十分<rt>じゅっぷん</rt></ruby><ruby>以内<rt>いない</rt></ruby>の<ruby>物件<rt>ぶっけん</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しています。", "en": "I'm looking for a place within a ten-minute walk of the station.", "cn": "我在找离车站步行十分钟以内的房子。"}
-  ]},
-  {"scenes": [
-   {"scene": "委婉异议", "ja": "おっしゃることは分かりますが、少し懸念があります。", "ruby": "おっしゃることは<ruby>分<rt>わ</rt></ruby>かりますが、<ruby>少<rt>すこ</rt></ruby>し<ruby>懸念<rt>けねん</rt></ruby>があります。", "en": "I see your point, but I have some concerns.", "cn": "我明白您的意思，但有一点担忧。"},
-   {"scene": "工期估算", "ja": "この機能の実装には、三日ほどかかると見ています。", "ruby": "この<ruby>機能<rt>きのう</rt></ruby>の<ruby>実装<rt>じっそう</rt></ruby>には、<ruby>三日<rt>みっか</rt></ruby>ほどかかると<ruby>見<rt>み</rt></ruby>ています。", "en": "I'd estimate this feature will take about three days.", "cn": "我估计这个功能大概要三天。"},
-   {"scene": "邻里问候", "ja": "隣に引っ越してきました。よろしくお願いします。", "ruby": "<ruby>隣<rt>となり</rt></ruby>に<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>してきました。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。", "en": "I just moved in next door — nice to meet you.", "cn": "我刚搬到隔壁，请多关照。"}
-  ]},
-  {"scenes": [
-   {"scene": "确认理解", "ja": "つまり、こういう理解で合っていますか。", "ruby": "つまり、こういう<ruby>理解<rt>りかい</rt></ruby>で<ruby>合<rt>あ</rt></ruby>っていますか。", "en": "So, is my understanding correct?", "cn": "也就是说，我这样理解对吗？"},
-   {"scene": "发布策略", "ja": "この機能はフィーチャーフラグ付きでリリースすることを提案します。", "ruby": "この<ruby>機能<rt>きのう</rt></ruby>はフィーチャーフラグ<ruby>付<rt>つ</rt></ruby>きでリリースすることを<ruby>提案<rt>ていあん</rt></ruby>します。", "en": "I'd suggest we release this behind a feature flag.", "cn": "我建议这个功能加个开关再发布。"},
-   {"scene": "天气寒暄", "ja": "今日は蒸し暑いですね。", "ruby": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>いですね。", "en": "It's really humid today, isn't it?", "cn": "今天真闷热啊。"}
-  ]},
-  {"scenes": [
-   {"scene": "事后道谢", "ja": "先日は助けていただき、ありがとうございました。", "ruby": "<ruby>先日<rt>せんじつ</rt></ruby>は<ruby>助<rt>たす</rt></ruby>けていただき、ありがとうございました。", "en": "Thank you for your help the other day.", "cn": "前几天多谢您帮忙了。"},
-   {"scene": "需求澄清", "ja": "確認ですが、iOSとAndroidの両方が対象ですか。", "ruby": "<ruby>確認<rt>かくにん</rt></ruby>ですが、iOSとAndroidの<ruby>両方<rt>りょうほう</rt></ruby>が<ruby>対象<rt>たいしょう</rt></ruby>ですか。", "en": "Just to clarify, are we targeting both iOS and Android?", "cn": "确认一下，我们的目标是同时支持 iOS 和 Android 吗？"},
-   {"scene": "电车停运", "ja": "人身事故で電車が止まっているみたいです。", "ruby": "<ruby>人身事故<rt>じんしんじこ</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっているみたいです。", "en": "It seems the trains are stopped because of an accident.", "cn": "好像因为人身事故电车停运了。"}
-  ]},
-  {"scenes": [
-   {"scene": "委托期限", "ja": "こちら、金曜日までにお願いできますか。", "ruby": "こちら、<ruby>金曜日<rt>きんようび</rt></ruby>までにお<ruby>願<rt>ねが</rt></ruby>いできますか。", "en": "Could you have this done by Friday?", "cn": "这个能麻烦你周五之前完成吗？"},
-   {"scene": "表示赞同", "ja": "それは納得です。その方針でいきましょう。", "ruby": "それは<ruby>納得<rt>なっとく</rt></ruby>です。その<ruby>方針<rt>ほうしん</rt></ruby>でいきましょう。", "en": "That makes sense — let's go with that approach.", "cn": "有道理，就按这个思路来吧。"},
-   {"scene": "居酒屋", "ja": "とりあえず、生ビールを二つください。", "ruby": "とりあえず、<ruby>生<rt>なま</rt></ruby>ビールを<ruby>二<rt>ふた</rt></ruby>つください。", "en": "To start, two draft beers, please.", "cn": "先来两杯生啤。"}
-  ]},
-  {"scenes": [
-   {"scene": "承诺回复", "ja": "明日中にはお返事します。", "ruby": "<ruby>明日中<rt>あしたじゅう</rt></ruby>にはお<ruby>返事<rt>へんじ</rt></ruby>します。", "en": "I'll get back to you by the end of tomorrow.", "cn": "我明天之内给您答复。"},
-   {"scene": "礼貌异议", "ja": "私は少し違う見方をしています。考えを共有してもいいですか。", "ruby": "<ruby>私<rt>わたし</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>違<rt>ちが</rt></ruby>う<ruby>見方<rt>みかた</rt></ruby>をしています。<ruby>考<rt>かんが</rt></ruby>えを<ruby>共有<rt>きょうゆう</rt></ruby>してもいいですか。", "en": "I see it a bit differently — may I share my perspective?", "cn": "我的看法稍有不同，可以说说我的想法吗？"},
-   {"scene": "分开结账", "ja": "お会計は別々にできますか。", "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>別々<rt>べつべつ</rt></ruby>にできますか。", "en": "Could we get separate checks?", "cn": "可以分开结账吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "小步试错", "ja": "まず小さく試してみるのはどうでしょうか。", "ruby": "まず<ruby>小<rt>ちい</rt></ruby>さく<ruby>試<rt>ため</rt></ruby>してみるのはどうでしょうか。", "en": "How about we start with a small experiment first?", "cn": "要不我们先小范围试一试？"},
-   {"scene": "会后跟进", "ja": "会議のあとで、要点をまとめて共有します。", "ruby": "<ruby>会議<rt>かいぎ</rt></ruby>のあとで、<ruby>要点<rt>ようてん</rt></ruby>をまとめて<ruby>共有<rt>きょうゆう</rt></ruby>します。", "en": "I'll follow up with a summary after the meeting.", "cn": "会后我整理要点发给大家。"},
-   {"scene": "失物招领", "ja": "電車に傘を忘れてしまったのですが。", "ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>傘<rt>かさ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れてしまったのですが。", "en": "I left my umbrella on the train.", "cn": "我把伞忘在电车上了。"}
-  ]},
-  {"scenes": [
-   {"scene": "排优先级", "ja": "今はこちらのタスクを優先すべきだと思います。", "ruby": "<ruby>今<rt>いま</rt></ruby>はこちらのタスクを<ruby>優先<rt>ゆうせん</rt></ruby>すべきだと<ruby>思<rt>おも</rt></ruby>います。", "en": "I think we should prioritize this task for now.", "cn": "我觉得现在应该优先做这个任务。"},
-   {"scene": "同事闲聊", "ja": "週末はどうでしたか。何か楽しいことをしましたか。", "ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>はどうでしたか。<ruby>何<rt>なに</rt></ruby>か<ruby>楽<rt>たの</rt></ruby>しいことをしましたか。", "en": "How was your weekend? Did you do anything fun?", "cn": "周末过得怎么样？有做什么有意思的事吗？"},
-   {"scene": "报修家电", "ja": "洗濯機の調子が悪いので、見に来てもらえますか。", "ruby": "<ruby>洗濯機<rt>せんたくき</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いので、<ruby>見<rt>み</rt></ruby>に<ruby>来<rt>き</rt></ruby>てもらえますか。", "en": "My washing machine isn't working right — could someone come take a look?", "cn": "洗衣机有点问题，能来看一下吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "认领任务", "ja": "この部分は私が担当します。", "ruby": "この<ruby>部分<rt>ぶぶん</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>が<ruby>担当<rt>たんとう</rt></ruby>します。", "en": "I'll take care of this part.", "cn": "这部分由我来负责。"},
-   {"scene": "回应反馈", "ja": "フィードバックありがとうございます。とても参考になります。", "ruby": "フィードバックありがとうございます。とても<ruby>参考<rt>さんこう</rt></ruby>になります。", "en": "Thanks for the feedback — that's really helpful.", "cn": "谢谢反馈，非常有帮助。"},
-   {"scene": "健身房", "ja": "見学だけでもできますか。", "ruby": "<ruby>見学<rt>けんがく</rt></ruby>だけでもできますか。", "en": "Could I just take a tour first?", "cn": "可以只参观一下吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "会议目标", "ja": "今日の目的は、方針を決めることです。", "ruby": "<ruby>今日<rt>きょう</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>は、<ruby>方針<rt>ほうしん</rt></ruby>を<ruby>決<rt>き</rt></ruby>めることです。", "en": "Today's goal is to decide on our direction.", "cn": "今天的目的是把方针定下来。"},
-   {"scene": "请说慢些", "ja": "すみません、もう少しゆっくり話していただけますか。", "ruby": "すみません、もう<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>していただけますか。", "en": "Sorry, could you speak a little more slowly?", "cn": "不好意思，能稍微说慢一点吗？"},
-   {"scene": "旅馆订房", "ja": "今夜、空いている部屋はありますか。", "ruby": "<ruby>今夜<rt>こんや</rt></ruby>、<ruby>空<rt>あ</rt></ruby>いている<ruby>部屋<rt>へや</rt></ruby>はありますか。", "en": "Do you have any rooms available tonight?", "cn": "今晚还有空房间吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "核对数字", "ja": "念のため、数字をもう一度確認させてください。", "ruby": "<ruby>念<rt>ねん</rt></ruby>のため、<ruby>数字<rt>すうじ</rt></ruby>をもう<ruby>一度<rt>いちど</rt></ruby><ruby>確認<rt>かくにん</rt></ruby>させてください。", "en": "Just to be sure, let me double-check the numbers.", "cn": "保险起见，让我再核对一遍数字。"},
-   {"scene": "请再说一遍", "ja": "すみません、聞き取れませんでした。もう一度言っていただけますか。", "ruby": "すみません、<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>れませんでした。もう<ruby>一度<rt>いちど</rt></ruby><ruby>言<rt>い</rt></ruby>っていただけますか。", "en": "Sorry, I didn't catch that — could you say it again?", "cn": "抱歉没听清，能再说一遍吗？"},
-   {"scene": "试穿", "ja": "これ、試着してもいいですか。", "ruby": "これ、<ruby>試着<rt>しちゃく</rt></ruby>してもいいですか。", "en": "May I try this on?", "cn": "这件可以试穿吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "征求意见", "ja": "率直なご意見をいただけると助かります。", "ruby": "<ruby>率直<rt>そっちょく</rt></ruby>なご<ruby>意見<rt>いけん</rt></ruby>をいただけると<ruby>助<rt>たす</rt></ruby>かります。", "en": "I'd really appreciate your honest feedback.", "cn": "如果能听到您的坦率意见就太好了。"},
-   {"scene": "确认行动项", "ja": "つまり、私が設計書を用意する、ということで合っていますか。", "ruby": "つまり、<ruby>私<rt>わたし</rt></ruby>が<ruby>設計書<rt>せっけいしょ</rt></ruby>を<ruby>用意<rt>ようい</rt></ruby>する、ということで<ruby>合<rt>あ</rt></ruby>っていますか。", "en": "So the action item is that I'll prepare the design doc, right?", "cn": "也就是说，行动项是我来准备设计文档，对吧？"},
-   {"scene": "退换货", "ja": "サイズが合わなかったので、交換できますか。", "ruby": "サイズが<ruby>合<rt>あ</rt></ruby>わなかったので、<ruby>交換<rt>こうかん</rt></ruby>できますか。", "en": "It didn't fit — could I exchange it?", "cn": "尺码不合适，可以换一件吗？"}
-  ]},
-  {"scenes": [
-   {"scene": "抛出问题", "ja": "一点、共有しておきたい問題があります。", "ruby": "<ruby>一点<rt>いってん</rt></ruby>、<ruby>共有<rt>きょうゆう</rt></ruby>しておきたい<ruby>問題<rt>もんだい</rt></ruby>があります。", "en": "There's one issue I'd like to flag.", "cn": "有一个问题想先同步给大家。"},
-   {"scene": "技术取舍", "ja": "ここでは、パフォーマンスと読みやすさのトレードオフがあります。", "ruby": "ここでは、パフォーマンスと<ruby>読<rt>よ</rt></ruby>みやすさのトレードオフがあります。", "en": "There's a trade-off between performance and readability here.", "cn": "这里存在性能和可读性之间的取舍。"},
-   {"scene": "咖啡外带", "ja": "アイスコーヒーをテイクアウトでお願いします。", "ruby": "アイスコーヒーをテイクアウトでお<ruby>願<rt>ねが</rt></ruby>いします。", "en": "An iced coffee to go, please.", "cn": "一杯冰咖啡，带走。"}
-  ]},
-  {"scenes": [
-   {"scene": "择日再议", "ja": "この件は、次回の会議で改めて話しましょう。", "ruby": "この<ruby>件<rt>けん</rt></ruby>は、<ruby>次回<rt>じかい</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>で<ruby>改<rt>あらた</rt></ruby>めて<ruby>話<rt>はな</rt></ruby>しましょう。", "en": "Let's revisit this in the next meeting.", "cn": "这件事下次会议再详谈吧。"},
-   {"scene": "新人求文档", "ja": "まず読んでおくべきドキュメントはありますか。", "ruby": "まず<ruby>読<rt>よ</rt></ruby>んでおくべきドキュメントはありますか。", "en": "Is there any documentation I should read first?", "cn": "有什么文档是我应该先读的吗？"},
-   {"scene": "电梯故障", "ja": "エレベーターが動いていないようです。", "ruby": "エレベーターが<ruby>動<rt>うご</rt></ruby>いていないようです。", "en": "The elevator doesn't seem to be working.", "cn": "电梯好像不动了。"}
-  ]},
-  {"scenes": [
-   {"scene": "新人报到", "ja": "今日から一緒に働くことになりました。よろしくお願いします。", "ruby": "<ruby>今日<rt>きょう</rt></ruby>から<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>くことになりました。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。", "en": "I'll be working with you starting today — great to meet you all.", "cn": "从今天起和大家一起共事，请多关照。"},
-   {"scene": "主动帮忙", "ja": "何か手伝えることがあれば言ってください。", "ruby": "<ruby>何<rt>なに</rt></ruby>か<ruby>手伝<rt>てつだ</rt></ruby>えることがあれば<ruby>言<rt>い</rt></ruby>ってください。", "en": "Let me know if there's anything I can help with.", "cn": "有什么我能帮忙的尽管说。"},
-   {"scene": "牙医预约", "ja": "歯の定期検診をお願いしたいのですが。", "ruby": "<ruby>歯<rt>は</rt></ruby>の<ruby>定期検診<rt>ていきけんしん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いしたいのですが。", "en": "I'd like to schedule a regular dental checkup.", "cn": "我想预约牙齿的定期检查。"}
-  ]},
-  {"scenes": [
-   {"scene": "请假", "ja": "明日、私用のためお休みをいただきます。", "ruby": "<ruby>明日<rt>あす</rt></ruby>、<ruby>私用<rt>しよう</rt></ruby>のためお<ruby>休<rt>やす</rt></ruby>みをいただきます。", "en": "I'll be taking tomorrow off for personal reasons.", "cn": "明天我因私事请假一天。"},
-   {"scene": "协商延期", "ja": "締め切りを数日延ばす必要があるかもしれません。", "ruby": "<ruby>締<rt>し</rt></ruby>め<ruby>切<rt>き</rt></ruby>りを<ruby>数日<rt>すうじつ</rt></ruby><ruby>延<rt>の</rt></ruby>ばす<ruby>必要<rt>ひつよう</rt></ruby>があるかもしれません。", "en": "We might need to push the deadline back a few days.", "cn": "截止日期可能需要往后推几天。"},
-   {"scene": "台风天", "ja": "台風が近づいているので、早めに帰りましょう。", "ruby": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づいているので、<ruby>早<rt>はや</rt></ruby>めに<ruby>帰<rt>かえ</rt></ruby>りましょう。", "en": "A typhoon is coming, so let's head home early.", "cn": "台风快来了，早点回家吧。"}
-  ]},
-  {"scenes": [
-   {"scene": "出差", "ja": "来週、大阪に出張する予定です。", "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>出張<rt>しゅっちょう</rt></ruby>する<ruby>予定<rt>よてい</rt></ruby>です。", "en": "I'm scheduled for a business trip to Osaka next week.", "cn": "下周我要去大阪出差。"},
-   {"scene": "庆祝上线", "ja": "みなさんお疲れさまでした。ついにリリースできましたね。", "ruby": "みなさんお<ruby>疲<rt>つか</rt></ruby>れさまでした。ついにリリースできましたね。", "en": "Great work, everyone — we finally shipped it!", "cn": "大家辛苦了——终于上线了！"},
-   {"scene": "拉面店", "ja": "麺は硬めでお願いします。", "ruby": "<ruby>麺<rt>めん</rt></ruby>は<ruby>硬<rt>かた</rt></ruby>めでお<ruby>願<rt>ねが</rt></ruby>いします。", "en": "Firm noodles, please.", "cn": "面要偏硬的。"}
-  ]}
+  {
+   "scenario": {
+    "title_ja": "コンビニで会計",
+    "title_cn": "便利店结账",
+    "desc": "在便利店买便当和饮料，店员问加热、袋子和支付方式",
+    "tip": "「温めますか」要加热答「お願いします」；不要袋子说「袋は大丈夫です」（大丈夫=婉拒万能词）"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "いらっしゃいませ。お弁当、温めますか？",
+     "ruby": "いらっしゃいませ。お<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>温<rt>あたた</rt></ruby>めますか？",
+     "en": "Welcome! Would you like your bento heated?",
+     "cn": "欢迎光临。便当要加热吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "はい、お願いします。",
+     "ruby": "はい、お<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Yes, please.",
+     "cn": "好的，麻烦你。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "レジ袋はご利用ですか？",
+     "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか？",
+     "en": "Would you like a plastic bag?",
+     "cn": "需要塑料袋吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "いえ、袋は大丈夫です。",
+     "ruby": "いえ、<ruby>袋<rt>ふくろ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+     "en": "No, I don't need a bag.",
+     "cn": "不用，袋子就不需要了。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "お会計は六百八十円です。",
+     "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>六百八十円<rt>ろっぴゃくはちじゅうえん</rt></ruby>です。",
+     "en": "Your total is 680 yen.",
+     "cn": "一共是680日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "カードでお願いします。",
+     "ruby": "カードでお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "I'll pay by card.",
+     "cn": "刷卡，麻烦了。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "ありがとうございました。",
+     "ruby": "ありがとうございました。",
+     "en": "Thank you very much!",
+     "cn": "谢谢惠顾。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "ラーメン屋で注文",
+    "title_cn": "拉面店点餐",
+    "desc": "进拉面店点单：选口味、面的硬度，加点饺子",
+    "tip": "点餐句型「〜を一つお願いします」；「麺の硬さ」可答 硬め／普通／柔らかめ"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "いらっしゃいませ！ご注文はお決まりですか？",
+     "ruby": "いらっしゃいませ！ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりですか？",
+     "en": "Welcome! Are you ready to order?",
+     "cn": "欢迎光临！决定点什么了吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "醤油ラーメンを一つお願いします。",
+     "ruby": "<ruby>醤油<rt>しょうゆ</rt></ruby>ラーメンを<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "One shoyu ramen, please.",
+     "cn": "请来一碗酱油拉面。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "麺の硬さはどうしますか？",
+     "ruby": "<ruby>麺<rt>めん</rt></ruby>の<ruby>硬<rt>かた</rt></ruby>さはどうしますか？",
+     "en": "How would you like your noodles?",
+     "cn": "面的硬度要怎么样？"
+    },
+    {
+     "speaker": "客",
+     "ja": "普通で。あと、餃子もください。",
+     "ruby": "<ruby>普通<rt>ふつう</rt></ruby>で。あと、<ruby>餃子<rt>ぎょうざ</rt></ruby>もください。",
+     "en": "Regular, please. And an order of gyoza too.",
+     "cn": "普通就好。另外再来一份饺子。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "かしこまりました。少々お待ちください。",
+     "ruby": "かしこまりました。<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+     "en": "Certainly. Just a moment, please.",
+     "cn": "好的，请稍等。"
+    },
+    {
+     "speaker": "客",
+     "ja": "すみません、お水をもらえますか？",
+     "ruby": "すみません、お<ruby>水<rt>みず</rt></ruby>をもらえますか？",
+     "en": "Excuse me, could I get some water?",
+     "cn": "不好意思，能给我杯水吗？"
+    },
+    {
+     "speaker": "店員",
+     "ja": "はい、ただいまお持ちします。",
+     "ruby": "はい、ただいまお<ruby>持<rt>も</rt></ruby>ちします。",
+     "en": "Of course, right away.",
+     "cn": "好的，马上给您拿来。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "カフェでテイクアウト",
+    "title_cn": "咖啡店点单",
+    "desc": "在咖啡店点冰拿铁外带，用手机支付",
+    "tip": "「店内」vs「持ち帰り」（イートイン／テイクアウト）是点单必被问的一组词"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "お次の方、どうぞ。",
+     "ruby": "お<ruby>次<rt>つぎ</rt></ruby>の<ruby>方<rt>かた</rt></ruby>、どうぞ。",
+     "en": "Next in line, please.",
+     "cn": "下一位，这边请。"
+    },
+    {
+     "speaker": "客",
+     "ja": "アイスカフェラテのMサイズを一つお願いします。",
+     "ruby": "アイスカフェラテのMサイズを<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "One medium iced caffè latte, please.",
+     "cn": "请给我一杯中杯冰拿铁。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "店内をご利用ですか？",
+     "ruby": "<ruby>店内<rt>てんない</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ですか？",
+     "en": "Will you be having it here?",
+     "cn": "请问在店内喝吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "いえ、持ち帰りでお願いします。",
+     "ruby": "いえ、<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りでお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "No, to go, please.",
+     "cn": "不，带走。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "お会計は五百円です。",
+     "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>五百円<rt>ごひゃくえん</rt></ruby>です。",
+     "en": "That'll be 500 yen.",
+     "cn": "一共500日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "PayPayで払えますか？",
+     "ruby": "PayPayで<ruby>払<rt>はら</rt></ruby>えますか？",
+     "en": "Can I pay with PayPay?",
+     "cn": "可以用PayPay支付吗？"
+    },
+    {
+     "speaker": "店員",
+     "ja": "はい、大丈夫ですよ。",
+     "ruby": "はい、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+     "en": "Yes, that's fine.",
+     "cn": "可以的。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "駅で乗り換えを聞く",
+    "title_cn": "车站问乘换",
+    "desc": "在车站向站务员打听去新宿的路线和站台",
+    "tip": "问路万能开场「すみません、〜に行きたいんですが」，句尾んですが留半句更自然"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "すみません、新宿に行きたいんですが。",
+     "ruby": "すみません、<ruby>新宿<rt>しんじゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいんですが。",
+     "en": "Excuse me, I'd like to get to Shinjuku.",
+     "cn": "不好意思，我想去新宿。"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "新宿なら、山手線が便利ですよ。",
+     "ruby": "<ruby>新宿<rt>しんじゅく</rt></ruby>なら、<ruby>山手線<rt>やまのてせん</rt></ruby>が<ruby>便利<rt>べんり</rt></ruby>ですよ。",
+     "en": "For Shinjuku, the Yamanote Line is convenient.",
+     "cn": "去新宿的话，坐山手线很方便。"
+    },
+    {
+     "speaker": "客",
+     "ja": "何番線から出ますか？",
+     "ruby": "<ruby>何番線<rt>なんばんせん</rt></ruby>から<ruby>出<rt>で</rt></ruby>ますか？",
+     "en": "Which platform does it leave from?",
+     "cn": "从几号站台发车？"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "三番線です。あの階段を上がってください。",
+     "ruby": "<ruby>三番線<rt>さんばんせん</rt></ruby>です。あの<ruby>階段<rt>かいだん</rt></ruby>を<ruby>上<rt>あ</rt></ruby>がってください。",
+     "en": "Platform three. Go up those stairs over there.",
+     "cn": "3号站台。请上那边的楼梯。"
+    },
+    {
+     "speaker": "客",
+     "ja": "どのくらいかかりますか？",
+     "ruby": "どのくらいかかりますか？",
+     "en": "How long does it take?",
+     "cn": "大概要多长时间？"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "十五分くらいですね。",
+     "ruby": "<ruby>十五分<rt>じゅうごふん</rt></ruby>くらいですね。",
+     "en": "About fifteen minutes.",
+     "cn": "大约15分钟。"
+    },
+    {
+     "speaker": "客",
+     "ja": "助かりました。ありがとうございます。",
+     "ruby": "<ruby>助<rt>たす</rt></ruby>かりました。ありがとうございます。",
+     "en": "That helps a lot. Thank you!",
+     "cn": "帮大忙了，谢谢！"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "電車遅延の連絡",
+    "title_cn": "电车晚点打电话报备",
+    "desc": "电车晚点，打电话给同事说明会迟到",
+    "tip": "报迟到常用「〜そうです」（看样子会…）+「〜ほど遅れます」；先道歉再说明"
+   },
+   "lines": [
+    {
+     "speaker": "自分",
+     "ja": "おはようございます。少し遅れそうなので、ご連絡しました。",
+     "ruby": "おはようございます。<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れそうなので、ご<ruby>連絡<rt>れんらく</rt></ruby>しました。",
+     "en": "Good morning. I'm calling because it looks like I'll be a bit late.",
+     "cn": "早上好。我可能会迟到一会儿，先跟你说一声。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "どうしたんですか？",
+     "ruby": "どうしたんですか？",
+     "en": "What happened?",
+     "cn": "怎么了？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "電車が遅延していて、駅で止まったままなんです。",
+     "ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅延<rt>ちえん</rt></ruby>していて、<ruby>駅<rt>えき</rt></ruby>で<ruby>止<rt>と</rt></ruby>まったままなんです。",
+     "en": "The train is delayed — we've been stopped at a station.",
+     "cn": "电车晚点了，现在一直停在车站不动。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "大変ですね。会議は十時からですよ。",
+     "ruby": "<ruby>大変<rt>たいへん</rt></ruby>ですね。<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>十時<rt>じゅうじ</rt></ruby>からですよ。",
+     "en": "That's rough. The meeting starts at ten, you know.",
+     "cn": "真够呛。会议十点开始哦。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "十五分ほど遅れると思います。すみません。",
+     "ruby": "<ruby>十五分<rt>じゅうごふん</rt></ruby>ほど<ruby>遅<rt>おく</rt></ruby>れると<ruby>思<rt>おも</rt></ruby>います。すみません。",
+     "en": "I think I'll be about fifteen minutes late. I'm sorry.",
+     "cn": "我估计会迟到15分钟左右，抱歉。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "了解です。気をつけて来てください。",
+     "ruby": "<ruby>了解<rt>りょうかい</rt></ruby>です。<ruby>気<rt>き</rt></ruby>をつけて<ruby>来<rt>き</rt></ruby>てください。",
+     "en": "Got it. Get here safely.",
+     "cn": "了解。路上注意安全。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "病院の受付",
+    "title_cn": "医院挂号",
+    "desc": "第一次去医院看病，在前台挂号",
+    "tip": "初诊必带 保険証；「問診票」=问诊表；说症状用「〜から…があって」"
+   },
+   "lines": [
+    {
+     "speaker": "患者",
+     "ja": "すみません、初めてなんですが、診てもらえますか？",
+     "ruby": "すみません、<ruby>初<rt>はじ</rt></ruby>めてなんですが、<ruby>診<rt>み</rt></ruby>てもらえますか？",
+     "en": "Excuse me, this is my first visit — could I see a doctor?",
+     "cn": "不好意思，我是第一次来，能看诊吗？"
+    },
+    {
+     "speaker": "受付",
+     "ja": "はい。保険証はお持ちですか？",
+     "ruby": "はい。<ruby>保険証<rt>ほけんしょう</rt></ruby>はお<ruby>持<rt>も</rt></ruby>ちですか？",
+     "en": "Yes. Do you have your insurance card?",
+     "cn": "可以。您带保险证了吗？"
+    },
+    {
+     "speaker": "患者",
+     "ja": "はい、これです。",
+     "ruby": "はい、これです。",
+     "en": "Yes, here it is.",
+     "cn": "带了，给您。"
+    },
+    {
+     "speaker": "受付",
+     "ja": "こちらの問診票にご記入ください。",
+     "ruby": "こちらの<ruby>問診票<rt>もんしんひょう</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>ください。",
+     "en": "Please fill out this medical questionnaire.",
+     "cn": "请填写这份问诊表。"
+    },
+    {
+     "speaker": "患者",
+     "ja": "昨日から熱があって、喉も痛いです。",
+     "ruby": "<ruby>昨日<rt>きのう</rt></ruby>から<ruby>熱<rt>ねつ</rt></ruby>があって、<ruby>喉<rt>のど</rt></ruby>も<ruby>痛<rt>いた</rt></ruby>いです。",
+     "en": "I've had a fever since yesterday, and my throat hurts too.",
+     "cn": "从昨天开始发烧，嗓子也疼。"
+    },
+    {
+     "speaker": "受付",
+     "ja": "分かりました。お呼びするまで、お掛けになってお待ちください。",
+     "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。お<ruby>呼<rt>よ</rt></ruby>びするまで、お<ruby>掛<rt>か</rt></ruby>けになってお<ruby>待<rt>ま</rt></ruby>ちください。",
+     "en": "Understood. Please have a seat until we call you.",
+     "cn": "好的。叫到您之前，请坐着稍等。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "薬局で薬を受け取る",
+    "title_cn": "药局取药",
+    "desc": "在药局听药剂师说明用法和注意事项",
+    "tip": "药袋高频词：食後・食前・一日◯回；「お大事に」是医生药师的送别语"
+   },
+   "lines": [
+    {
+     "speaker": "薬剤師",
+     "ja": "お薬のご説明をしますね。",
+     "ruby": "お<ruby>薬<rt>くすり</rt></ruby>のご<ruby>説明<rt>せつめい</rt></ruby>をしますね。",
+     "en": "Let me explain your medication.",
+     "cn": "我来说明一下药的用法。"
+    },
+    {
+     "speaker": "薬剤師",
+     "ja": "こちらは一日三回、食後に飲んでください。",
+     "ruby": "こちらは<ruby>一日三回<rt>いちにちさんかい</rt></ruby>、<ruby>食後<rt>しょくご</rt></ruby>に<ruby>飲<rt>の</rt></ruby>んでください。",
+     "en": "Take this three times a day, after meals.",
+     "cn": "这个每天三次，饭后服用。"
+    },
+    {
+     "speaker": "患者",
+     "ja": "眠くなったりしますか？",
+     "ruby": "<ruby>眠<rt>ねむ</rt></ruby>くなったりしますか？",
+     "en": "Will it make me sleepy?",
+     "cn": "吃了会犯困吗？"
+    },
+    {
+     "speaker": "薬剤師",
+     "ja": "眠くなることがあるので、運転は控えてください。",
+     "ruby": "<ruby>眠<rt>ねむ</rt></ruby>くなることがあるので、<ruby>運転<rt>うんてん</rt></ruby>は<ruby>控<rt>ひか</rt></ruby>えてください。",
+     "en": "It can cause drowsiness, so please avoid driving.",
+     "cn": "有可能会困，所以请尽量别开车。"
+    },
+    {
+     "speaker": "患者",
+     "ja": "分かりました。お風呂は入っても大丈夫ですか？",
+     "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。お<ruby>風呂<rt>ふろ</rt></ruby>は<ruby>入<rt>はい</rt></ruby>っても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか？",
+     "en": "Got it. Is it okay to take a bath?",
+     "cn": "明白了。可以泡澡吗？"
+    },
+    {
+     "speaker": "薬剤師",
+     "ja": "熱が下がっていれば大丈夫ですよ。お大事に。",
+     "ruby": "<ruby>熱<rt>ねつ</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がっていれば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。お<ruby>大事<rt>だいじ</rt></ruby>に。",
+     "en": "If your fever has gone down, that's fine. Take care!",
+     "cn": "退烧了的话就没问题。请多保重。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "美容院でカット",
+    "title_cn": "理发",
+    "desc": "在美容院说明想要的发型",
+    "tip": "「〜くらい」表程度；「耳は出してください」这类具体要求直接说就行"
+   },
+   "lines": [
+    {
+     "speaker": "美容師",
+     "ja": "今日はどうなさいますか？",
+     "ruby": "<ruby>今日<rt>きょう</rt></ruby>はどうなさいますか？",
+     "en": "What would you like done today?",
+     "cn": "今天想怎么剪？"
+    },
+    {
+     "speaker": "客",
+     "ja": "全体に短くしたいです。",
+     "ruby": "<ruby>全体<rt>ぜんたい</rt></ruby>に<ruby>短<rt>みじか</rt></ruby>くしたいです。",
+     "en": "I'd like it shorter overall.",
+     "cn": "整体想剪短一点。"
+    },
+    {
+     "speaker": "美容師",
+     "ja": "どのくらい切りますか？",
+     "ruby": "どのくらい<ruby>切<rt>き</rt></ruby>りますか？",
+     "en": "How much should I take off?",
+     "cn": "要剪掉多少？"
+    },
+    {
+     "speaker": "客",
+     "ja": "三センチくらいお願いします。耳は出してください。",
+     "ruby": "<ruby>三<rt>さん</rt></ruby>センチくらいお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>耳<rt>みみ</rt></ruby>は<ruby>出<rt>だ</rt></ruby>してください。",
+     "en": "About three centimeters. And please keep my ears uncovered.",
+     "cn": "剪个三厘米左右吧。耳朵请露出来。"
+    },
+    {
+     "speaker": "美容師",
+     "ja": "かしこまりました。シャンプーもされますか？",
+     "ruby": "かしこまりました。シャンプーもされますか？",
+     "en": "Certainly. Would you like a shampoo as well?",
+     "cn": "好的。要洗头吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "はい、お願いします。",
+     "ruby": "はい、お<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Yes, please.",
+     "cn": "好，麻烦了。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "宅配便の受け取り",
+    "title_cn": "收快递与约再配送",
+    "desc": "在家收快递，顺便预约另一件的再配送",
+    "tip": "「不在票」=不在配送单；约时间说「◯時以降」（…点以后）"
+   },
+   "lines": [
+    {
+     "speaker": "配達員",
+     "ja": "こんにちは、宅配便です。お荷物をお届けに来ました。",
+     "ruby": "こんにちは、<ruby>宅配便<rt>たくはいびん</rt></ruby>です。お<ruby>荷物<rt>にもつ</rt></ruby>をお<ruby>届<rt>とど</rt></ruby>けに<ruby>来<rt>き</rt></ruby>ました。",
+     "en": "Hello, delivery service. I have a package for you.",
+     "cn": "您好，快递。给您送包裹来了。"
+    },
+    {
+     "speaker": "住人",
+     "ja": "はい、今開けます。少々お待ちください。",
+     "ruby": "はい、<ruby>今<rt>いま</rt></ruby><ruby>開<rt>あ</rt></ruby>けます。<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+     "en": "Yes, I'll open the door. Just a moment.",
+     "cn": "好，我这就开门，请稍等。"
+    },
+    {
+     "speaker": "配達員",
+     "ja": "こちらに受け取りのサインをお願いします。",
+     "ruby": "こちらに<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りのサインをお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Could you sign here for the package, please?",
+     "cn": "请在这里签收。"
+    },
+    {
+     "speaker": "住人",
+     "ja": "はい。あ、もう一つ不在票が入っていたんですが。",
+     "ruby": "はい。あ、もう<ruby>一<rt>ひと</rt></ruby>つ<ruby>不在票<rt>ふざいひょう</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っていたんですが。",
+     "en": "Sure. Oh, there was also a missed-delivery notice in my mailbox.",
+     "cn": "好。啊对了，信箱里还有一张不在配送单。"
+    },
+    {
+     "speaker": "配達員",
+     "ja": "では、再配達の手配をしますね。ご希望の時間はありますか？",
+     "ruby": "では、<ruby>再配達<rt>さいはいたつ</rt></ruby>の<ruby>手配<rt>てはい</rt></ruby>をしますね。ご<ruby>希望<rt>きぼう</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>はありますか？",
+     "en": "I'll arrange a redelivery, then. What time would work for you?",
+     "cn": "那我帮您安排再配送。有希望的时间段吗？"
+    },
+    {
+     "speaker": "住人",
+     "ja": "今夜七時以降でお願いします。",
+     "ruby": "<ruby>今夜<rt>こんや</rt></ruby><ruby>七時以降<rt>しちじいこう</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Tonight after seven, please.",
+     "cn": "今晚七点以后，麻烦了。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "区役所で転入届",
+    "title_cn": "区役所办转入",
+    "desc": "搬家后到区役所办理转入手续",
+    "tip": "搬家 14 天内要交 転入届；窗口先抽 番号札 等叫号"
+   },
+   "lines": [
+    {
+     "speaker": "住民",
+     "ja": "すみません、引っ越しの手続きをしたいんですが。",
+     "ruby": "すみません、<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>手続<rt>てつづ</rt></ruby>きをしたいんですが。",
+     "en": "Excuse me, I'd like to do the paperwork for moving in.",
+     "cn": "不好意思，我想办理搬家的手续。"
+    },
+    {
+     "speaker": "職員",
+     "ja": "転入届ですね。番号札を取って、お待ちください。",
+     "ruby": "<ruby>転入届<rt>てんにゅうとどけ</rt></ruby>ですね。<ruby>番号札<rt>ばんごうふだ</rt></ruby>を<ruby>取<rt>と</rt></ruby>って、お<ruby>待<rt>ま</rt></ruby>ちください。",
+     "en": "A move-in notification, right? Please take a number and wait.",
+     "cn": "是转入申报吧。请先取号稍等。"
+    },
+    {
+     "speaker": "職員",
+     "ja": "お待たせしました。本人確認書類はお持ちですか？",
+     "ruby": "お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>本人確認書類<rt>ほんにんかくにんしょるい</rt></ruby>はお<ruby>持<rt>も</rt></ruby>ちですか？",
+     "en": "Thank you for waiting. Do you have identification with you?",
+     "cn": "让您久等了。带身份证明文件了吗？"
+    },
+    {
+     "speaker": "住民",
+     "ja": "在留カードでいいですか？",
+     "ruby": "<ruby>在留<rt>ざいりゅう</rt></ruby>カードでいいですか？",
+     "en": "Is my residence card okay?",
+     "cn": "在留卡可以吗？"
+    },
+    {
+     "speaker": "職員",
+     "ja": "大丈夫です。この用紙にご記入ください。",
+     "ruby": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。この<ruby>用紙<rt>ようし</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>ください。",
+     "en": "That's fine. Please fill out this form.",
+     "cn": "可以。请填写这张表。"
+    },
+    {
+     "speaker": "住民",
+     "ja": "手続きはどのくらいかかりますか？",
+     "ruby": "<ruby>手続<rt>てつづ</rt></ruby>きはどのくらいかかりますか？",
+     "en": "How long will the procedure take?",
+     "cn": "手续大概要多久？"
+    },
+    {
+     "speaker": "職員",
+     "ja": "三十分ほどです。",
+     "ruby": "<ruby>三十分<rt>さんじゅっぷん</rt></ruby>ほどです。",
+     "en": "About thirty minutes.",
+     "cn": "大约30分钟。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "携帯ショップでプラン変更",
+    "title_cn": "手机店改套餐",
+    "desc": "在手机店咨询并更换更划算的套餐",
+    "tip": "「見直したい」=想重新调整；月费说 月額；含税=税込み"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "すみません、料金プランを見直したいんですが。",
+     "ruby": "すみません、<ruby>料金<rt>りょうきん</rt></ruby>プランを<ruby>見直<rt>みなお</rt></ruby>したいんですが。",
+     "en": "Excuse me, I'd like to review my phone plan.",
+     "cn": "不好意思，我想调整一下资费套餐。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "ありがとうございます。毎月どのくらいデータを使いますか？",
+     "ruby": "ありがとうございます。<ruby>毎月<rt>まいつき</rt></ruby>どのくらいデータを<ruby>使<rt>つか</rt></ruby>いますか？",
+     "en": "Thank you. About how much data do you use each month?",
+     "cn": "感谢惠顾。您每个月大概用多少流量？"
+    },
+    {
+     "speaker": "客",
+     "ja": "だいたい二十ギガくらいです。",
+     "ruby": "だいたい<ruby>二十<rt>にじゅう</rt></ruby>ギガくらいです。",
+     "en": "Around twenty gigabytes.",
+     "cn": "大概20G左右。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "でしたら、こちらのプランがお得ですよ。",
+     "ruby": "でしたら、こちらのプランがお<ruby>得<rt>とく</rt></ruby>ですよ。",
+     "en": "In that case, this plan is a better deal.",
+     "cn": "那样的话，这个套餐更划算。"
+    },
+    {
+     "speaker": "客",
+     "ja": "月額はいくらですか？",
+     "ruby": "<ruby>月額<rt>げつがく</rt></ruby>はいくらですか？",
+     "en": "How much is it per month?",
+     "cn": "月费是多少？"
+    },
+    {
+     "speaker": "店員",
+     "ja": "税込みで二千九百円です。",
+     "ruby": "<ruby>税込<rt>ぜいこ</rt></ruby>みで<ruby>二千九百円<rt>にせんきゅうひゃくえん</rt></ruby>です。",
+     "en": "It's 2,900 yen including tax.",
+     "cn": "含税2900日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "じゃあ、それに変更をお願いします。",
+     "ruby": "じゃあ、それに<ruby>変更<rt>へんこう</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Then I'd like to switch to that one, please.",
+     "cn": "那就换成那个吧。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "水漏れを管理会社に連絡",
+    "title_cn": "漏水报修",
+    "desc": "厨房水龙头漏水，打电话给管理公司报修",
+    "tip": "报修句型「〜から水が漏れていて、止まらないんです」；んです用来强调状况"
+   },
+   "lines": [
+    {
+     "speaker": "住人",
+     "ja": "もしもし、203号室の者ですが。",
+     "ruby": "もしもし、203<ruby>号室<rt>ごうしつ</rt></ruby>の<ruby>者<rt>もの</rt></ruby>ですが。",
+     "en": "Hello, this is the tenant in room 203.",
+     "cn": "喂，我是203室的住户。"
+    },
+    {
+     "speaker": "担当者",
+     "ja": "はい、いつもお世話になっております。",
+     "ruby": "はい、いつもお<ruby>世話<rt>せわ</rt></ruby>になっております。",
+     "en": "Yes, thank you for calling.",
+     "cn": "您好，承蒙关照。"
+    },
+    {
+     "speaker": "住人",
+     "ja": "キッチンの蛇口から水が漏れていて、止まらないんです。",
+     "ruby": "キッチンの<ruby>蛇口<rt>じゃぐち</rt></ruby>から<ruby>水<rt>みず</rt></ruby>が<ruby>漏<rt>も</rt></ruby>れていて、<ruby>止<rt>と</rt></ruby>まらないんです。",
+     "en": "The kitchen faucet is leaking, and it won't stop.",
+     "cn": "厨房的水龙头在漏水，止不住。"
+    },
+    {
+     "speaker": "担当者",
+     "ja": "ご不便をおかけしてすみません。業者を手配します。",
+     "ruby": "ご<ruby>不便<rt>ふべん</rt></ruby>をおかけしてすみません。<ruby>業者<rt>ぎょうしゃ</rt></ruby>を<ruby>手配<rt>てはい</rt></ruby>します。",
+     "en": "Sorry for the inconvenience. We'll arrange a repair company.",
+     "cn": "给您添麻烦了，我们马上安排维修人员。"
+    },
+    {
+     "speaker": "住人",
+     "ja": "今日中に来てもらえますか？",
+     "ruby": "<ruby>今日中<rt>きょうじゅう</rt></ruby>に<ruby>来<rt>き</rt></ruby>てもらえますか？",
+     "en": "Could someone come today?",
+     "cn": "今天之内能来吗？"
+    },
+    {
+     "speaker": "担当者",
+     "ja": "午後三時ごろに伺えます。ご在宅ですか？",
+     "ruby": "<ruby>午後<rt>ごご</rt></ruby><ruby>三時<rt>さんじ</rt></ruby>ごろに<ruby>伺<rt>うかが</rt></ruby>えます。ご<ruby>在宅<rt>ざいたく</rt></ruby>ですか？",
+     "en": "We can come around three p.m. Will you be home?",
+     "cn": "下午三点左右可以过去。您在家吗？"
+    },
+    {
+     "speaker": "住人",
+     "ja": "はい、家にいます。よろしくお願いします。",
+     "ruby": "はい、<ruby>家<rt>いえ</rt></ruby>にいます。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Yes, I'll be home. Thank you.",
+     "cn": "在的，那拜托了。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "居酒屋で乾杯",
+    "title_cn": "居酒屋同事聚会",
+    "desc": "下班和同事去居酒屋，点酒并干杯",
+    "tip": "「とりあえず生」=先来杯生啤（聚会开场固定句）；不喝酒用「控えておきます」婉拒"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "お飲み物は何になさいますか？",
+     "ruby": "お<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>何<rt>なに</rt></ruby>になさいますか？",
+     "en": "What would you like to drink?",
+     "cn": "请问喝点什么？"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "とりあえず、生ビールを二つお願いします。",
+     "ruby": "とりあえず、<ruby>生<rt>なま</rt></ruby>ビールを<ruby>二<rt>ふた</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Two draft beers to start, please.",
+     "cn": "先来两杯生啤。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "すみません、私はウーロン茶で。",
+     "ruby": "すみません、<ruby>私<rt>わたし</rt></ruby>はウーロン<ruby>茶<rt>ちゃ</rt></ruby>で。",
+     "en": "Sorry — I'll have an oolong tea.",
+     "cn": "不好意思，我要乌龙茶。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "あれ、今日は飲まないんですか？",
+     "ruby": "あれ、<ruby>今日<rt>きょう</rt></ruby>は<ruby>飲<rt>の</rt></ruby>まないんですか？",
+     "en": "Oh? You're not drinking today?",
+     "cn": "咦，今天不喝吗？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "明日の朝が早いので、控えておきます。",
+     "ruby": "<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>が<ruby>早<rt>はや</rt></ruby>いので、<ruby>控<rt>ひか</rt></ruby>えておきます。",
+     "en": "I have an early morning tomorrow, so I'll pass this time.",
+     "cn": "明天一早有事，就不喝了。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "そうですか。じゃあ、乾杯しましょう！",
+     "ruby": "そうですか。じゃあ、<ruby>乾杯<rt>かんぱい</rt></ruby>しましょう！",
+     "en": "I see. Well then, cheers!",
+     "cn": "这样啊。那，干杯！"
+    },
+    {
+     "speaker": "自分",
+     "ja": "乾杯！お疲れ様でした！",
+     "ruby": "<ruby>乾杯<rt>かんぱい</rt></ruby>！お<ruby>疲<rt>つか</rt></ruby>れ<ruby>様<rt>さま</rt></ruby>でした！",
+     "en": "Cheers! Great work today!",
+     "cn": "干杯！今天辛苦了！"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "スーパーのレジで",
+    "title_cn": "超市收银台",
+    "desc": "在超市收银台结账",
+    "tip": "收银高频三连问：ポイントカード／レジ袋何枚／お支払い方法，听懂就不慌"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "ポイントカードはお持ちですか？",
+     "ruby": "ポイントカードはお<ruby>持<rt>も</rt></ruby>ちですか？",
+     "en": "Do you have a point card?",
+     "cn": "有积分卡吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "いえ、持っていません。",
+     "ruby": "いえ、<ruby>持<rt>も</rt></ruby>っていません。",
+     "en": "No, I don't.",
+     "cn": "没有。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "レジ袋は何枚お使いになりますか？",
+     "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>は<ruby>何枚<rt>なんまい</rt></ruby>お<ruby>使<rt>つか</rt></ruby>いになりますか？",
+     "en": "How many bags would you like?",
+     "cn": "塑料袋需要几个？"
+    },
+    {
+     "speaker": "客",
+     "ja": "一枚お願いします。",
+     "ruby": "<ruby>一枚<rt>いちまい</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Just one, please.",
+     "cn": "要一个，谢谢。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "合計で千二百三十円です。",
+     "ruby": "<ruby>合計<rt>ごうけい</rt></ruby>で<ruby>千二百三十円<rt>せんにひゃくさんじゅうえん</rt></ruby>です。",
+     "en": "Your total is 1,230 yen.",
+     "cn": "一共1230日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "すみません、これも一緒にお願いします。",
+     "ruby": "すみません、これも<ruby>一緒<rt>いっしょ</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Sorry, could you ring this up too?",
+     "cn": "不好意思，这个也一起结。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "かしこまりました。お支払いはいかがなさいますか？",
+     "ruby": "かしこまりました。お<ruby>支払<rt>しはら</rt></ruby>いはいかがなさいますか？",
+     "en": "Certainly. How would you like to pay?",
+     "cn": "好的。请问怎么支付？"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "タクシーに乗る",
+    "title_cn": "打车",
+    "desc": "打车去东京站，中途指路并要收据",
+    "tip": "上车即用「◯◯までお願いします」；下车「そこで／手前で止めてください」"
+   },
+   "lines": [
+    {
+     "speaker": "運転手",
+     "ja": "どちらまでですか？",
+     "ruby": "どちらまでですか？",
+     "en": "Where to?",
+     "cn": "请问去哪里？"
+    },
+    {
+     "speaker": "客",
+     "ja": "東京駅までお願いします。",
+     "ruby": "<ruby>東京駅<rt>とうきょうえき</rt></ruby>までお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "To Tokyo Station, please.",
+     "cn": "到东京站，麻烦了。"
+    },
+    {
+     "speaker": "運転手",
+     "ja": "高速を使いますか？",
+     "ruby": "<ruby>高速<rt>こうそく</rt></ruby>を<ruby>使<rt>つか</rt></ruby>いますか？",
+     "en": "Shall I take the expressway?",
+     "cn": "要走高速吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "いえ、下の道で大丈夫です。",
+     "ruby": "いえ、<ruby>下<rt>した</rt></ruby>の<ruby>道<rt>みち</rt></ruby>で<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+     "en": "No, regular roads are fine.",
+     "cn": "不用，走普通道路就行。"
+    },
+    {
+     "speaker": "客",
+     "ja": "あの信号の手前で止めてください。",
+     "ruby": "あの<ruby>信号<rt>しんごう</rt></ruby>の<ruby>手前<rt>てまえ</rt></ruby>で<ruby>止<rt>と</rt></ruby>めてください。",
+     "en": "Please stop just before that traffic light.",
+     "cn": "请在那个红绿灯前面停车。"
+    },
+    {
+     "speaker": "運転手",
+     "ja": "かしこまりました。千八百円です。",
+     "ruby": "かしこまりました。<ruby>千八百円<rt>せんはっぴゃくえん</rt></ruby>です。",
+     "en": "Certainly. That'll be 1,800 yen.",
+     "cn": "好的。一共1800日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "領収書をお願いします。",
+     "ruby": "<ruby>領収書<rt>りょうしゅうしょ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Could I have a receipt, please?",
+     "cn": "请给我开张收据。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "郵便局で荷物を送る",
+    "title_cn": "邮局寄包裹",
+    "desc": "在邮局往大阪寄包裹",
+    "tip": "寄件必被问「中身は何ですか」；易碎品=割れ物"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "この荷物を大阪まで送りたいんですが。",
+     "ruby": "この<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>大阪<rt>おおさか</rt></ruby>まで<ruby>送<rt>おく</rt></ruby>りたいんですが。",
+     "en": "I'd like to send this package to Osaka.",
+     "cn": "我想把这个包裹寄到大阪。"
+    },
+    {
+     "speaker": "局員",
+     "ja": "中身は何ですか？",
+     "ruby": "<ruby>中身<rt>なかみ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか？",
+     "en": "What's inside?",
+     "cn": "里面是什么？"
+    },
+    {
+     "speaker": "客",
+     "ja": "本と服です。割れ物はありません。",
+     "ruby": "<ruby>本<rt>ほん</rt></ruby>と<ruby>服<rt>ふく</rt></ruby>です。<ruby>割<rt>わ</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>はありません。",
+     "en": "Books and clothes. Nothing fragile.",
+     "cn": "书和衣服，没有易碎品。"
+    },
+    {
+     "speaker": "局員",
+     "ja": "ゆうパックですと、九百円です。",
+     "ruby": "ゆうパックですと、<ruby>九百円<rt>きゅうひゃくえん</rt></ruby>です。",
+     "en": "By Yu-Pack, it would be 900 yen.",
+     "cn": "用邮政包裹的话是900日元。"
+    },
+    {
+     "speaker": "客",
+     "ja": "どのくらいで着きますか？",
+     "ruby": "どのくらいで<ruby>着<rt>つ</rt></ruby>きますか？",
+     "en": "How long will it take to arrive?",
+     "cn": "多久能到？"
+    },
+    {
+     "speaker": "局員",
+     "ja": "明日の午後には届きますよ。",
+     "ruby": "<ruby>明日<rt>あす</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>には<ruby>届<rt>とど</rt></ruby>きますよ。",
+     "en": "It should arrive by tomorrow afternoon.",
+     "cn": "明天下午就能送到。"
+    },
+    {
+     "speaker": "客",
+     "ja": "じゃあ、それでお願いします。",
+     "ruby": "じゃあ、それでお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Then I'll go with that, please.",
+     "cn": "那就这样寄吧。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "電話でレストラン予約",
+    "title_cn": "电话订餐厅",
+    "desc": "打电话预约周五晚上的餐厅",
+    "tip": "订位三要素：日期・人数（◯名）・时间；报名字用「名前は◯◯です」"
+   },
+   "lines": [
+    {
+     "speaker": "店員",
+     "ja": "お電話ありがとうございます。レストラン花です。",
+     "ruby": "お<ruby>電話<rt>でんわ</rt></ruby>ありがとうございます。レストラン<ruby>花<rt>はな</rt></ruby>です。",
+     "en": "Thank you for calling. This is Restaurant Hana.",
+     "cn": "感谢来电，这里是花餐厅。"
+    },
+    {
+     "speaker": "客",
+     "ja": "今週の金曜日、予約をしたいんですが。",
+     "ruby": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>予約<rt>よやく</rt></ruby>をしたいんですが。",
+     "en": "I'd like to make a reservation for this Friday.",
+     "cn": "我想预约这周五的位子。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "何名様でしょうか？",
+     "ruby": "<ruby>何名様<rt>なんめいさま</rt></ruby>でしょうか？",
+     "en": "For how many people?",
+     "cn": "请问几位？"
+    },
+    {
+     "speaker": "客",
+     "ja": "二名です。七時からお願いします。",
+     "ruby": "<ruby>二名<rt>にめい</rt></ruby>です。<ruby>七時<rt>しちじ</rt></ruby>からお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Two people, from seven o'clock, please.",
+     "cn": "两位，七点开始。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "窓側のお席をご用意できますよ。",
+     "ruby": "<ruby>窓側<rt>まどがわ</rt></ruby>のお<ruby>席<rt>せき</rt></ruby>をご<ruby>用意<rt>ようい</rt></ruby>できますよ。",
+     "en": "We can prepare a table by the window for you.",
+     "cn": "可以为您安排靠窗的位子。"
+    },
+    {
+     "speaker": "客",
+     "ja": "ありがとうございます。名前はリンです。",
+     "ruby": "ありがとうございます。<ruby>名前<rt>なまえ</rt></ruby>はリンです。",
+     "en": "Thank you. The name is Lin.",
+     "cn": "谢谢。我姓林。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "リン様ですね。お待ちしております。",
+     "ruby": "リン<ruby>様<rt>さま</rt></ruby>ですね。お<ruby>待<rt>ま</rt></ruby>ちしております。",
+     "en": "Noted. We look forward to seeing you.",
+     "cn": "好的，恭候您的光临。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "朝のオフィス雑談",
+    "title_cn": "办公室早上闲聊",
+    "desc": "早上到公司和同事寒暄聊周末",
+    "tip": "「そういえば」是转换话题神器；周末聊天固定问「週末はどうでしたか」"
+   },
+   "lines": [
+    {
+     "speaker": "同僚",
+     "ja": "おはようございます。今日も暑いですね。",
+     "ruby": "おはようございます。<ruby>今日<rt>きょう</rt></ruby>も<ruby>暑<rt>あつ</rt></ruby>いですね。",
+     "en": "Good morning. Hot again today, isn't it?",
+     "cn": "早上好。今天又是好热啊。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "本当ですね。朝から三十度超えだそうですよ。",
+     "ruby": "<ruby>本当<rt>ほんとう</rt></ruby>ですね。<ruby>朝<rt>あさ</rt></ruby>から<ruby>三十度<rt>さんじゅうど</rt></ruby><ruby>超<rt>ご</rt></ruby>えだそうですよ。",
+     "en": "It really is. I heard it's already over thirty degrees this morning.",
+     "cn": "真的。听说一早就超过30度了。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "そういえば、週末はどうでしたか？",
+     "ruby": "そういえば、<ruby>週末<rt>しゅうまつ</rt></ruby>はどうでしたか？",
+     "en": "By the way, how was your weekend?",
+     "cn": "对了，周末过得怎么样？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "家族と鎌倉に行ってきました。",
+     "ruby": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>鎌倉<rt>かまくら</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってきました。",
+     "en": "I went to Kamakura with my family.",
+     "cn": "和家人去了趟镰仓。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "いいですね！混んでいましたか？",
+     "ruby": "いいですね！<ruby>混<rt>こ</rt></ruby>んでいましたか？",
+     "en": "Nice! Was it crowded?",
+     "cn": "真不错！人多吗？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "すごい人でした。でも海がきれいでしたよ。",
+     "ruby": "すごい<ruby>人<rt>ひと</rt></ruby>でした。でも<ruby>海<rt>うみ</rt></ruby>がきれいでしたよ。",
+     "en": "It was packed. But the ocean was beautiful.",
+     "cn": "人山人海。不过海很漂亮。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "会議で意見を言う",
+    "title_cn": "会议上表达意见",
+    "desc": "在会议上先表示赞成、再委婉提出顾虑",
+    "tip": "先「賛成です」再「ただ、一つ気になる点が」——日式委婉反对的模板"
+   },
+   "lines": [
+    {
+     "speaker": "上司",
+     "ja": "この件について、何か意見はありますか？",
+     "ruby": "この<ruby>件<rt>けん</rt></ruby>について、<ruby>何<rt>なに</rt></ruby>か<ruby>意見<rt>いけん</rt></ruby>はありますか？",
+     "en": "Does anyone have any opinions on this matter?",
+     "cn": "关于这件事，大家有什么意见吗？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "はい。基本的には賛成です。",
+     "ruby": "はい。<ruby>基本的<rt>きほんてき</rt></ruby>には<ruby>賛成<rt>さんせい</rt></ruby>です。",
+     "en": "Yes. Basically, I'm in favor.",
+     "cn": "有。基本上我是赞成的。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "ただ、一つ気になる点があります。",
+     "ruby": "ただ、<ruby>一<rt>ひと</rt></ruby>つ<ruby>気<rt>き</rt></ruby>になる<ruby>点<rt>てん</rt></ruby>があります。",
+     "en": "However, there's one thing that concerns me.",
+     "cn": "不过，有一点让我有些在意。"
+    },
+    {
+     "speaker": "上司",
+     "ja": "どうぞ、続けてください。",
+     "ruby": "どうぞ、<ruby>続<rt>つづ</rt></ruby>けてください。",
+     "en": "Please, go on.",
+     "cn": "请继续说。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "スケジュールが少し厳しいと思います。",
+     "ruby": "スケジュールが<ruby>少<rt>すこ</rt></ruby>し<ruby>厳<rt>きび</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>います。",
+     "en": "I think the schedule is a bit tight.",
+     "cn": "我觉得日程安排有点紧。"
+    },
+    {
+     "speaker": "上司",
+     "ja": "なるほど。では、もう一度見直しましょう。",
+     "ruby": "なるほど。では、もう<ruby>一度<rt>いちど</rt></ruby><ruby>見直<rt>みなお</rt></ruby>しましょう。",
+     "en": "I see. Then let's review it once more.",
+     "cn": "有道理。那我们再重新过一遍吧。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "同僚とランチへ",
+    "title_cn": "和同事去午餐",
+    "desc": "中午和同事商量去哪吃饭",
+    "tip": "「そろそろ〜ませんか」=差不多该…了吧；「らしい」=听说"
+   },
+   "lines": [
+    {
+     "speaker": "同僚",
+     "ja": "そろそろお昼に行きませんか？",
+     "ruby": "そろそろお<ruby>昼<rt>ひる</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか？",
+     "en": "Shall we head to lunch soon?",
+     "cn": "差不多该去吃午饭了吧？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "いいですね。今日は何にしましょうか？",
+     "ruby": "いいですね。<ruby>今日<rt>きょう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>にしましょうか？",
+     "en": "Sounds good. What should we have today?",
+     "cn": "好啊。今天吃什么呢？"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "駅前に新しいそば屋ができたらしいですよ。",
+     "ruby": "<ruby>駅前<rt>えきまえ</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しいそば<ruby>屋<rt>や</rt></ruby>ができたらしいですよ。",
+     "en": "Apparently a new soba place opened up by the station.",
+     "cn": "听说站前新开了一家荞麦面店。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "へえ、行ってみたいです。混む前に出ましょう。",
+     "ruby": "へえ、<ruby>行<rt>い</rt></ruby>ってみたいです。<ruby>混<rt>こ</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>に<ruby>出<rt>で</rt></ruby>ましょう。",
+     "en": "Oh, I'd like to try it. Let's leave before it gets crowded.",
+     "cn": "是嘛，想去试试。趁人多之前出发吧。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "そうですね。十二時前なら入れると思います。",
+     "ruby": "そうですね。<ruby>十二時前<rt>じゅうにじまえ</rt></ruby>なら<ruby>入<rt>はい</rt></ruby>れると<ruby>思<rt>おも</rt></ruby>います。",
+     "en": "Right. I think we can get in if we go before noon.",
+     "cn": "对。十二点前去的话应该能进。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "じゃあ、先にエレベーターの前で待っていますね。",
+     "ruby": "じゃあ、<ruby>先<rt>さき</rt></ruby>にエレベーターの<ruby>前<rt>まえ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>っていますね。",
+     "en": "Then I'll wait for you by the elevator.",
+     "cn": "那我先在电梯口等你。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "体調不良で休む連絡",
+    "title_cn": "请病假电话",
+    "desc": "发烧了，一早打电话向上司请假",
+    "tip": "请假固定句「お休みをいただけますか」；上司回「無理しないで」=别硬撑"
+   },
+   "lines": [
+    {
+     "speaker": "自分",
+     "ja": "おはようございます。朝早くにすみません。",
+     "ruby": "おはようございます。<ruby>朝早<rt>あさはや</rt></ruby>くにすみません。",
+     "en": "Good morning. Sorry to call so early.",
+     "cn": "早上好。一大早打扰您了。"
+    },
+    {
+     "speaker": "上司",
+     "ja": "おはようございます。どうしましたか？",
+     "ruby": "おはようございます。どうしましたか？",
+     "en": "Good morning. What's the matter?",
+     "cn": "早上好。怎么了？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "昨夜から熱が出てしまって。",
+     "ruby": "<ruby>昨夜<rt>ゆうべ</rt></ruby>から<ruby>熱<rt>ねつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てしまって。",
+     "en": "I've had a fever since last night.",
+     "cn": "从昨晚开始发烧了。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "申し訳ありませんが、今日はお休みをいただけますか？",
+     "ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、<ruby>今日<rt>きょう</rt></ruby>はお<ruby>休<rt>やす</rt></ruby>みをいただけますか？",
+     "en": "I'm very sorry, but could I take today off?",
+     "cn": "非常抱歉，今天能让我请一天假吗？"
+    },
+    {
+     "speaker": "上司",
+     "ja": "分かりました。無理しないでください。",
+     "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。<ruby>無理<rt>むり</rt></ruby>しないでください。",
+     "en": "Understood. Don't push yourself.",
+     "cn": "知道了。别硬撑。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "ありがとうございます。明日には出られると思います。",
+     "ruby": "ありがとうございます。<ruby>明日<rt>あした</rt></ruby>には<ruby>出<rt>で</rt></ruby>られると<ruby>思<rt>おも</rt></ruby>います。",
+     "en": "Thank you. I think I'll be able to come in tomorrow.",
+     "cn": "谢谢。我想明天应该能上班。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "ジムの見学と入会",
+    "title_cn": "健身房参观入会",
+    "desc": "参观健身房，问清月费后当场入会",
+    "tip": "参观=見学；月费=月会費（げっかいひ）；免费出借=無料で貸し出し"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "すみません、入会を考えているんですが、見学できますか？",
+     "ruby": "すみません、<ruby>入会<rt>にゅうかい</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えているんですが、<ruby>見学<rt>けんがく</rt></ruby>できますか？",
+     "en": "Excuse me, I'm thinking of joining — could I take a look around?",
+     "cn": "不好意思，我在考虑入会，可以先参观一下吗？"
+    },
+    {
+     "speaker": "スタッフ",
+     "ja": "もちろんです。ご案内しますね。",
+     "ruby": "もちろんです。ご<ruby>案内<rt>あんない</rt></ruby>しますね。",
+     "en": "Of course. Let me show you around.",
+     "cn": "当然可以。我带您看看。"
+    },
+    {
+     "speaker": "客",
+     "ja": "月会費はいくらですか？",
+     "ruby": "<ruby>月会費<rt>げっかいひ</rt></ruby>はいくらですか？",
+     "en": "How much is the monthly fee?",
+     "cn": "月费是多少？"
+    },
+    {
+     "speaker": "スタッフ",
+     "ja": "月八千円で、二十四時間使えます。",
+     "ruby": "<ruby>月<rt>つき</rt></ruby><ruby>八千円<rt>はっせんえん</rt></ruby>で、<ruby>二十四時間<rt>にじゅうよじかん</rt></ruby><ruby>使<rt>つか</rt></ruby>えます。",
+     "en": "It's 8,000 yen a month, and you can use it twenty-four hours.",
+     "cn": "每月8000日元，24小时都能用。"
+    },
+    {
+     "speaker": "客",
+     "ja": "タオルは借りられますか？",
+     "ruby": "タオルは<ruby>借<rt>か</rt></ruby>りられますか？",
+     "en": "Can I rent towels?",
+     "cn": "毛巾可以借吗？"
+    },
+    {
+     "speaker": "スタッフ",
+     "ja": "はい、無料で貸し出していますよ。",
+     "ruby": "はい、<ruby>無料<rt>むりょう</rt></ruby>で<ruby>貸<rt>か</rt></ruby>し<ruby>出<rt>だ</rt></ruby>していますよ。",
+     "en": "Yes, we lend them out for free.",
+     "cn": "可以，免费出借。"
+    },
+    {
+     "speaker": "客",
+     "ja": "いいですね。今日、申し込めますか？",
+     "ruby": "いいですね。<ruby>今日<rt>きょう</rt></ruby>、<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>めますか？",
+     "en": "Great. Can I sign up today?",
+     "cn": "不错。今天就能办入会吗？"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "ホテルのチェックイン",
+    "title_cn": "酒店入住",
+    "desc": "在酒店前台办理入住",
+    "tip": "「予約した◯◯です」报名字即可；拝見=「看」的谦让语"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "チェックインをお願いします。予約したリンです。",
+     "ruby": "チェックインをお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>予約<rt>よやく</rt></ruby>したリンです。",
+     "en": "I'd like to check in. I have a reservation under Lin.",
+     "cn": "我要办理入住。我姓林，有预约。"
+    },
+    {
+     "speaker": "フロント",
+     "ja": "ご予約、確認できました。パスポートを拝見できますか？",
+     "ruby": "ご<ruby>予約<rt>よやく</rt></ruby>、<ruby>確認<rt>かくにん</rt></ruby>できました。パスポートを<ruby>拝見<rt>はいけん</rt></ruby>できますか？",
+     "en": "I've found your reservation. May I see your passport?",
+     "cn": "已确认到您的预约。可以看一下您的护照吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "はい、どうぞ。",
+     "ruby": "はい、どうぞ。",
+     "en": "Yes, here you are.",
+     "cn": "好的，给您。"
+    },
+    {
+     "speaker": "フロント",
+     "ja": "朝食は七時から、二階のレストランです。",
+     "ruby": "<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>七時<rt>しちじ</rt></ruby>から、<ruby>二階<rt>にかい</rt></ruby>のレストランです。",
+     "en": "Breakfast is from seven o'clock at the restaurant on the second floor.",
+     "cn": "早餐七点开始，在二楼餐厅。"
+    },
+    {
+     "speaker": "客",
+     "ja": "チェックアウトは何時ですか？",
+     "ruby": "チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？",
+     "en": "What time is checkout?",
+     "cn": "退房是几点？"
+    },
+    {
+     "speaker": "フロント",
+     "ja": "十一時でございます。お部屋は八階です。",
+     "ruby": "<ruby>十一時<rt>じゅういちじ</rt></ruby>でございます。お<ruby>部屋<rt>へや</rt></ruby>は<ruby>八階<rt>はっかい</rt></ruby>です。",
+     "en": "Eleven o'clock. Your room is on the eighth floor.",
+     "cn": "十一点。您的房间在八楼。"
+    },
+    {
+     "speaker": "客",
+     "ja": "ありがとうございます。",
+     "ruby": "ありがとうございます。",
+     "en": "Thank you very much.",
+     "cn": "谢谢。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "新幹線の切符を買う",
+    "title_cn": "买新干线车票",
+    "desc": "在绿色窗口买去大阪的新干线车票",
+    "tip": "指定席／自由席、往復／片道——买票必选的两组词"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "大阪まで、新幹線の切符をお願いします。",
+     "ruby": "<ruby>大阪<rt>おおさか</rt></ruby>まで、<ruby>新幹線<rt>しんかんせん</rt></ruby>の<ruby>切符<rt>きっぷ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "A Shinkansen ticket to Osaka, please.",
+     "cn": "请给我一张到大阪的新干线车票。"
+    },
+    {
+     "speaker": "係員",
+     "ja": "いつご出発ですか？",
+     "ruby": "いつご<ruby>出発<rt>しゅっぱつ</rt></ruby>ですか？",
+     "en": "When will you be departing?",
+     "cn": "什么时候出发？"
+    },
+    {
+     "speaker": "客",
+     "ja": "土曜日の朝、九時ごろの列車で。",
+     "ruby": "<ruby>土曜日<rt>どようび</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>九時<rt>くじ</rt></ruby>ごろの<ruby>列車<rt>れっしゃ</rt></ruby>で。",
+     "en": "Saturday morning — a train around nine.",
+     "cn": "周六早上，九点左右的车。"
+    },
+    {
+     "speaker": "係員",
+     "ja": "指定席と自由席、どちらになさいますか？",
+     "ruby": "<ruby>指定席<rt>していせき</rt></ruby>と<ruby>自由席<rt>じゆうせき</rt></ruby>、どちらになさいますか？",
+     "en": "Would you like a reserved seat or a non-reserved seat?",
+     "cn": "指定席和自由席，您要哪种？"
+    },
+    {
+     "speaker": "客",
+     "ja": "指定席で、窓側をお願いします。",
+     "ruby": "<ruby>指定席<rt>していせき</rt></ruby>で、<ruby>窓側<rt>まどがわ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "A reserved seat by the window, please.",
+     "cn": "指定席，要靠窗的。"
+    },
+    {
+     "speaker": "係員",
+     "ja": "往復になさいますか？",
+     "ruby": "<ruby>往復<rt>おうふく</rt></ruby>になさいますか？",
+     "en": "Will that be a round trip?",
+     "cn": "要买往返吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "いえ、片道で大丈夫です。",
+     "ruby": "いえ、<ruby>片道<rt>かたみち</rt></ruby>で<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+     "en": "No, one way is fine.",
+     "cn": "不用，单程就好。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "駅で忘れ物を探す",
+    "title_cn": "车站找失物",
+    "desc": "把伞忘在电车上，到车站窗口求助",
+    "tip": "丢东西句型「〜に◯◯を忘れてしまいました」；てしまう带懊悔语气"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "すみません、電車に傘を忘れてしまいました。",
+     "ruby": "すみません、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>傘<rt>かさ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れてしまいました。",
+     "en": "Excuse me, I left my umbrella on the train.",
+     "cn": "不好意思，我把伞忘在电车上了。"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "何線の電車ですか？",
+     "ruby": "<ruby>何線<rt>なにせん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>ですか？",
+     "en": "Which line was it?",
+     "cn": "是哪条线的电车？"
+    },
+    {
+     "speaker": "客",
+     "ja": "中央線です。十分ほど前に降りました。",
+     "ruby": "<ruby>中央線<rt>ちゅうおうせん</rt></ruby>です。<ruby>十分<rt>じゅっぷん</rt></ruby>ほど<ruby>前<rt>まえ</rt></ruby>に<ruby>降<rt>お</rt></ruby>りました。",
+     "en": "The Chuo Line. I got off about ten minutes ago.",
+     "cn": "中央线。大概十分钟前下的车。"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "どんな傘か教えていただけますか？",
+     "ruby": "どんな<ruby>傘<rt>かさ</rt></ruby>か<ruby>教<rt>おし</rt></ruby>えていただけますか？",
+     "en": "Could you tell me what the umbrella looks like?",
+     "cn": "能描述一下是什么样的伞吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "紺色の折りたたみ傘です。",
+     "ruby": "<ruby>紺色<rt>こんいろ</rt></ruby>の<ruby>折<rt>お</rt></ruby>りたたみ<ruby>傘<rt>がさ</rt></ruby>です。",
+     "en": "It's a navy-blue folding umbrella.",
+     "cn": "是深蓝色的折叠伞。"
+    },
+    {
+     "speaker": "駅員",
+     "ja": "確認しますので、少々お待ちください。",
+     "ruby": "<ruby>確認<rt>かくにん</rt></ruby>しますので、<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+     "en": "I'll check for you — one moment, please.",
+     "cn": "我帮您查一下，请稍等。"
+    },
+    {
+     "speaker": "客",
+     "ja": "よろしくお願いします。",
+     "ruby": "よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "Thank you, I appreciate it.",
+     "cn": "拜托您了。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "服屋で試着",
+    "title_cn": "服装店试穿",
+    "desc": "在服装店试穿并换尺码",
+    "tip": "「試着してもいいですか」；试完店员必问「サイズはいかがですか」"
+   },
+   "lines": [
+    {
+     "speaker": "客",
+     "ja": "すみません、これ、試着してもいいですか？",
+     "ruby": "すみません、これ、<ruby>試着<rt>しちゃく</rt></ruby>してもいいですか？",
+     "en": "Excuse me, may I try this on?",
+     "cn": "不好意思，这件可以试穿吗？"
+    },
+    {
+     "speaker": "店員",
+     "ja": "はい、どうぞ。試着室はこちらです。",
+     "ruby": "はい、どうぞ。<ruby>試着室<rt>しちゃくしつ</rt></ruby>はこちらです。",
+     "en": "Of course. The fitting room is right this way.",
+     "cn": "可以，请。试衣间在这边。"
+    },
+    {
+     "speaker": "客",
+     "ja": "ちょっと小さいですね。Lサイズはありますか？",
+     "ruby": "ちょっと<ruby>小<rt>ちい</rt></ruby>さいですね。Lサイズはありますか？",
+     "en": "It's a bit small. Do you have a large?",
+     "cn": "有点小。有L码的吗？"
+    },
+    {
+     "speaker": "店員",
+     "ja": "お持ちしますね。色は黒でよろしいですか？",
+     "ruby": "お<ruby>持<rt>も</rt></ruby>ちしますね。<ruby>色<rt>いろ</rt></ruby>は<ruby>黒<rt>くろ</rt></ruby>でよろしいですか？",
+     "en": "I'll bring one. Is black okay?",
+     "cn": "我去拿。颜色还是黑色可以吗？"
+    },
+    {
+     "speaker": "客",
+     "ja": "白もあれば、見せてください。",
+     "ruby": "<ruby>白<rt>しろ</rt></ruby>もあれば、<ruby>見<rt>み</rt></ruby>せてください。",
+     "en": "If you have it in white too, please show me.",
+     "cn": "如果有白色的话，也给我看看。"
+    },
+    {
+     "speaker": "店員",
+     "ja": "サイズはいかがですか？",
+     "ruby": "サイズはいかがですか？",
+     "en": "How does the size feel?",
+     "cn": "尺码怎么样？"
+    },
+    {
+     "speaker": "客",
+     "ja": "ぴったりです。これをください。",
+     "ruby": "ぴったりです。これをください。",
+     "en": "It fits perfectly. I'll take this one.",
+     "cn": "正合适。就要这件了。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "歯医者の予約電話",
+    "title_cn": "电话约牙医",
+    "desc": "打电话第一次预约牙医",
+    "tip": "「しみる」=（冷热刺激）酸痛敏感；电话预约先说「初めてなんですが」"
+   },
+   "lines": [
+    {
+     "speaker": "受付",
+     "ja": "はい、さくら歯科です。",
+     "ruby": "はい、さくら<ruby>歯科<rt>しか</rt></ruby>です。",
+     "en": "Hello, Sakura Dental Clinic.",
+     "cn": "您好，樱花牙科。"
+    },
+    {
+     "speaker": "患者",
+     "ja": "初めてなんですが、予約をお願いしたいです。",
+     "ruby": "<ruby>初<rt>はじ</rt></ruby>めてなんですが、<ruby>予約<rt>よやく</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いしたいです。",
+     "en": "I'm a first-time patient, and I'd like to make an appointment.",
+     "cn": "我是第一次看诊，想预约一下。"
+    },
+    {
+     "speaker": "受付",
+     "ja": "ありがとうございます。どうされましたか？",
+     "ruby": "ありがとうございます。どうされましたか？",
+     "en": "Thank you. What seems to be the problem?",
+     "cn": "好的。请问哪里不舒服？"
+    },
+    {
+     "speaker": "患者",
+     "ja": "右の奥歯が、冷たい物でしみるんです。",
+     "ruby": "<ruby>右<rt>みぎ</rt></ruby>の<ruby>奥歯<rt>おくば</rt></ruby>が、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>物<rt>もの</rt></ruby>でしみるんです。",
+     "en": "One of my back teeth on the right hurts when I have something cold.",
+     "cn": "右边的后槽牙，一碰冷的就酸疼。"
+    },
+    {
+     "speaker": "受付",
+     "ja": "来週の火曜日、十八時はいかがですか？",
+     "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>火曜日<rt>かようび</rt></ruby>、<ruby>十八時<rt>じゅうはちじ</rt></ruby>はいかがですか？",
+     "en": "How about next Tuesday at six p.m.?",
+     "cn": "下周二晚上六点方便吗？"
+    },
+    {
+     "speaker": "患者",
+     "ja": "大丈夫です。よろしくお願いします。",
+     "ruby": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "That works. Thank you very much.",
+     "cn": "可以。那就拜托了。"
+    },
+    {
+     "speaker": "受付",
+     "ja": "では、保険証をお持ちください。",
+     "ruby": "では、<ruby>保険証<rt>ほけんしょう</rt></ruby>をお<ruby>持<rt>も</rt></ruby>ちください。",
+     "en": "Please bring your insurance card with you.",
+     "cn": "那请当天带好保险证。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "引っ越しの挨拶",
+    "title_cn": "搬家后拜访邻居",
+    "desc": "搬家后带小礼物拜访隔壁邻居",
+    "tip": "搬家问候送小礼说「ほんの気持ちですが」；顺便问清 ゴミ出し 规则最实用"
+   },
+   "lines": [
+    {
+     "speaker": "自分",
+     "ja": "すみません、隣の302号室に越してきた者です。",
+     "ruby": "すみません、<ruby>隣<rt>となり</rt></ruby>の302<ruby>号室<rt>ごうしつ</rt></ruby>に<ruby>越<rt>こ</rt></ruby>してきた<ruby>者<rt>もの</rt></ruby>です。",
+     "en": "Hello, I just moved in next door, in room 302.",
+     "cn": "您好，我是刚搬到隔壁302室的。"
+    },
+    {
+     "speaker": "隣人",
+     "ja": "ああ、ご丁寧にどうも。",
+     "ruby": "ああ、ご<ruby>丁寧<rt>ていねい</rt></ruby>にどうも。",
+     "en": "Oh, how thoughtful of you.",
+     "cn": "哎呀，您太客气了。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "これ、ほんの気持ちですが、どうぞ。",
+     "ruby": "これ、ほんの<ruby>気持<rt>きも</rt></ruby>ちですが、どうぞ。",
+     "en": "This is just a small token — please take it.",
+     "cn": "这是一点小心意，请收下。"
+    },
+    {
+     "speaker": "隣人",
+     "ja": "わざわざすみません。ありがとうございます。",
+     "ruby": "わざわざすみません。ありがとうございます。",
+     "en": "You really didn't have to. Thank you.",
+     "cn": "让您特意跑一趟，谢谢。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "ゴミ出しのルールを教えていただけますか？",
+     "ruby": "ゴミ<ruby>出<rt>だ</rt></ruby>しのルールを<ruby>教<rt>おし</rt></ruby>えていただけますか？",
+     "en": "Could you tell me the rules for taking out the trash?",
+     "cn": "能请教一下扔垃圾的规则吗？"
+    },
+    {
+     "speaker": "隣人",
+     "ja": "燃えるゴミは月曜と木曜ですよ。",
+     "ruby": "<ruby>燃<rt>も</rt></ruby>えるゴミは<ruby>月曜<rt>げつよう</rt></ruby>と<ruby>木曜<rt>もくよう</rt></ruby>ですよ。",
+     "en": "Burnable trash goes out on Mondays and Thursdays.",
+     "cn": "可燃垃圾是周一和周四。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "助かります。これからよろしくお願いします。",
+     "ruby": "<ruby>助<rt>たす</rt></ruby>かります。これからよろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+     "en": "That's very helpful. I look forward to being your neighbor.",
+     "cn": "太有帮助了。今后请多关照。"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "飲み会を断る",
+    "title_cn": "婉拒酒局",
+    "desc": "同事约今晚喝酒，礼貌地拒绝",
+    "tip": "拒绝三步：道谢→先約があって→また今度——不伤关系"
+   },
+   "lines": [
+    {
+     "speaker": "同僚",
+     "ja": "今夜、みんなで飲みに行くんですが、どうですか？",
+     "ruby": "<ruby>今夜<rt>こんや</rt></ruby>、みんなで<ruby>飲<rt>の</rt></ruby>みに<ruby>行<rt>い</rt></ruby>くんですが、どうですか？",
+     "en": "We're all going out for drinks tonight — want to join?",
+     "cn": "今晚大家要去喝一杯，你来吗？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "誘ってくれてありがとうございます。",
+     "ruby": "<ruby>誘<rt>さそ</rt></ruby>ってくれてありがとうございます。",
+     "en": "Thanks for inviting me.",
+     "cn": "谢谢你约我。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "ただ、今夜は先約があって、行けないんです。",
+     "ruby": "ただ、<ruby>今夜<rt>こんや</rt></ruby>は<ruby>先約<rt>せんやく</rt></ruby>があって、<ruby>行<rt>い</rt></ruby>けないんです。",
+     "en": "But I have a prior engagement tonight, so I can't make it.",
+     "cn": "不过今晚已经有约了，去不了。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "そうですか、残念です。",
+     "ruby": "そうですか、<ruby>残念<rt>ざんねん</rt></ruby>です。",
+     "en": "I see — that's too bad.",
+     "cn": "这样啊，真遗憾。"
+    },
+    {
+     "speaker": "自分",
+     "ja": "また今度、ぜひ誘ってください。",
+     "ruby": "また<ruby>今度<rt>こんど</rt></ruby>、ぜひ<ruby>誘<rt>さそ</rt></ruby>ってください。",
+     "en": "Please invite me again next time.",
+     "cn": "下次请一定再叫上我。"
+    },
+    {
+     "speaker": "同僚",
+     "ja": "もちろんです。楽しんできてください。",
+     "ruby": "もちろんです。<ruby>楽<rt>たの</rt></ruby>しんできてください。",
+     "en": "Of course. Enjoy your evening!",
+     "cn": "当然。祝你今晚愉快！"
+    }
+   ]
+  },
+  {
+   "scenario": {
+    "title_ja": "週末の待ち合わせ",
+    "title_cn": "约周末看电影",
+    "desc": "和朋友约周六下午看电影",
+    "tip": "约人问「空いていますか」；定碰头「◯時に◯◯で待ち合わせましょう」"
+   },
+   "lines": [
+    {
+     "speaker": "友達",
+     "ja": "今度の土曜日、空いていますか？",
+     "ruby": "<ruby>今度<rt>こんど</rt></ruby>の<ruby>土曜日<rt>どようび</rt></ruby>、<ruby>空<rt>あ</rt></ruby>いていますか？",
+     "en": "Are you free this Saturday?",
+     "cn": "这周六有空吗？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "午後なら空いていますよ。どうしたんですか？",
+     "ruby": "<ruby>午後<rt>ごご</rt></ruby>なら<ruby>空<rt>あ</rt></ruby>いていますよ。どうしたんですか？",
+     "en": "I'm free in the afternoon. What's up?",
+     "cn": "下午的话有空。怎么了？"
+    },
+    {
+     "speaker": "友達",
+     "ja": "新しい映画を見に行きませんか？",
+     "ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか？",
+     "en": "Want to go see that new movie?",
+     "cn": "要不要去看那部新电影？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "いいですね。何時の回にしますか？",
+     "ruby": "いいですね。<ruby>何時<rt>なんじ</rt></ruby>の<ruby>回<rt>かい</rt></ruby>にしますか？",
+     "en": "Sounds good. Which showing should we go to?",
+     "cn": "好啊。看几点的场？"
+    },
+    {
+     "speaker": "友達",
+     "ja": "二時の回はどうですか？",
+     "ruby": "<ruby>二時<rt>にじ</rt></ruby>の<ruby>回<rt>かい</rt></ruby>はどうですか？",
+     "en": "How about the two o'clock showing?",
+     "cn": "两点的场怎么样？"
+    },
+    {
+     "speaker": "自分",
+     "ja": "じゃあ、一時半に駅前で待ち合わせましょう。",
+     "ruby": "じゃあ、<ruby>一時半<rt>いちじはん</rt></ruby>に<ruby>駅前<rt>えきまえ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせましょう。",
+     "en": "Then let's meet at one thirty in front of the station.",
+     "cn": "那我们一点半在站前碰头吧。"
+    },
+    {
+     "speaker": "友達",
+     "ja": "分かりました。楽しみですね！",
+     "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。<ruby>楽<rt>たの</rt></ruby>しみですね！",
+     "en": "Got it. Looking forward to it!",
+     "cn": "好的。好期待啊！"
+    }
+   ]
+  }
  ]
 }
