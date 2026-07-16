@@ -10,6 +10,7 @@ import asyncio
 import json
 import re
 import sys
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -71,6 +72,9 @@ async def main() -> None:
     else:
         validate(day)
         audio_dir.mkdir(parents=True, exist_ok=True)
+        # 音频 URL 带生成版本参数：--force 重新生成时 URL 必然变化，
+        # 击穿 CDN / 浏览器 / Service Worker(cache-first) 各层缓存，避免新旧文音错配
+        gen = int(time.time())
         speakers: list[str] = []
         for l in day["lines"]:
             if l["speaker"] not in speakers:
@@ -84,8 +88,8 @@ async def main() -> None:
             await synth(l["en"], EN_VOICES[vi], en_path)
             lines.append({
                 **l,
-                "ja_audio": f"audio/{dstr}/ja{i}.mp3",
-                "en_audio": f"audio/{dstr}/en{i}.mp3",
+                "ja_audio": f"audio/{dstr}/ja{i}.mp3?g={gen}",
+                "en_audio": f"audio/{dstr}/en{i}.mp3?g={gen}",
             })
         payload = {"date": dstr, "scenario": day["scenario"], "lines": lines}
         out_file.write_text(
