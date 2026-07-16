@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-17",
+ "scenario": {
+  "title_ja": "ラーメン屋で注文",
+  "title_cn": "拉面店点餐",
+  "desc": "进拉面店点单：选口味、面的硬度，加点饺子",
+  "tip": "点餐句型「〜を一つお願いします」；「麺の硬さ」可答 硬め／普通／柔らかめ"
+ },
+ "lines": [
+  {
+   "speaker": "店員",
+   "ja": "いらっしゃいませ！ご注文はお決まりですか？",
+   "ruby": "いらっしゃいませ！ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりですか？",
+   "en": "Welcome! Are you ready to order?",
+   "cn": "欢迎光临！决定点什么了吗？",
+   "ja_audio": "audio/2026-07-17/ja1.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en1.mp3?g=1784239480"
+  },
+  {
+   "speaker": "客",
+   "ja": "醤油ラーメンを一つお願いします。",
+   "ruby": "<ruby>醤油<rt>しょうゆ</rt></ruby>ラーメンを<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "One shoyu ramen, please.",
+   "cn": "请来一碗酱油拉面。",
+   "ja_audio": "audio/2026-07-17/ja2.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en2.mp3?g=1784239480"
+  },
+  {
+   "speaker": "店員",
+   "ja": "麺の硬さはどうしますか？",
+   "ruby": "<ruby>麺<rt>めん</rt></ruby>の<ruby>硬<rt>かた</rt></ruby>さはどうしますか？",
+   "en": "How would you like your noodles?",
+   "cn": "面的硬度要怎么样？",
+   "ja_audio": "audio/2026-07-17/ja3.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en3.mp3?g=1784239480"
+  },
+  {
+   "speaker": "客",
+   "ja": "普通で。あと、餃子もください。",
+   "ruby": "<ruby>普通<rt>ふつう</rt></ruby>で。あと、<ruby>餃子<rt>ぎょうざ</rt></ruby>もください。",
+   "en": "Regular, please. And an order of gyoza too.",
+   "cn": "普通就好。另外再来一份饺子。",
+   "ja_audio": "audio/2026-07-17/ja4.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en4.mp3?g=1784239480"
+  },
+  {
+   "speaker": "店員",
+   "ja": "かしこまりました。少々お待ちください。",
+   "ruby": "かしこまりました。<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+   "en": "Certainly. Just a moment, please.",
+   "cn": "好的，请稍等。",
+   "ja_audio": "audio/2026-07-17/ja5.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en5.mp3?g=1784239480"
+  },
+  {
+   "speaker": "客",
+   "ja": "すみません、お水をもらえますか？",
+   "ruby": "すみません、お<ruby>水<rt>みず</rt></ruby>をもらえますか？",
+   "en": "Excuse me, could I get some water?",
+   "cn": "不好意思，能给我杯水吗？",
+   "ja_audio": "audio/2026-07-17/ja6.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en6.mp3?g=1784239480"
+  },
+  {
+   "speaker": "店員",
+   "ja": "はい、ただいまお持ちします。",
+   "ruby": "はい、ただいまお<ruby>持<rt>も</rt></ruby>ちします。",
+   "en": "Of course, right away.",
+   "cn": "好的，马上给您拿来。",
+   "ja_audio": "audio/2026-07-17/ja7.mp3?g=1784239480",
+   "en_audio": "audio/2026-07-17/en7.mp3?g=1784239480"
+  }
+ ]
+}
