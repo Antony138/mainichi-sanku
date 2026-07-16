@@ -274,7 +274,7 @@
 
   async function fetchDay(d) {
     if (dayCache.has(d)) return dayCache.get(d);
-    const res = await fetch(`data/${d}.json`);
+    const res = await fetch(`data/${d}.json`, { cache: 'no-cache' });
     if (!res.ok) throw new Error(d);
     const j = await res.json();
     dayCache.set(d, j);

@@ -13,8 +13,8 @@
    "ruby": "いらっしゃいませ。お<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>温<rt>あたた</rt></ruby>めますか？",
    "en": "Welcome! Would you like your bento heated?",
    "cn": "欢迎光临。便当要加热吗？",
-   "ja_audio": "audio/2026-07-16/ja1.mp3",
-   "en_audio": "audio/2026-07-16/en1.mp3"
+   "ja_audio": "audio/2026-07-16/ja1.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en1.mp3?g=1784162643"
   },
   {
    "speaker": "客",
@@ -22,8 +22,8 @@
    "ruby": "はい、お<ruby>願<rt>ねが</rt></ruby>いします。",
    "en": "Yes, please.",
    "cn": "好的，麻烦你。",
-   "ja_audio": "audio/2026-07-16/ja2.mp3",
-   "en_audio": "audio/2026-07-16/en2.mp3"
+   "ja_audio": "audio/2026-07-16/ja2.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en2.mp3?g=1784162643"
   },
   {
    "speaker": "店員",
@@ -31,8 +31,8 @@
    "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか？",
    "en": "Would you like a plastic bag?",
    "cn": "需要塑料袋吗？",
-   "ja_audio": "audio/2026-07-16/ja3.mp3",
-   "en_audio": "audio/2026-07-16/en3.mp3"
+   "ja_audio": "audio/2026-07-16/ja3.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en3.mp3?g=1784162643"
   },
   {
    "speaker": "客",
@@ -40,8 +40,8 @@
    "ruby": "いえ、<ruby>袋<rt>ふくろ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
    "en": "No, I don't need a bag.",
    "cn": "不用，袋子就不需要了。",
-   "ja_audio": "audio/2026-07-16/ja4.mp3",
-   "en_audio": "audio/2026-07-16/en4.mp3"
+   "ja_audio": "audio/2026-07-16/ja4.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en4.mp3?g=1784162643"
   },
   {
    "speaker": "店員",
@@ -49,8 +49,8 @@
    "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>六百八十円<rt>ろっぴゃくはちじゅうえん</rt></ruby>です。",
    "en": "Your total is 680 yen.",
    "cn": "一共是680日元。",
-   "ja_audio": "audio/2026-07-16/ja5.mp3",
-   "en_audio": "audio/2026-07-16/en5.mp3"
+   "ja_audio": "audio/2026-07-16/ja5.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en5.mp3?g=1784162643"
   },
   {
    "speaker": "客",
@@ -58,8 +58,8 @@
    "ruby": "カードでお<ruby>願<rt>ねが</rt></ruby>いします。",
    "en": "I'll pay by card.",
    "cn": "刷卡，麻烦了。",
-   "ja_audio": "audio/2026-07-16/ja6.mp3",
-   "en_audio": "audio/2026-07-16/en6.mp3"
+   "ja_audio": "audio/2026-07-16/ja6.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en6.mp3?g=1784162643"
   },
   {
    "speaker": "店員",
@@ -67,8 +67,8 @@
    "ruby": "ありがとうございました。",
    "en": "Thank you very much!",
    "cn": "谢谢惠顾。",
-   "ja_audio": "audio/2026-07-16/ja7.mp3",
-   "en_audio": "audio/2026-07-16/en7.mp3"
+   "ja_audio": "audio/2026-07-16/ja7.mp3?g=1784162643",
+   "en_audio": "audio/2026-07-16/en7.mp3?g=1784162643"
   }
  ]
 }
