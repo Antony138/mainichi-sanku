@@ -1,4 +1,4 @@
-const VER = 'ms-v1';
+const VER = 'ms-v2';
 
 self.addEventListener('install', () => self.skipWaiting());
 

@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 21 * * *'   # 21:00 UTC = 06:00 JST
   workflow_dispatch:
+    inputs:
+      force:
+        description: '强制重新生成今天（改语料后立即生效用）'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -36,8 +41,8 @@ jobs:
 
       - run: pip install edge-tts
 
-      - name: Generate today's sentences + audio
-        run: python scripts/generate.py
+      - name: Generate today's scenario + audio
+        run: python scripts/generate.py ${{ inputs.force && '--force' || '' }}
 
       - name: Commit generated content
         run: |
