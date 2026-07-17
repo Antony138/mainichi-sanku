@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-18",
+ "scenario": {
+  "title_ja": "カフェでテイクアウト",
+  "title_cn": "咖啡店点单",
+  "desc": "在咖啡店点冰拿铁外带，用手机支付",
+  "tip": "「店内」vs「持ち帰り」（イートイン／テイクアウト）是点单必被问的一组词"
+ },
+ "lines": [
+  {
+   "speaker": "店員",
+   "ja": "お次の方、どうぞ。",
+   "ruby": "お<ruby>次<rt>つぎ</rt></ruby>の<ruby>方<rt>かた</rt></ruby>、どうぞ。",
+   "en": "Next in line, please.",
+   "cn": "下一位，这边请。",
+   "ja_audio": "audio/2026-07-18/ja1.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en1.mp3?g=1784325305"
+  },
+  {
+   "speaker": "客",
+   "ja": "アイスカフェラテのMサイズを一つお願いします。",
+   "ruby": "アイスカフェラテのMサイズを<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "One medium iced caffè latte, please.",
+   "cn": "请给我一杯中杯冰拿铁。",
+   "ja_audio": "audio/2026-07-18/ja2.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en2.mp3?g=1784325305"
+  },
+  {
+   "speaker": "店員",
+   "ja": "店内をご利用ですか？",
+   "ruby": "<ruby>店内<rt>てんない</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ですか？",
+   "en": "Will you be having it here?",
+   "cn": "请问在店内喝吗？",
+   "ja_audio": "audio/2026-07-18/ja3.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en3.mp3?g=1784325305"
+  },
+  {
+   "speaker": "客",
+   "ja": "いえ、持ち帰りでお願いします。",
+   "ruby": "いえ、<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りでお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "No, to go, please.",
+   "cn": "不，带走。",
+   "ja_audio": "audio/2026-07-18/ja4.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en4.mp3?g=1784325305"
+  },
+  {
+   "speaker": "店員",
+   "ja": "お会計は五百円です。",
+   "ruby": "お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>五百円<rt>ごひゃくえん</rt></ruby>です。",
+   "en": "That'll be 500 yen.",
+   "cn": "一共500日元。",
+   "ja_audio": "audio/2026-07-18/ja5.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en5.mp3?g=1784325305"
+  },
+  {
+   "speaker": "客",
+   "ja": "PayPayで払えますか？",
+   "ruby": "PayPayで<ruby>払<rt>はら</rt></ruby>えますか？",
+   "en": "Can I pay with PayPay?",
+   "cn": "可以用PayPay支付吗？",
+   "ja_audio": "audio/2026-07-18/ja6.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en6.mp3?g=1784325305"
+  },
+  {
+   "speaker": "店員",
+   "ja": "はい、大丈夫ですよ。",
+   "ruby": "はい、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。",
+   "en": "Yes, that's fine.",
+   "cn": "可以的。",
+   "ja_audio": "audio/2026-07-18/ja7.mp3?g=1784325305",
+   "en_audio": "audio/2026-07-18/en7.mp3?g=1784325305"
+  }
+ ]
+}
