@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-19",
+ "scenario": {
+  "title_ja": "駅で乗り換えを聞く",
+  "title_cn": "车站问乘换",
+  "desc": "在车站向站务员打听去新宿的路线和站台",
+  "tip": "问路万能开场「すみません、〜に行きたいんですが」，句尾んですが留半句更自然"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "すみません、新宿に行きたいんですが。",
+   "ruby": "すみません、<ruby>新宿<rt>しんじゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいんですが。",
+   "en": "Excuse me, I'd like to get to Shinjuku.",
+   "cn": "不好意思，我想去新宿。",
+   "ja_audio": "audio/2026-07-19/ja1.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en1.mp3?g=1784411550"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "新宿なら、山手線が便利ですよ。",
+   "ruby": "<ruby>新宿<rt>しんじゅく</rt></ruby>なら、<ruby>山手線<rt>やまのてせん</rt></ruby>が<ruby>便利<rt>べんり</rt></ruby>ですよ。",
+   "en": "For Shinjuku, the Yamanote Line is convenient.",
+   "cn": "去新宿的话，坐山手线很方便。",
+   "ja_audio": "audio/2026-07-19/ja2.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en2.mp3?g=1784411550"
+  },
+  {
+   "speaker": "客",
+   "ja": "何番線から出ますか？",
+   "ruby": "<ruby>何番線<rt>なんばんせん</rt></ruby>から<ruby>出<rt>で</rt></ruby>ますか？",
+   "en": "Which platform does it leave from?",
+   "cn": "从几号站台发车？",
+   "ja_audio": "audio/2026-07-19/ja3.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en3.mp3?g=1784411550"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "三番線です。あの階段を上がってください。",
+   "ruby": "<ruby>三番線<rt>さんばんせん</rt></ruby>です。あの<ruby>階段<rt>かいだん</rt></ruby>を<ruby>上<rt>あ</rt></ruby>がってください。",
+   "en": "Platform three. Go up those stairs over there.",
+   "cn": "3号站台。请上那边的楼梯。",
+   "ja_audio": "audio/2026-07-19/ja4.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en4.mp3?g=1784411550"
+  },
+  {
+   "speaker": "客",
+   "ja": "どのくらいかかりますか？",
+   "ruby": "どのくらいかかりますか？",
+   "en": "How long does it take?",
+   "cn": "大概要多长时间？",
+   "ja_audio": "audio/2026-07-19/ja5.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en5.mp3?g=1784411550"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "十五分くらいですね。",
+   "ruby": "<ruby>十五分<rt>じゅうごふん</rt></ruby>くらいですね。",
+   "en": "About fifteen minutes.",
+   "cn": "大约15分钟。",
+   "ja_audio": "audio/2026-07-19/ja6.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en6.mp3?g=1784411550"
+  },
+  {
+   "speaker": "客",
+   "ja": "助かりました。ありがとうございます。",
+   "ruby": "<ruby>助<rt>たす</rt></ruby>かりました。ありがとうございます。",
+   "en": "That helps a lot. Thank you!",
+   "cn": "帮大忙了，谢谢！",
+   "ja_audio": "audio/2026-07-19/ja7.mp3?g=1784411550",
+   "en_audio": "audio/2026-07-19/en7.mp3?g=1784411550"
+  }
+ ]
+}
