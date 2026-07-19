@@ -1,0 +1,65 @@
+{
+ "date": "2026-07-20",
+ "scenario": {
+  "title_ja": "電車遅延の連絡",
+  "title_cn": "电车晚点打电话报备",
+  "desc": "电车晚点，打电话给同事说明会迟到",
+  "tip": "报迟到常用「〜そうです」（看样子会…）+「〜ほど遅れます」；先道歉再说明"
+ },
+ "lines": [
+  {
+   "speaker": "自分",
+   "ja": "おはようございます。少し遅れそうなので、ご連絡しました。",
+   "ruby": "おはようございます。<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れそうなので、ご<ruby>連絡<rt>れんらく</rt></ruby>しました。",
+   "en": "Good morning. I'm calling because it looks like I'll be a bit late.",
+   "cn": "早上好。我可能会迟到一会儿，先跟你说一声。",
+   "ja_audio": "audio/2026-07-20/ja1.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en1.mp3?g=1784498065"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "どうしたんですか？",
+   "ruby": "どうしたんですか？",
+   "en": "What happened?",
+   "cn": "怎么了？",
+   "ja_audio": "audio/2026-07-20/ja2.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en2.mp3?g=1784498065"
+  },
+  {
+   "speaker": "自分",
+   "ja": "電車が遅延していて、駅で止まったままなんです。",
+   "ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅延<rt>ちえん</rt></ruby>していて、<ruby>駅<rt>えき</rt></ruby>で<ruby>止<rt>と</rt></ruby>まったままなんです。",
+   "en": "The train is delayed — we've been stopped at a station.",
+   "cn": "电车晚点了，现在一直停在车站不动。",
+   "ja_audio": "audio/2026-07-20/ja3.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en3.mp3?g=1784498065"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "大変ですね。会議は十時からですよ。",
+   "ruby": "<ruby>大変<rt>たいへん</rt></ruby>ですね。<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>十時<rt>じゅうじ</rt></ruby>からですよ。",
+   "en": "That's rough. The meeting starts at ten, you know.",
+   "cn": "真够呛。会议十点开始哦。",
+   "ja_audio": "audio/2026-07-20/ja4.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en4.mp3?g=1784498065"
+  },
+  {
+   "speaker": "自分",
+   "ja": "十五分ほど遅れると思います。すみません。",
+   "ruby": "<ruby>十五分<rt>じゅうごふん</rt></ruby>ほど<ruby>遅<rt>おく</rt></ruby>れると<ruby>思<rt>おも</rt></ruby>います。すみません。",
+   "en": "I think I'll be about fifteen minutes late. I'm sorry.",
+   "cn": "我估计会迟到15分钟左右，抱歉。",
+   "ja_audio": "audio/2026-07-20/ja5.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en5.mp3?g=1784498065"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "了解です。気をつけて来てください。",
+   "ruby": "<ruby>了解<rt>りょうかい</rt></ruby>です。<ruby>気<rt>き</rt></ruby>をつけて<ruby>来<rt>き</rt></ruby>てください。",
+   "en": "Got it. Get here safely.",
+   "cn": "了解。路上注意安全。",
+   "ja_audio": "audio/2026-07-20/ja6.mp3?g=1784498065",
+   "en_audio": "audio/2026-07-20/en6.mp3?g=1784498065"
+  }
+ ]
+}
