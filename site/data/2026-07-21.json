@@ -1,0 +1,65 @@
+{
+ "date": "2026-07-21",
+ "scenario": {
+  "title_ja": "病院の受付",
+  "title_cn": "医院挂号",
+  "desc": "第一次去医院看病，在前台挂号",
+  "tip": "初诊必带 保険証；「問診票」=问诊表；说症状用「〜から…があって」"
+ },
+ "lines": [
+  {
+   "speaker": "患者",
+   "ja": "すみません、初めてなんですが、診てもらえますか？",
+   "ruby": "すみません、<ruby>初<rt>はじ</rt></ruby>めてなんですが、<ruby>診<rt>み</rt></ruby>てもらえますか？",
+   "en": "Excuse me, this is my first visit — could I see a doctor?",
+   "cn": "不好意思，我是第一次来，能看诊吗？",
+   "ja_audio": "audio/2026-07-21/ja1.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en1.mp3?g=1784584837"
+  },
+  {
+   "speaker": "受付",
+   "ja": "はい。保険証はお持ちですか？",
+   "ruby": "はい。<ruby>保険証<rt>ほけんしょう</rt></ruby>はお<ruby>持<rt>も</rt></ruby>ちですか？",
+   "en": "Yes. Do you have your insurance card?",
+   "cn": "可以。您带保险证了吗？",
+   "ja_audio": "audio/2026-07-21/ja2.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en2.mp3?g=1784584837"
+  },
+  {
+   "speaker": "患者",
+   "ja": "はい、これです。",
+   "ruby": "はい、これです。",
+   "en": "Yes, here it is.",
+   "cn": "带了，给您。",
+   "ja_audio": "audio/2026-07-21/ja3.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en3.mp3?g=1784584837"
+  },
+  {
+   "speaker": "受付",
+   "ja": "こちらの問診票にご記入ください。",
+   "ruby": "こちらの<ruby>問診票<rt>もんしんひょう</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>ください。",
+   "en": "Please fill out this medical questionnaire.",
+   "cn": "请填写这份问诊表。",
+   "ja_audio": "audio/2026-07-21/ja4.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en4.mp3?g=1784584837"
+  },
+  {
+   "speaker": "患者",
+   "ja": "昨日から熱があって、喉も痛いです。",
+   "ruby": "<ruby>昨日<rt>きのう</rt></ruby>から<ruby>熱<rt>ねつ</rt></ruby>があって、<ruby>喉<rt>のど</rt></ruby>も<ruby>痛<rt>いた</rt></ruby>いです。",
+   "en": "I've had a fever since yesterday, and my throat hurts too.",
+   "cn": "从昨天开始发烧，嗓子也疼。",
+   "ja_audio": "audio/2026-07-21/ja5.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en5.mp3?g=1784584837"
+  },
+  {
+   "speaker": "受付",
+   "ja": "分かりました。お呼びするまで、お掛けになってお待ちください。",
+   "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。お<ruby>呼<rt>よ</rt></ruby>びするまで、お<ruby>掛<rt>か</rt></ruby>けになってお<ruby>待<rt>ま</rt></ruby>ちください。",
+   "en": "Understood. Please have a seat until we call you.",
+   "cn": "好的。叫到您之前，请坐着稍等。",
+   "ja_audio": "audio/2026-07-21/ja6.mp3?g=1784584837",
+   "en_audio": "audio/2026-07-21/en6.mp3?g=1784584837"
+  }
+ ]
+}
