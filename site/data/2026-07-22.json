@@ -1,0 +1,65 @@
+{
+ "date": "2026-07-22",
+ "scenario": {
+  "title_ja": "薬局で薬を受け取る",
+  "title_cn": "药局取药",
+  "desc": "在药局听药剂师说明用法和注意事项",
+  "tip": "药袋高频词：食後・食前・一日◯回；「お大事に」是医生药师的送别语"
+ },
+ "lines": [
+  {
+   "speaker": "薬剤師",
+   "ja": "お薬のご説明をしますね。",
+   "ruby": "お<ruby>薬<rt>くすり</rt></ruby>のご<ruby>説明<rt>せつめい</rt></ruby>をしますね。",
+   "en": "Let me explain your medication.",
+   "cn": "我来说明一下药的用法。",
+   "ja_audio": "audio/2026-07-22/ja1.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en1.mp3?g=1784671459"
+  },
+  {
+   "speaker": "薬剤師",
+   "ja": "こちらは一日三回、食後に飲んでください。",
+   "ruby": "こちらは<ruby>一日三回<rt>いちにちさんかい</rt></ruby>、<ruby>食後<rt>しょくご</rt></ruby>に<ruby>飲<rt>の</rt></ruby>んでください。",
+   "en": "Take this three times a day, after meals.",
+   "cn": "这个每天三次，饭后服用。",
+   "ja_audio": "audio/2026-07-22/ja2.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en2.mp3?g=1784671459"
+  },
+  {
+   "speaker": "患者",
+   "ja": "眠くなったりしますか？",
+   "ruby": "<ruby>眠<rt>ねむ</rt></ruby>くなったりしますか？",
+   "en": "Will it make me sleepy?",
+   "cn": "吃了会犯困吗？",
+   "ja_audio": "audio/2026-07-22/ja3.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en3.mp3?g=1784671459"
+  },
+  {
+   "speaker": "薬剤師",
+   "ja": "眠くなることがあるので、運転は控えてください。",
+   "ruby": "<ruby>眠<rt>ねむ</rt></ruby>くなることがあるので、<ruby>運転<rt>うんてん</rt></ruby>は<ruby>控<rt>ひか</rt></ruby>えてください。",
+   "en": "It can cause drowsiness, so please avoid driving.",
+   "cn": "有可能会困，所以请尽量别开车。",
+   "ja_audio": "audio/2026-07-22/ja4.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en4.mp3?g=1784671459"
+  },
+  {
+   "speaker": "患者",
+   "ja": "分かりました。お風呂は入っても大丈夫ですか？",
+   "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。お<ruby>風呂<rt>ふろ</rt></ruby>は<ruby>入<rt>はい</rt></ruby>っても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか？",
+   "en": "Got it. Is it okay to take a bath?",
+   "cn": "明白了。可以泡澡吗？",
+   "ja_audio": "audio/2026-07-22/ja5.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en5.mp3?g=1784671459"
+  },
+  {
+   "speaker": "薬剤師",
+   "ja": "熱が下がっていれば大丈夫ですよ。お大事に。",
+   "ruby": "<ruby>熱<rt>ねつ</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がっていれば<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですよ。お<ruby>大事<rt>だいじ</rt></ruby>に。",
+   "en": "If your fever has gone down, that's fine. Take care!",
+   "cn": "退烧了的话就没问题。请多保重。",
+   "ja_audio": "audio/2026-07-22/ja6.mp3?g=1784671459",
+   "en_audio": "audio/2026-07-22/en6.mp3?g=1784671459"
+  }
+ ]
+}
