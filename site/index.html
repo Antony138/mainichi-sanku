@@ -244,7 +244,7 @@
     <button class="pill" id="btnCn" aria-pressed="false">隐藏中文</button>
   </div>
 
-  <footer>每天 6:00 (JST) 自动更新 · edge-tts 神经语音 · 听过的句子离线可用</footer>
+  <footer>每天 6:00 (JST) 自动更新 · edge-tts 神经语音 · 听过的句子离线可用<span id="visits"></span></footer>
 </div>
 
 <script>
@@ -482,6 +482,18 @@
   })();
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+
+  // 访问统计：自建 Cloudflare Worker（见 cc-digest 仓库 counter/ 目录），不采集 IP、不种 cookie；失败时静默
+  (() => {
+    let nv = 0;
+    try {
+      if (!localStorage.getItem('msk_visited')) { nv = 1; localStorage.setItem('msk_visited', '1'); }
+    } catch {}
+    fetch('https://gh-visits.antony138.workers.dev/hit', { method: 'POST', body: JSON.stringify({ site: 'mainichi-sanku', nv }) })
+      .then(r => r.json())
+      .then(d => { if (d?.pv) document.getElementById('visits').textContent = ` · 访问 ${d.pv} · 访客 ${d.uv}`; })
+      .catch(() => {});
+  })();
 </script>
 </body>
 </html>
