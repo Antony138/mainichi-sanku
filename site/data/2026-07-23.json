@@ -1,0 +1,65 @@
+{
+ "date": "2026-07-23",
+ "scenario": {
+  "title_ja": "美容院でカット",
+  "title_cn": "理发",
+  "desc": "在美容院说明想要的发型",
+  "tip": "「〜くらい」表程度；「耳は出してください」这类具体要求直接说就行"
+ },
+ "lines": [
+  {
+   "speaker": "美容師",
+   "ja": "今日はどうなさいますか？",
+   "ruby": "<ruby>今日<rt>きょう</rt></ruby>はどうなさいますか？",
+   "en": "What would you like done today?",
+   "cn": "今天想怎么剪？",
+   "ja_audio": "audio/2026-07-23/ja1.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en1.mp3?g=1784757871"
+  },
+  {
+   "speaker": "客",
+   "ja": "全体に短くしたいです。",
+   "ruby": "<ruby>全体<rt>ぜんたい</rt></ruby>に<ruby>短<rt>みじか</rt></ruby>くしたいです。",
+   "en": "I'd like it shorter overall.",
+   "cn": "整体想剪短一点。",
+   "ja_audio": "audio/2026-07-23/ja2.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en2.mp3?g=1784757871"
+  },
+  {
+   "speaker": "美容師",
+   "ja": "どのくらい切りますか？",
+   "ruby": "どのくらい<ruby>切<rt>き</rt></ruby>りますか？",
+   "en": "How much should I take off?",
+   "cn": "要剪掉多少？",
+   "ja_audio": "audio/2026-07-23/ja3.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en3.mp3?g=1784757871"
+  },
+  {
+   "speaker": "客",
+   "ja": "三センチくらいお願いします。耳は出してください。",
+   "ruby": "<ruby>三<rt>さん</rt></ruby>センチくらいお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>耳<rt>みみ</rt></ruby>は<ruby>出<rt>だ</rt></ruby>してください。",
+   "en": "About three centimeters. And please keep my ears uncovered.",
+   "cn": "剪个三厘米左右吧。耳朵请露出来。",
+   "ja_audio": "audio/2026-07-23/ja4.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en4.mp3?g=1784757871"
+  },
+  {
+   "speaker": "美容師",
+   "ja": "かしこまりました。シャンプーもされますか？",
+   "ruby": "かしこまりました。シャンプーもされますか？",
+   "en": "Certainly. Would you like a shampoo as well?",
+   "cn": "好的。要洗头吗？",
+   "ja_audio": "audio/2026-07-23/ja5.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en5.mp3?g=1784757871"
+  },
+  {
+   "speaker": "客",
+   "ja": "はい、お願いします。",
+   "ruby": "はい、お<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Yes, please.",
+   "cn": "好，麻烦了。",
+   "ja_audio": "audio/2026-07-23/ja6.mp3?g=1784757871",
+   "en_audio": "audio/2026-07-23/en6.mp3?g=1784757871"
+  }
+ ]
+}
