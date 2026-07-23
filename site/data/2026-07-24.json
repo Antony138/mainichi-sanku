@@ -1,0 +1,65 @@
+{
+ "date": "2026-07-24",
+ "scenario": {
+  "title_ja": "宅配便の受け取り",
+  "title_cn": "收快递与约再配送",
+  "desc": "在家收快递，顺便预约另一件的再配送",
+  "tip": "「不在票」=不在配送单；约时间说「◯時以降」（…点以后）"
+ },
+ "lines": [
+  {
+   "speaker": "配達員",
+   "ja": "こんにちは、宅配便です。お荷物をお届けに来ました。",
+   "ruby": "こんにちは、<ruby>宅配便<rt>たくはいびん</rt></ruby>です。お<ruby>荷物<rt>にもつ</rt></ruby>をお<ruby>届<rt>とど</rt></ruby>けに<ruby>来<rt>き</rt></ruby>ました。",
+   "en": "Hello, delivery service. I have a package for you.",
+   "cn": "您好，快递。给您送包裹来了。",
+   "ja_audio": "audio/2026-07-24/ja1.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en1.mp3?g=1784844295"
+  },
+  {
+   "speaker": "住人",
+   "ja": "はい、今開けます。少々お待ちください。",
+   "ruby": "はい、<ruby>今<rt>いま</rt></ruby><ruby>開<rt>あ</rt></ruby>けます。<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+   "en": "Yes, I'll open the door. Just a moment.",
+   "cn": "好，我这就开门，请稍等。",
+   "ja_audio": "audio/2026-07-24/ja2.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en2.mp3?g=1784844295"
+  },
+  {
+   "speaker": "配達員",
+   "ja": "こちらに受け取りのサインをお願いします。",
+   "ruby": "こちらに<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りのサインをお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Could you sign here for the package, please?",
+   "cn": "请在这里签收。",
+   "ja_audio": "audio/2026-07-24/ja3.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en3.mp3?g=1784844295"
+  },
+  {
+   "speaker": "住人",
+   "ja": "はい。あ、もう一つ不在票が入っていたんですが。",
+   "ruby": "はい。あ、もう<ruby>一<rt>ひと</rt></ruby>つ<ruby>不在票<rt>ふざいひょう</rt></ruby>が<ruby>入<rt>はい</rt></ruby>っていたんですが。",
+   "en": "Sure. Oh, there was also a missed-delivery notice in my mailbox.",
+   "cn": "好。啊对了，信箱里还有一张不在配送单。",
+   "ja_audio": "audio/2026-07-24/ja4.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en4.mp3?g=1784844295"
+  },
+  {
+   "speaker": "配達員",
+   "ja": "では、再配達の手配をしますね。ご希望の時間はありますか？",
+   "ruby": "では、<ruby>再配達<rt>さいはいたつ</rt></ruby>の<ruby>手配<rt>てはい</rt></ruby>をしますね。ご<ruby>希望<rt>きぼう</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>はありますか？",
+   "en": "I'll arrange a redelivery, then. What time would work for you?",
+   "cn": "那我帮您安排再配送。有希望的时间段吗？",
+   "ja_audio": "audio/2026-07-24/ja5.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en5.mp3?g=1784844295"
+  },
+  {
+   "speaker": "住人",
+   "ja": "今夜七時以降でお願いします。",
+   "ruby": "<ruby>今夜<rt>こんや</rt></ruby><ruby>七時以降<rt>しちじいこう</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Tonight after seven, please.",
+   "cn": "今晚七点以后，麻烦了。",
+   "ja_audio": "audio/2026-07-24/ja6.mp3?g=1784844295",
+   "en_audio": "audio/2026-07-24/en6.mp3?g=1784844295"
+  }
+ ]
+}
