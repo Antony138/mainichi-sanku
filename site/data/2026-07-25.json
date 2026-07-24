@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-25",
+ "scenario": {
+  "title_ja": "区役所で転入届",
+  "title_cn": "区役所办转入",
+  "desc": "搬家后到区役所办理转入手续",
+  "tip": "搬家 14 天内要交 転入届；窗口先抽 番号札 等叫号"
+ },
+ "lines": [
+  {
+   "speaker": "住民",
+   "ja": "すみません、引っ越しの手続きをしたいんですが。",
+   "ruby": "すみません、<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの<ruby>手続<rt>てつづ</rt></ruby>きをしたいんですが。",
+   "en": "Excuse me, I'd like to do the paperwork for moving in.",
+   "cn": "不好意思，我想办理搬家的手续。",
+   "ja_audio": "audio/2026-07-25/ja1.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en1.mp3?g=1784930740"
+  },
+  {
+   "speaker": "職員",
+   "ja": "転入届ですね。番号札を取って、お待ちください。",
+   "ruby": "<ruby>転入届<rt>てんにゅうとどけ</rt></ruby>ですね。<ruby>番号札<rt>ばんごうふだ</rt></ruby>を<ruby>取<rt>と</rt></ruby>って、お<ruby>待<rt>ま</rt></ruby>ちください。",
+   "en": "A move-in notification, right? Please take a number and wait.",
+   "cn": "是转入申报吧。请先取号稍等。",
+   "ja_audio": "audio/2026-07-25/ja2.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en2.mp3?g=1784930740"
+  },
+  {
+   "speaker": "職員",
+   "ja": "お待たせしました。本人確認書類はお持ちですか？",
+   "ruby": "お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>本人確認書類<rt>ほんにんかくにんしょるい</rt></ruby>はお<ruby>持<rt>も</rt></ruby>ちですか？",
+   "en": "Thank you for waiting. Do you have identification with you?",
+   "cn": "让您久等了。带身份证明文件了吗？",
+   "ja_audio": "audio/2026-07-25/ja3.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en3.mp3?g=1784930740"
+  },
+  {
+   "speaker": "住民",
+   "ja": "在留カードでいいですか？",
+   "ruby": "<ruby>在留<rt>ざいりゅう</rt></ruby>カードでいいですか？",
+   "en": "Is my residence card okay?",
+   "cn": "在留卡可以吗？",
+   "ja_audio": "audio/2026-07-25/ja4.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en4.mp3?g=1784930740"
+  },
+  {
+   "speaker": "職員",
+   "ja": "大丈夫です。この用紙にご記入ください。",
+   "ruby": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。この<ruby>用紙<rt>ようし</rt></ruby>にご<ruby>記入<rt>きにゅう</rt></ruby>ください。",
+   "en": "That's fine. Please fill out this form.",
+   "cn": "可以。请填写这张表。",
+   "ja_audio": "audio/2026-07-25/ja5.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en5.mp3?g=1784930740"
+  },
+  {
+   "speaker": "住民",
+   "ja": "手続きはどのくらいかかりますか？",
+   "ruby": "<ruby>手続<rt>てつづ</rt></ruby>きはどのくらいかかりますか？",
+   "en": "How long will the procedure take?",
+   "cn": "手续大概要多久？",
+   "ja_audio": "audio/2026-07-25/ja6.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en6.mp3?g=1784930740"
+  },
+  {
+   "speaker": "職員",
+   "ja": "三十分ほどです。",
+   "ruby": "<ruby>三十分<rt>さんじゅっぷん</rt></ruby>ほどです。",
+   "en": "About thirty minutes.",
+   "cn": "大约30分钟。",
+   "ja_audio": "audio/2026-07-25/ja7.mp3?g=1784930740",
+   "en_audio": "audio/2026-07-25/en7.mp3?g=1784930740"
+  }
+ ]
+}
