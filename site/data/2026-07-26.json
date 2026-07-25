@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-26",
+ "scenario": {
+  "title_ja": "携帯ショップでプラン変更",
+  "title_cn": "手机店改套餐",
+  "desc": "在手机店咨询并更换更划算的套餐",
+  "tip": "「見直したい」=想重新调整；月费说 月額；含税=税込み"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "すみません、料金プランを見直したいんですが。",
+   "ruby": "すみません、<ruby>料金<rt>りょうきん</rt></ruby>プランを<ruby>見直<rt>みなお</rt></ruby>したいんですが。",
+   "en": "Excuse me, I'd like to review my phone plan.",
+   "cn": "不好意思，我想调整一下资费套餐。",
+   "ja_audio": "audio/2026-07-26/ja1.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en1.mp3?g=1785016645"
+  },
+  {
+   "speaker": "店員",
+   "ja": "ありがとうございます。毎月どのくらいデータを使いますか？",
+   "ruby": "ありがとうございます。<ruby>毎月<rt>まいつき</rt></ruby>どのくらいデータを<ruby>使<rt>つか</rt></ruby>いますか？",
+   "en": "Thank you. About how much data do you use each month?",
+   "cn": "感谢惠顾。您每个月大概用多少流量？",
+   "ja_audio": "audio/2026-07-26/ja2.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en2.mp3?g=1785016645"
+  },
+  {
+   "speaker": "客",
+   "ja": "だいたい二十ギガくらいです。",
+   "ruby": "だいたい<ruby>二十<rt>にじゅう</rt></ruby>ギガくらいです。",
+   "en": "Around twenty gigabytes.",
+   "cn": "大概20G左右。",
+   "ja_audio": "audio/2026-07-26/ja3.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en3.mp3?g=1785016645"
+  },
+  {
+   "speaker": "店員",
+   "ja": "でしたら、こちらのプランがお得ですよ。",
+   "ruby": "でしたら、こちらのプランがお<ruby>得<rt>とく</rt></ruby>ですよ。",
+   "en": "In that case, this plan is a better deal.",
+   "cn": "那样的话，这个套餐更划算。",
+   "ja_audio": "audio/2026-07-26/ja4.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en4.mp3?g=1785016645"
+  },
+  {
+   "speaker": "客",
+   "ja": "月額はいくらですか？",
+   "ruby": "<ruby>月額<rt>げつがく</rt></ruby>はいくらですか？",
+   "en": "How much is it per month?",
+   "cn": "月费是多少？",
+   "ja_audio": "audio/2026-07-26/ja5.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en5.mp3?g=1785016645"
+  },
+  {
+   "speaker": "店員",
+   "ja": "税込みで二千九百円です。",
+   "ruby": "<ruby>税込<rt>ぜいこ</rt></ruby>みで<ruby>二千九百円<rt>にせんきゅうひゃくえん</rt></ruby>です。",
+   "en": "It's 2,900 yen including tax.",
+   "cn": "含税2900日元。",
+   "ja_audio": "audio/2026-07-26/ja6.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en6.mp3?g=1785016645"
+  },
+  {
+   "speaker": "客",
+   "ja": "じゃあ、それに変更をお願いします。",
+   "ruby": "じゃあ、それに<ruby>変更<rt>へんこう</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Then I'd like to switch to that one, please.",
+   "cn": "那就换成那个吧。",
+   "ja_audio": "audio/2026-07-26/ja7.mp3?g=1785016645",
+   "en_audio": "audio/2026-07-26/en7.mp3?g=1785016645"
+  }
+ ]
+}
