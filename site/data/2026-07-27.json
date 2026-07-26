@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-27",
+ "scenario": {
+  "title_ja": "水漏れを管理会社に連絡",
+  "title_cn": "漏水报修",
+  "desc": "厨房水龙头漏水，打电话给管理公司报修",
+  "tip": "报修句型「〜から水が漏れていて、止まらないんです」；んです用来强调状况"
+ },
+ "lines": [
+  {
+   "speaker": "住人",
+   "ja": "もしもし、203号室の者ですが。",
+   "ruby": "もしもし、203<ruby>号室<rt>ごうしつ</rt></ruby>の<ruby>者<rt>もの</rt></ruby>ですが。",
+   "en": "Hello, this is the tenant in room 203.",
+   "cn": "喂，我是203室的住户。",
+   "ja_audio": "audio/2026-07-27/ja1.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en1.mp3?g=1785103215"
+  },
+  {
+   "speaker": "担当者",
+   "ja": "はい、いつもお世話になっております。",
+   "ruby": "はい、いつもお<ruby>世話<rt>せわ</rt></ruby>になっております。",
+   "en": "Yes, thank you for calling.",
+   "cn": "您好，承蒙关照。",
+   "ja_audio": "audio/2026-07-27/ja2.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en2.mp3?g=1785103215"
+  },
+  {
+   "speaker": "住人",
+   "ja": "キッチンの蛇口から水が漏れていて、止まらないんです。",
+   "ruby": "キッチンの<ruby>蛇口<rt>じゃぐち</rt></ruby>から<ruby>水<rt>みず</rt></ruby>が<ruby>漏<rt>も</rt></ruby>れていて、<ruby>止<rt>と</rt></ruby>まらないんです。",
+   "en": "The kitchen faucet is leaking, and it won't stop.",
+   "cn": "厨房的水龙头在漏水，止不住。",
+   "ja_audio": "audio/2026-07-27/ja3.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en3.mp3?g=1785103215"
+  },
+  {
+   "speaker": "担当者",
+   "ja": "ご不便をおかけしてすみません。業者を手配します。",
+   "ruby": "ご<ruby>不便<rt>ふべん</rt></ruby>をおかけしてすみません。<ruby>業者<rt>ぎょうしゃ</rt></ruby>を<ruby>手配<rt>てはい</rt></ruby>します。",
+   "en": "Sorry for the inconvenience. We'll arrange a repair company.",
+   "cn": "给您添麻烦了，我们马上安排维修人员。",
+   "ja_audio": "audio/2026-07-27/ja4.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en4.mp3?g=1785103215"
+  },
+  {
+   "speaker": "住人",
+   "ja": "今日中に来てもらえますか？",
+   "ruby": "<ruby>今日中<rt>きょうじゅう</rt></ruby>に<ruby>来<rt>き</rt></ruby>てもらえますか？",
+   "en": "Could someone come today?",
+   "cn": "今天之内能来吗？",
+   "ja_audio": "audio/2026-07-27/ja5.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en5.mp3?g=1785103215"
+  },
+  {
+   "speaker": "担当者",
+   "ja": "午後三時ごろに伺えます。ご在宅ですか？",
+   "ruby": "<ruby>午後<rt>ごご</rt></ruby><ruby>三時<rt>さんじ</rt></ruby>ごろに<ruby>伺<rt>うかが</rt></ruby>えます。ご<ruby>在宅<rt>ざいたく</rt></ruby>ですか？",
+   "en": "We can come around three p.m. Will you be home?",
+   "cn": "下午三点左右可以过去。您在家吗？",
+   "ja_audio": "audio/2026-07-27/ja6.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en6.mp3?g=1785103215"
+  },
+  {
+   "speaker": "住人",
+   "ja": "はい、家にいます。よろしくお願いします。",
+   "ruby": "はい、<ruby>家<rt>いえ</rt></ruby>にいます。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Yes, I'll be home. Thank you.",
+   "cn": "在的，那拜托了。",
+   "ja_audio": "audio/2026-07-27/ja7.mp3?g=1785103215",
+   "en_audio": "audio/2026-07-27/en7.mp3?g=1785103215"
+  }
+ ]
+}
