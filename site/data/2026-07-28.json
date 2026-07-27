@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-28",
+ "scenario": {
+  "title_ja": "居酒屋で乾杯",
+  "title_cn": "居酒屋同事聚会",
+  "desc": "下班和同事去居酒屋，点酒并干杯",
+  "tip": "「とりあえず生」=先来杯生啤（聚会开场固定句）；不喝酒用「控えておきます」婉拒"
+ },
+ "lines": [
+  {
+   "speaker": "店員",
+   "ja": "お飲み物は何になさいますか？",
+   "ruby": "お<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>何<rt>なに</rt></ruby>になさいますか？",
+   "en": "What would you like to drink?",
+   "cn": "请问喝点什么？",
+   "ja_audio": "audio/2026-07-28/ja1.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en1.mp3?g=1785190130"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "とりあえず、生ビールを二つお願いします。",
+   "ruby": "とりあえず、<ruby>生<rt>なま</rt></ruby>ビールを<ruby>二<rt>ふた</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Two draft beers to start, please.",
+   "cn": "先来两杯生啤。",
+   "ja_audio": "audio/2026-07-28/ja2.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en2.mp3?g=1785190130"
+  },
+  {
+   "speaker": "自分",
+   "ja": "すみません、私はウーロン茶で。",
+   "ruby": "すみません、<ruby>私<rt>わたし</rt></ruby>はウーロン<ruby>茶<rt>ちゃ</rt></ruby>で。",
+   "en": "Sorry — I'll have an oolong tea.",
+   "cn": "不好意思，我要乌龙茶。",
+   "ja_audio": "audio/2026-07-28/ja3.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en3.mp3?g=1785190130"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "あれ、今日は飲まないんですか？",
+   "ruby": "あれ、<ruby>今日<rt>きょう</rt></ruby>は<ruby>飲<rt>の</rt></ruby>まないんですか？",
+   "en": "Oh? You're not drinking today?",
+   "cn": "咦，今天不喝吗？",
+   "ja_audio": "audio/2026-07-28/ja4.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en4.mp3?g=1785190130"
+  },
+  {
+   "speaker": "自分",
+   "ja": "明日の朝が早いので、控えておきます。",
+   "ruby": "<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>が<ruby>早<rt>はや</rt></ruby>いので、<ruby>控<rt>ひか</rt></ruby>えておきます。",
+   "en": "I have an early morning tomorrow, so I'll pass this time.",
+   "cn": "明天一早有事，就不喝了。",
+   "ja_audio": "audio/2026-07-28/ja5.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en5.mp3?g=1785190130"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "そうですか。じゃあ、乾杯しましょう！",
+   "ruby": "そうですか。じゃあ、<ruby>乾杯<rt>かんぱい</rt></ruby>しましょう！",
+   "en": "I see. Well then, cheers!",
+   "cn": "这样啊。那，干杯！",
+   "ja_audio": "audio/2026-07-28/ja6.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en6.mp3?g=1785190130"
+  },
+  {
+   "speaker": "自分",
+   "ja": "乾杯！お疲れ様でした！",
+   "ruby": "<ruby>乾杯<rt>かんぱい</rt></ruby>！お<ruby>疲<rt>つか</rt></ruby>れ<ruby>様<rt>さま</rt></ruby>でした！",
+   "en": "Cheers! Great work today!",
+   "cn": "干杯！今天辛苦了！",
+   "ja_audio": "audio/2026-07-28/ja7.mp3?g=1785190130",
+   "en_audio": "audio/2026-07-28/en7.mp3?g=1785190130"
+  }
+ ]
+}
