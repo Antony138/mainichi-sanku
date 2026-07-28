@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-29",
+ "scenario": {
+  "title_ja": "スーパーのレジで",
+  "title_cn": "超市收银台",
+  "desc": "在超市收银台结账",
+  "tip": "收银高频三连问：ポイントカード／レジ袋何枚／お支払い方法，听懂就不慌"
+ },
+ "lines": [
+  {
+   "speaker": "店員",
+   "ja": "ポイントカードはお持ちですか？",
+   "ruby": "ポイントカードはお<ruby>持<rt>も</rt></ruby>ちですか？",
+   "en": "Do you have a point card?",
+   "cn": "有积分卡吗？",
+   "ja_audio": "audio/2026-07-29/ja1.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en1.mp3?g=1785276281"
+  },
+  {
+   "speaker": "客",
+   "ja": "いえ、持っていません。",
+   "ruby": "いえ、<ruby>持<rt>も</rt></ruby>っていません。",
+   "en": "No, I don't.",
+   "cn": "没有。",
+   "ja_audio": "audio/2026-07-29/ja2.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en2.mp3?g=1785276281"
+  },
+  {
+   "speaker": "店員",
+   "ja": "レジ袋は何枚お使いになりますか？",
+   "ruby": "レジ<ruby>袋<rt>ぶくろ</rt></ruby>は<ruby>何枚<rt>なんまい</rt></ruby>お<ruby>使<rt>つか</rt></ruby>いになりますか？",
+   "en": "How many bags would you like?",
+   "cn": "塑料袋需要几个？",
+   "ja_audio": "audio/2026-07-29/ja3.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en3.mp3?g=1785276281"
+  },
+  {
+   "speaker": "客",
+   "ja": "一枚お願いします。",
+   "ruby": "<ruby>一枚<rt>いちまい</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Just one, please.",
+   "cn": "要一个，谢谢。",
+   "ja_audio": "audio/2026-07-29/ja4.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en4.mp3?g=1785276281"
+  },
+  {
+   "speaker": "店員",
+   "ja": "合計で千二百三十円です。",
+   "ruby": "<ruby>合計<rt>ごうけい</rt></ruby>で<ruby>千二百三十円<rt>せんにひゃくさんじゅうえん</rt></ruby>です。",
+   "en": "Your total is 1,230 yen.",
+   "cn": "一共1230日元。",
+   "ja_audio": "audio/2026-07-29/ja5.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en5.mp3?g=1785276281"
+  },
+  {
+   "speaker": "客",
+   "ja": "すみません、これも一緒にお願いします。",
+   "ruby": "すみません、これも<ruby>一緒<rt>いっしょ</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Sorry, could you ring this up too?",
+   "cn": "不好意思，这个也一起结。",
+   "ja_audio": "audio/2026-07-29/ja6.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en6.mp3?g=1785276281"
+  },
+  {
+   "speaker": "店員",
+   "ja": "かしこまりました。お支払いはいかがなさいますか？",
+   "ruby": "かしこまりました。お<ruby>支払<rt>しはら</rt></ruby>いはいかがなさいますか？",
+   "en": "Certainly. How would you like to pay?",
+   "cn": "好的。请问怎么支付？",
+   "ja_audio": "audio/2026-07-29/ja7.mp3?g=1785276281",
+   "en_audio": "audio/2026-07-29/en7.mp3?g=1785276281"
+  }
+ ]
+}
