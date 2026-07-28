@@ -97,10 +97,25 @@
   }
   .card + .card { margin-top: 12px; }
   .scene {
+    display: flex; align-items: center; gap: 10px;
     font-size: 12px; font-weight: 600; letter-spacing: .06em;
-    color: var(--muted); padding: 8px 16px 0;
+    color: var(--muted); padding: 8px 12px 0 16px;
   }
+  .sceneTxt { flex: 1; min-width: 0; }
   .scene b { color: var(--accent-ink); font-weight: 700; }
+
+  /* WIP 标记：把正在重点练的场景收藏起来，顶部导航可一键筛选 */
+  .star {
+    flex: 0 0 auto; display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 9px; border-radius: 13px;
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    font: 700 10px/1 system-ui, sans-serif; letter-spacing: .1em;
+    cursor: pointer; transition: color .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .star svg { display: block; }
+  .star.on { color: var(--accent-ink); background: var(--wash); border-color: var(--accent); }
+  .star.on svg path { fill: currentColor; }
+  .star:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .desc { margin: 2px 0 6px; padding: 0 16px; font-size: 12.5px; color: var(--muted); }
 
   /* 场景对话（新格式）：每句 = 说话人 + 日语行 + 英语行 + 中文 */
@@ -177,9 +192,33 @@
   .compact .row { padding: 10px 16px; }
   .compact .cn { font-size: 12.5px; }
 
+  /* 顶部导航：历史日期 + WIP 筛选，滚动时吸附在顶端 */
+  .topbar {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; align-items: center; gap: 8px;
+    margin: 0 -18px; padding: 6px 14px;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .wipToggle {
+    flex: 0 0 auto; display: inline-flex; align-items: center; gap: 5px;
+    height: 30px; padding: 0 11px; border-radius: 15px;
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    font: 700 11.5px/1 system-ui, sans-serif; letter-spacing: .06em;
+    font-variant-numeric: tabular-nums; cursor: pointer;
+    transition: color .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .wipToggle svg { display: block; }
+  .wipToggle.on { border-color: var(--accent); color: var(--accent-ink); background: var(--wash); }
+  .wipToggle.on svg path { fill: currentColor; }
+  .wipToggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
   .chips {
-    display: flex; gap: 8px; overflow-x: auto; padding: 4px;
-    scrollbar-width: none;
+    flex: 1; min-width: 0; position: relative;
+    display: flex; align-items: center; gap: 8px;
+    overflow-x: auto; padding: 4px;
+    scrollbar-width: none; scroll-behavior: smooth;
   }
   .chips::-webkit-scrollbar { display: none; }
   .datechip {
@@ -189,9 +228,16 @@
     font: 600 12.5px/1 system-ui, sans-serif;
     font-variant-numeric: tabular-nums;
     padding: 8px 12px; cursor: pointer;
+    max-width: 190px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .datechip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .datechip.sel { border-color: var(--accent); color: var(--accent-ink); background: var(--wash); }
+  .datechip.wip::before {
+    content: '★'; margin-right: 4px; font-size: 10px;
+    color: var(--accent-ink); vertical-align: 1px;
+  }
+  .datechip .chipDate { margin-left: 6px; opacity: .6; }
+  .hint { font-size: 12px; color: var(--muted); padding: 8px 2px; white-space: nowrap; }
 
   .bar {
     position: sticky; bottom: 0; margin-top: 4px;
@@ -225,16 +271,16 @@
     <p class="sub">一天一个实用场景 — 点哪句读哪句，日语英语都能点</p>
   </header>
 
+  <nav class="topbar" id="topbar" hidden>
+    <button class="wipToggle" id="btnWip" aria-pressed="false" aria-label="只看 WIP 场景" title="只看 WIP 场景"></button>
+    <div class="chips" id="histChips"></div>
+  </nav>
+
   <main id="main"><div class="loading">加载中…</div></main>
 
   <section id="reviewSec" hidden>
     <h2 class="secTitle">温故 · 间隔复习</h2>
     <div id="reviewBox"></div>
-  </section>
-
-  <section id="histSec" hidden>
-    <h2 class="secTitle">历史</h2>
-    <div class="chips" id="histChips"></div>
   </section>
 
   <div class="bar">
@@ -249,7 +295,9 @@
 
 <script>
   const SPK = '<span class="spk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></span><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>';
+  const star = (n) => `<svg width="${n}" height="${n}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.6 2.55 5.17 5.7.83-4.12 4.02.97 5.68L12 16.6l-5.1 2.68.97-5.68L3.75 9.6l5.7-.83L12 3.6z"/></svg>`;
   const WD = ['周日','周一','周二','周三','周四','周五','周六'];
+  const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
   const player = new Audio();
   player.preservesPitch = true;
@@ -258,6 +306,12 @@
   let rate = 1, loop = false, currentKey = null, currentRow = null, loopTimer = null;
   const dayCache = new Map();
   let dates = [], selected = null, latest = null;
+
+  // WIP：正在重点练习的场景，日期 → 场景标题，存本地
+  const WIP_KEY = 'msk_wip';
+  let wip = new Map(), wipOnly = false;
+  try { wip = new Map(Object.entries(JSON.parse(localStorage.getItem(WIP_KEY) || '{}'))); } catch {}
+  const saveWip = () => { try { localStorage.setItem(WIP_KEY, JSON.stringify(Object.fromEntries(wip))); } catch {} };
 
   const $ = (id) => document.getElementById(id);
 
@@ -288,6 +342,12 @@
     </button>`;
   }
 
+  function starBtn(date, title) {
+    const on = wip.has(date);
+    return `<button class="star${on ? ' on' : ''}" data-date="${date}" data-title="${esc(title)}"
+      aria-pressed="${on}" aria-label="标记为 WIP（正在重点练习）" title="标记为 WIP（正在重点练习）">${star(15)}<span>WIP</span></button>`;
+  }
+
   // 新格式：一天 = 一个场景的连续对话
   function scenarioCard(day, tag) {
     const sc = day.scenario;
@@ -299,7 +359,10 @@
         <p class="cn plain" title="点击显示/隐藏">${l.cn}</p>
       </div>`).join('');
     return `<section class="card">
-      <div class="scene">${tag ? `<b>${tag}</b> · ${sc.title_ja}` : `場面 · <b>${sc.title_ja}</b>`} · ${sc.title_cn}</div>
+      <div class="scene">
+        <span class="sceneTxt">${tag ? `<b>${tag}</b> · ${sc.title_ja}` : `場面 · <b>${sc.title_ja}</b>`} · ${sc.title_cn}</span>
+        ${starBtn(day.date, sc.title_cn || sc.title_ja)}
+      </div>
       ${sc.desc ? `<p class="desc">${sc.desc}</p>` : ''}
       ${lines}
       ${sc.tip ? `<p class="tip">💡 ${sc.tip}</p>` : ''}
@@ -310,7 +373,7 @@
   function legacyCards(day, tag) {
     return day.scenes.map((s) => `
       <section class="card">
-        <div class="scene">${tag ? `<b>${tag}</b> · ` : '场景 · '}${s.scene}</div>
+        <div class="scene"><span class="sceneTxt">${tag ? `<b>${tag}</b> · ` : '场景 · '}${s.scene}</span></div>
         ${rowBtn(s.ja_audio, s.ja, 'ja-JP', 'ja', '日', s.ruby)}
         ${rowBtn(s.en_audio, s.en, 'en-US', 'en', 'EN', s.en)}
         <p class="cn" title="点击显示/隐藏">${s.cn}</p>
@@ -383,6 +446,8 @@
   player.addEventListener('play', () => { player.playbackRate = rate; });
 
   document.addEventListener('click', (e) => {
+    const starEl = e.target.closest('.star');
+    if (starEl) { toggleWip(starEl.dataset.date, starEl.dataset.title); return; }
     const row = e.target.closest('.row');
     if (row) {
       if (queue && !queue.includes(row)) clearQueue();
@@ -429,13 +494,57 @@
     document.querySelectorAll('.cn').forEach((p) => p.classList.remove('peek'));
   });
 
-  function renderChips() {
-    $('histChips').innerHTML = [...dates].reverse().map((d) => {
-      const [, m, dd] = d.split('-');
-      return `<button class="datechip${d === selected ? ' sel' : ''}" data-date="${d}">${+m}/${+dd}</button>`;
-    }).join('');
-    $('histSec').hidden = dates.length < 2;
+  function toggleWip(date, title) {
+    if (wip.has(date)) wip.delete(date);
+    else wip.set(date, title || date);
+    saveWip();
+    syncStars();
+    renderChips();
   }
+
+  function syncStars() {
+    document.querySelectorAll('.star').forEach((b) => {
+      const on = wip.has(b.dataset.date);
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+  }
+
+  function renderChips() {
+    const box = $('histChips');
+    $('topbar').hidden = !dates.length;
+    $('btnWip').innerHTML = `${star(14)}WIP${wip.size ? ' ' + wip.size : ''}`;
+    $('btnWip').classList.toggle('on', wipOnly);
+    $('btnWip').setAttribute('aria-pressed', String(wipOnly));
+
+    const list = [...dates].reverse().filter((d) => !wipOnly || wip.has(d));
+    if (wipOnly && !list.length) {
+      box.innerHTML = '<span class="hint">还没有 WIP — 点场景标题右侧的 ★ 标记正在练的场景</span>';
+      return;
+    }
+    box.innerHTML = list.map((d) => {
+      const [, m, dd] = d.split('-');
+      const md = `${+m}/${+dd}`;
+      const label = wipOnly
+        ? `${esc(wip.get(d))}<span class="chipDate">${md}</span>`
+        : md;
+      const cls = (d === selected ? ' sel' : '') + (!wipOnly && wip.has(d) ? ' wip' : '');
+      return `<button class="datechip${cls}" data-date="${d}">${label}</button>`;
+    }).join('');
+    centerChip();
+  }
+
+  // 选中的日期滚进可视区（历史变长后仍能看到自己在哪）
+  function centerChip() {
+    const box = $('histChips');
+    const el = box.querySelector('.sel');
+    if (el) box.scrollLeft = Math.max(0, el.offsetLeft - (box.clientWidth - el.offsetWidth) / 2);
+  }
+
+  $('btnWip').addEventListener('click', () => {
+    wipOnly = !wipOnly;
+    renderChips();
+  });
 
   async function renderReview() {
     const box = $('reviewBox');
