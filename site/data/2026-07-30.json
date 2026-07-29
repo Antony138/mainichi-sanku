@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-30",
+ "scenario": {
+  "title_ja": "タクシーに乗る",
+  "title_cn": "打车",
+  "desc": "打车去东京站，中途指路并要收据",
+  "tip": "上车即用「◯◯までお願いします」；下车「そこで／手前で止めてください」"
+ },
+ "lines": [
+  {
+   "speaker": "運転手",
+   "ja": "どちらまでですか？",
+   "ruby": "どちらまでですか？",
+   "en": "Where to?",
+   "cn": "请问去哪里？",
+   "ja_audio": "audio/2026-07-30/ja1.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en1.mp3?g=1785362511"
+  },
+  {
+   "speaker": "客",
+   "ja": "東京駅までお願いします。",
+   "ruby": "<ruby>東京駅<rt>とうきょうえき</rt></ruby>までお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "To Tokyo Station, please.",
+   "cn": "到东京站，麻烦了。",
+   "ja_audio": "audio/2026-07-30/ja2.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en2.mp3?g=1785362511"
+  },
+  {
+   "speaker": "運転手",
+   "ja": "高速を使いますか？",
+   "ruby": "<ruby>高速<rt>こうそく</rt></ruby>を<ruby>使<rt>つか</rt></ruby>いますか？",
+   "en": "Shall I take the expressway?",
+   "cn": "要走高速吗？",
+   "ja_audio": "audio/2026-07-30/ja3.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en3.mp3?g=1785362511"
+  },
+  {
+   "speaker": "客",
+   "ja": "いえ、下の道で大丈夫です。",
+   "ruby": "いえ、<ruby>下<rt>した</rt></ruby>の<ruby>道<rt>みち</rt></ruby>で<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+   "en": "No, regular roads are fine.",
+   "cn": "不用，走普通道路就行。",
+   "ja_audio": "audio/2026-07-30/ja4.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en4.mp3?g=1785362511"
+  },
+  {
+   "speaker": "客",
+   "ja": "あの信号の手前で止めてください。",
+   "ruby": "あの<ruby>信号<rt>しんごう</rt></ruby>の<ruby>手前<rt>てまえ</rt></ruby>で<ruby>止<rt>と</rt></ruby>めてください。",
+   "en": "Please stop just before that traffic light.",
+   "cn": "请在那个红绿灯前面停车。",
+   "ja_audio": "audio/2026-07-30/ja5.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en5.mp3?g=1785362511"
+  },
+  {
+   "speaker": "運転手",
+   "ja": "かしこまりました。千八百円です。",
+   "ruby": "かしこまりました。<ruby>千八百円<rt>せんはっぴゃくえん</rt></ruby>です。",
+   "en": "Certainly. That'll be 1,800 yen.",
+   "cn": "好的。一共1800日元。",
+   "ja_audio": "audio/2026-07-30/ja6.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en6.mp3?g=1785362511"
+  },
+  {
+   "speaker": "客",
+   "ja": "領収書をお願いします。",
+   "ruby": "<ruby>領収書<rt>りょうしゅうしょ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Could I have a receipt, please?",
+   "cn": "请给我开张收据。",
+   "ja_audio": "audio/2026-07-30/ja7.mp3?g=1785362511",
+   "en_audio": "audio/2026-07-30/en7.mp3?g=1785362511"
+  }
+ ]
+}
