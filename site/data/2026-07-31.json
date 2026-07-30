@@ -1,0 +1,74 @@
+{
+ "date": "2026-07-31",
+ "scenario": {
+  "title_ja": "郵便局で荷物を送る",
+  "title_cn": "邮局寄包裹",
+  "desc": "在邮局往大阪寄包裹",
+  "tip": "寄件必被问「中身は何ですか」；易碎品=割れ物"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "この荷物を大阪まで送りたいんですが。",
+   "ruby": "この<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>大阪<rt>おおさか</rt></ruby>まで<ruby>送<rt>おく</rt></ruby>りたいんですが。",
+   "en": "I'd like to send this package to Osaka.",
+   "cn": "我想把这个包裹寄到大阪。",
+   "ja_audio": "audio/2026-07-31/ja1.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en1.mp3?g=1785449250"
+  },
+  {
+   "speaker": "局員",
+   "ja": "中身は何ですか？",
+   "ruby": "<ruby>中身<rt>なかみ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか？",
+   "en": "What's inside?",
+   "cn": "里面是什么？",
+   "ja_audio": "audio/2026-07-31/ja2.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en2.mp3?g=1785449250"
+  },
+  {
+   "speaker": "客",
+   "ja": "本と服です。割れ物はありません。",
+   "ruby": "<ruby>本<rt>ほん</rt></ruby>と<ruby>服<rt>ふく</rt></ruby>です。<ruby>割<rt>わ</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>はありません。",
+   "en": "Books and clothes. Nothing fragile.",
+   "cn": "书和衣服，没有易碎品。",
+   "ja_audio": "audio/2026-07-31/ja3.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en3.mp3?g=1785449250"
+  },
+  {
+   "speaker": "局員",
+   "ja": "ゆうパックですと、九百円です。",
+   "ruby": "ゆうパックですと、<ruby>九百円<rt>きゅうひゃくえん</rt></ruby>です。",
+   "en": "By Yu-Pack, it would be 900 yen.",
+   "cn": "用邮政包裹的话是900日元。",
+   "ja_audio": "audio/2026-07-31/ja4.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en4.mp3?g=1785449250"
+  },
+  {
+   "speaker": "客",
+   "ja": "どのくらいで着きますか？",
+   "ruby": "どのくらいで<ruby>着<rt>つ</rt></ruby>きますか？",
+   "en": "How long will it take to arrive?",
+   "cn": "多久能到？",
+   "ja_audio": "audio/2026-07-31/ja5.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en5.mp3?g=1785449250"
+  },
+  {
+   "speaker": "局員",
+   "ja": "明日の午後には届きますよ。",
+   "ruby": "<ruby>明日<rt>あす</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>には<ruby>届<rt>とど</rt></ruby>きますよ。",
+   "en": "It should arrive by tomorrow afternoon.",
+   "cn": "明天下午就能送到。",
+   "ja_audio": "audio/2026-07-31/ja6.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en6.mp3?g=1785449250"
+  },
+  {
+   "speaker": "客",
+   "ja": "じゃあ、それでお願いします。",
+   "ruby": "じゃあ、それでお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Then I'll go with that, please.",
+   "cn": "那就这样寄吧。",
+   "ja_audio": "audio/2026-07-31/ja7.mp3?g=1785449250",
+   "en_audio": "audio/2026-07-31/en7.mp3?g=1785449250"
+  }
+ ]
+}
