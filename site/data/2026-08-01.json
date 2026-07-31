@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-01",
+ "scenario": {
+  "title_ja": "電話でレストラン予約",
+  "title_cn": "电话订餐厅",
+  "desc": "打电话预约周五晚上的餐厅",
+  "tip": "订位三要素：日期・人数（◯名）・时间；报名字用「名前は◯◯です」"
+ },
+ "lines": [
+  {
+   "speaker": "店員",
+   "ja": "お電話ありがとうございます。レストラン花です。",
+   "ruby": "お<ruby>電話<rt>でんわ</rt></ruby>ありがとうございます。レストラン<ruby>花<rt>はな</rt></ruby>です。",
+   "en": "Thank you for calling. This is Restaurant Hana.",
+   "cn": "感谢来电，这里是花餐厅。",
+   "ja_audio": "audio/2026-08-01/ja1.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en1.mp3?g=1785535619"
+  },
+  {
+   "speaker": "客",
+   "ja": "今週の金曜日、予約をしたいんですが。",
+   "ruby": "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、<ruby>予約<rt>よやく</rt></ruby>をしたいんですが。",
+   "en": "I'd like to make a reservation for this Friday.",
+   "cn": "我想预约这周五的位子。",
+   "ja_audio": "audio/2026-08-01/ja2.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en2.mp3?g=1785535619"
+  },
+  {
+   "speaker": "店員",
+   "ja": "何名様でしょうか？",
+   "ruby": "<ruby>何名様<rt>なんめいさま</rt></ruby>でしょうか？",
+   "en": "For how many people?",
+   "cn": "请问几位？",
+   "ja_audio": "audio/2026-08-01/ja3.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en3.mp3?g=1785535619"
+  },
+  {
+   "speaker": "客",
+   "ja": "二名です。七時からお願いします。",
+   "ruby": "<ruby>二名<rt>にめい</rt></ruby>です。<ruby>七時<rt>しちじ</rt></ruby>からお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Two people, from seven o'clock, please.",
+   "cn": "两位，七点开始。",
+   "ja_audio": "audio/2026-08-01/ja4.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en4.mp3?g=1785535619"
+  },
+  {
+   "speaker": "店員",
+   "ja": "窓側のお席をご用意できますよ。",
+   "ruby": "<ruby>窓側<rt>まどがわ</rt></ruby>のお<ruby>席<rt>せき</rt></ruby>をご<ruby>用意<rt>ようい</rt></ruby>できますよ。",
+   "en": "We can prepare a table by the window for you.",
+   "cn": "可以为您安排靠窗的位子。",
+   "ja_audio": "audio/2026-08-01/ja5.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en5.mp3?g=1785535619"
+  },
+  {
+   "speaker": "客",
+   "ja": "ありがとうございます。名前はリンです。",
+   "ruby": "ありがとうございます。<ruby>名前<rt>なまえ</rt></ruby>はリンです。",
+   "en": "Thank you. The name is Lin.",
+   "cn": "谢谢。我姓林。",
+   "ja_audio": "audio/2026-08-01/ja6.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en6.mp3?g=1785535619"
+  },
+  {
+   "speaker": "店員",
+   "ja": "リン様ですね。お待ちしております。",
+   "ruby": "リン<ruby>様<rt>さま</rt></ruby>ですね。お<ruby>待<rt>ま</rt></ruby>ちしております。",
+   "en": "Noted. We look forward to seeing you.",
+   "cn": "好的，恭候您的光临。",
+   "ja_audio": "audio/2026-08-01/ja7.mp3?g=1785535619",
+   "en_audio": "audio/2026-08-01/en7.mp3?g=1785535619"
+  }
+ ]
+}
