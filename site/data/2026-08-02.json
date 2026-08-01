@@ -1,0 +1,65 @@
+{
+ "date": "2026-08-02",
+ "scenario": {
+  "title_ja": "朝のオフィス雑談",
+  "title_cn": "办公室早上闲聊",
+  "desc": "早上到公司和同事寒暄聊周末",
+  "tip": "「そういえば」是转换话题神器；周末聊天固定问「週末はどうでしたか」"
+ },
+ "lines": [
+  {
+   "speaker": "同僚",
+   "ja": "おはようございます。今日も暑いですね。",
+   "ruby": "おはようございます。<ruby>今日<rt>きょう</rt></ruby>も<ruby>暑<rt>あつ</rt></ruby>いですね。",
+   "en": "Good morning. Hot again today, isn't it?",
+   "cn": "早上好。今天又是好热啊。",
+   "ja_audio": "audio/2026-08-02/ja1.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en1.mp3?g=1785621452"
+  },
+  {
+   "speaker": "自分",
+   "ja": "本当ですね。朝から三十度超えだそうですよ。",
+   "ruby": "<ruby>本当<rt>ほんとう</rt></ruby>ですね。<ruby>朝<rt>あさ</rt></ruby>から<ruby>三十度<rt>さんじゅうど</rt></ruby><ruby>超<rt>ご</rt></ruby>えだそうですよ。",
+   "en": "It really is. I heard it's already over thirty degrees this morning.",
+   "cn": "真的。听说一早就超过30度了。",
+   "ja_audio": "audio/2026-08-02/ja2.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en2.mp3?g=1785621452"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "そういえば、週末はどうでしたか？",
+   "ruby": "そういえば、<ruby>週末<rt>しゅうまつ</rt></ruby>はどうでしたか？",
+   "en": "By the way, how was your weekend?",
+   "cn": "对了，周末过得怎么样？",
+   "ja_audio": "audio/2026-08-02/ja3.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en3.mp3?g=1785621452"
+  },
+  {
+   "speaker": "自分",
+   "ja": "家族と鎌倉に行ってきました。",
+   "ruby": "<ruby>家族<rt>かぞく</rt></ruby>と<ruby>鎌倉<rt>かまくら</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってきました。",
+   "en": "I went to Kamakura with my family.",
+   "cn": "和家人去了趟镰仓。",
+   "ja_audio": "audio/2026-08-02/ja4.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en4.mp3?g=1785621452"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "いいですね！混んでいましたか？",
+   "ruby": "いいですね！<ruby>混<rt>こ</rt></ruby>んでいましたか？",
+   "en": "Nice! Was it crowded?",
+   "cn": "真不错！人多吗？",
+   "ja_audio": "audio/2026-08-02/ja5.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en5.mp3?g=1785621452"
+  },
+  {
+   "speaker": "自分",
+   "ja": "すごい人でした。でも海がきれいでしたよ。",
+   "ruby": "すごい<ruby>人<rt>ひと</rt></ruby>でした。でも<ruby>海<rt>うみ</rt></ruby>がきれいでしたよ。",
+   "en": "It was packed. But the ocean was beautiful.",
+   "cn": "人山人海。不过海很漂亮。",
+   "ja_audio": "audio/2026-08-02/ja6.mp3?g=1785621452",
+   "en_audio": "audio/2026-08-02/en6.mp3?g=1785621452"
+  }
+ ]
+}
