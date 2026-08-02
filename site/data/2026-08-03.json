@@ -1,0 +1,65 @@
+{
+ "date": "2026-08-03",
+ "scenario": {
+  "title_ja": "会議で意見を言う",
+  "title_cn": "会议上表达意见",
+  "desc": "在会议上先表示赞成、再委婉提出顾虑",
+  "tip": "先「賛成です」再「ただ、一つ気になる点が」——日式委婉反对的模板"
+ },
+ "lines": [
+  {
+   "speaker": "上司",
+   "ja": "この件について、何か意見はありますか？",
+   "ruby": "この<ruby>件<rt>けん</rt></ruby>について、<ruby>何<rt>なに</rt></ruby>か<ruby>意見<rt>いけん</rt></ruby>はありますか？",
+   "en": "Does anyone have any opinions on this matter?",
+   "cn": "关于这件事，大家有什么意见吗？",
+   "ja_audio": "audio/2026-08-03/ja1.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en1.mp3?g=1785707856"
+  },
+  {
+   "speaker": "自分",
+   "ja": "はい。基本的には賛成です。",
+   "ruby": "はい。<ruby>基本的<rt>きほんてき</rt></ruby>には<ruby>賛成<rt>さんせい</rt></ruby>です。",
+   "en": "Yes. Basically, I'm in favor.",
+   "cn": "有。基本上我是赞成的。",
+   "ja_audio": "audio/2026-08-03/ja2.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en2.mp3?g=1785707856"
+  },
+  {
+   "speaker": "自分",
+   "ja": "ただ、一つ気になる点があります。",
+   "ruby": "ただ、<ruby>一<rt>ひと</rt></ruby>つ<ruby>気<rt>き</rt></ruby>になる<ruby>点<rt>てん</rt></ruby>があります。",
+   "en": "However, there's one thing that concerns me.",
+   "cn": "不过，有一点让我有些在意。",
+   "ja_audio": "audio/2026-08-03/ja3.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en3.mp3?g=1785707856"
+  },
+  {
+   "speaker": "上司",
+   "ja": "どうぞ、続けてください。",
+   "ruby": "どうぞ、<ruby>続<rt>つづ</rt></ruby>けてください。",
+   "en": "Please, go on.",
+   "cn": "请继续说。",
+   "ja_audio": "audio/2026-08-03/ja4.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en4.mp3?g=1785707856"
+  },
+  {
+   "speaker": "自分",
+   "ja": "スケジュールが少し厳しいと思います。",
+   "ruby": "スケジュールが<ruby>少<rt>すこ</rt></ruby>し<ruby>厳<rt>きび</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>います。",
+   "en": "I think the schedule is a bit tight.",
+   "cn": "我觉得日程安排有点紧。",
+   "ja_audio": "audio/2026-08-03/ja5.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en5.mp3?g=1785707856"
+  },
+  {
+   "speaker": "上司",
+   "ja": "なるほど。では、もう一度見直しましょう。",
+   "ruby": "なるほど。では、もう<ruby>一度<rt>いちど</rt></ruby><ruby>見直<rt>みなお</rt></ruby>しましょう。",
+   "en": "I see. Then let's review it once more.",
+   "cn": "有道理。那我们再重新过一遍吧。",
+   "ja_audio": "audio/2026-08-03/ja6.mp3?g=1785707856",
+   "en_audio": "audio/2026-08-03/en6.mp3?g=1785707856"
+  }
+ ]
+}
