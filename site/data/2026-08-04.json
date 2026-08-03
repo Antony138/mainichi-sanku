@@ -1,0 +1,65 @@
+{
+ "date": "2026-08-04",
+ "scenario": {
+  "title_ja": "同僚とランチへ",
+  "title_cn": "和同事去午餐",
+  "desc": "中午和同事商量去哪吃饭",
+  "tip": "「そろそろ〜ませんか」=差不多该…了吧；「らしい」=听说"
+ },
+ "lines": [
+  {
+   "speaker": "同僚",
+   "ja": "そろそろお昼に行きませんか？",
+   "ruby": "そろそろお<ruby>昼<rt>ひる</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか？",
+   "en": "Shall we head to lunch soon?",
+   "cn": "差不多该去吃午饭了吧？",
+   "ja_audio": "audio/2026-08-04/ja1.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en1.mp3?g=1785794992"
+  },
+  {
+   "speaker": "自分",
+   "ja": "いいですね。今日は何にしましょうか？",
+   "ruby": "いいですね。<ruby>今日<rt>きょう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>にしましょうか？",
+   "en": "Sounds good. What should we have today?",
+   "cn": "好啊。今天吃什么呢？",
+   "ja_audio": "audio/2026-08-04/ja2.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en2.mp3?g=1785794992"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "駅前に新しいそば屋ができたらしいですよ。",
+   "ruby": "<ruby>駅前<rt>えきまえ</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しいそば<ruby>屋<rt>や</rt></ruby>ができたらしいですよ。",
+   "en": "Apparently a new soba place opened up by the station.",
+   "cn": "听说站前新开了一家荞麦面店。",
+   "ja_audio": "audio/2026-08-04/ja3.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en3.mp3?g=1785794992"
+  },
+  {
+   "speaker": "自分",
+   "ja": "へえ、行ってみたいです。混む前に出ましょう。",
+   "ruby": "へえ、<ruby>行<rt>い</rt></ruby>ってみたいです。<ruby>混<rt>こ</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>に<ruby>出<rt>で</rt></ruby>ましょう。",
+   "en": "Oh, I'd like to try it. Let's leave before it gets crowded.",
+   "cn": "是嘛，想去试试。趁人多之前出发吧。",
+   "ja_audio": "audio/2026-08-04/ja4.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en4.mp3?g=1785794992"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "そうですね。十二時前なら入れると思います。",
+   "ruby": "そうですね。<ruby>十二時前<rt>じゅうにじまえ</rt></ruby>なら<ruby>入<rt>はい</rt></ruby>れると<ruby>思<rt>おも</rt></ruby>います。",
+   "en": "Right. I think we can get in if we go before noon.",
+   "cn": "对。十二点前去的话应该能进。",
+   "ja_audio": "audio/2026-08-04/ja5.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en5.mp3?g=1785794992"
+  },
+  {
+   "speaker": "自分",
+   "ja": "じゃあ、先にエレベーターの前で待っていますね。",
+   "ruby": "じゃあ、<ruby>先<rt>さき</rt></ruby>にエレベーターの<ruby>前<rt>まえ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>っていますね。",
+   "en": "Then I'll wait for you by the elevator.",
+   "cn": "那我先在电梯口等你。",
+   "ja_audio": "audio/2026-08-04/ja6.mp3?g=1785794992",
+   "en_audio": "audio/2026-08-04/en6.mp3?g=1785794992"
+  }
+ ]
+}
