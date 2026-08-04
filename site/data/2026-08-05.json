@@ -1,0 +1,65 @@
+{
+ "date": "2026-08-05",
+ "scenario": {
+  "title_ja": "体調不良で休む連絡",
+  "title_cn": "请病假电话",
+  "desc": "发烧了，一早打电话向上司请假",
+  "tip": "请假固定句「お休みをいただけますか」；上司回「無理しないで」=别硬撑"
+ },
+ "lines": [
+  {
+   "speaker": "自分",
+   "ja": "おはようございます。朝早くにすみません。",
+   "ruby": "おはようございます。<ruby>朝早<rt>あさはや</rt></ruby>くにすみません。",
+   "en": "Good morning. Sorry to call so early.",
+   "cn": "早上好。一大早打扰您了。",
+   "ja_audio": "audio/2026-08-05/ja1.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en1.mp3?g=1785881606"
+  },
+  {
+   "speaker": "上司",
+   "ja": "おはようございます。どうしましたか？",
+   "ruby": "おはようございます。どうしましたか？",
+   "en": "Good morning. What's the matter?",
+   "cn": "早上好。怎么了？",
+   "ja_audio": "audio/2026-08-05/ja2.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en2.mp3?g=1785881606"
+  },
+  {
+   "speaker": "自分",
+   "ja": "昨夜から熱が出てしまって。",
+   "ruby": "<ruby>昨夜<rt>ゆうべ</rt></ruby>から<ruby>熱<rt>ねつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てしまって。",
+   "en": "I've had a fever since last night.",
+   "cn": "从昨晚开始发烧了。",
+   "ja_audio": "audio/2026-08-05/ja3.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en3.mp3?g=1785881606"
+  },
+  {
+   "speaker": "自分",
+   "ja": "申し訳ありませんが、今日はお休みをいただけますか？",
+   "ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんが、<ruby>今日<rt>きょう</rt></ruby>はお<ruby>休<rt>やす</rt></ruby>みをいただけますか？",
+   "en": "I'm very sorry, but could I take today off?",
+   "cn": "非常抱歉，今天能让我请一天假吗？",
+   "ja_audio": "audio/2026-08-05/ja4.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en4.mp3?g=1785881606"
+  },
+  {
+   "speaker": "上司",
+   "ja": "分かりました。無理しないでください。",
+   "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。<ruby>無理<rt>むり</rt></ruby>しないでください。",
+   "en": "Understood. Don't push yourself.",
+   "cn": "知道了。别硬撑。",
+   "ja_audio": "audio/2026-08-05/ja5.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en5.mp3?g=1785881606"
+  },
+  {
+   "speaker": "自分",
+   "ja": "ありがとうございます。明日には出られると思います。",
+   "ruby": "ありがとうございます。<ruby>明日<rt>あした</rt></ruby>には<ruby>出<rt>で</rt></ruby>られると<ruby>思<rt>おも</rt></ruby>います。",
+   "en": "Thank you. I think I'll be able to come in tomorrow.",
+   "cn": "谢谢。我想明天应该能上班。",
+   "ja_audio": "audio/2026-08-05/ja6.mp3?g=1785881606",
+   "en_audio": "audio/2026-08-05/en6.mp3?g=1785881606"
+  }
+ ]
+}
