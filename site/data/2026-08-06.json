@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-06",
+ "scenario": {
+  "title_ja": "ジムの見学と入会",
+  "title_cn": "健身房参观入会",
+  "desc": "参观健身房，问清月费后当场入会",
+  "tip": "参观=見学；月费=月会費（げっかいひ）；免费出借=無料で貸し出し"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "すみません、入会を考えているんですが、見学できますか？",
+   "ruby": "すみません、<ruby>入会<rt>にゅうかい</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えているんですが、<ruby>見学<rt>けんがく</rt></ruby>できますか？",
+   "en": "Excuse me, I'm thinking of joining — could I take a look around?",
+   "cn": "不好意思，我在考虑入会，可以先参观一下吗？",
+   "ja_audio": "audio/2026-08-06/ja1.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en1.mp3?g=1785967995"
+  },
+  {
+   "speaker": "スタッフ",
+   "ja": "もちろんです。ご案内しますね。",
+   "ruby": "もちろんです。ご<ruby>案内<rt>あんない</rt></ruby>しますね。",
+   "en": "Of course. Let me show you around.",
+   "cn": "当然可以。我带您看看。",
+   "ja_audio": "audio/2026-08-06/ja2.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en2.mp3?g=1785967995"
+  },
+  {
+   "speaker": "客",
+   "ja": "月会費はいくらですか？",
+   "ruby": "<ruby>月会費<rt>げっかいひ</rt></ruby>はいくらですか？",
+   "en": "How much is the monthly fee?",
+   "cn": "月费是多少？",
+   "ja_audio": "audio/2026-08-06/ja3.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en3.mp3?g=1785967995"
+  },
+  {
+   "speaker": "スタッフ",
+   "ja": "月八千円で、二十四時間使えます。",
+   "ruby": "<ruby>月<rt>つき</rt></ruby><ruby>八千円<rt>はっせんえん</rt></ruby>で、<ruby>二十四時間<rt>にじゅうよじかん</rt></ruby><ruby>使<rt>つか</rt></ruby>えます。",
+   "en": "It's 8,000 yen a month, and you can use it twenty-four hours.",
+   "cn": "每月8000日元，24小时都能用。",
+   "ja_audio": "audio/2026-08-06/ja4.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en4.mp3?g=1785967995"
+  },
+  {
+   "speaker": "客",
+   "ja": "タオルは借りられますか？",
+   "ruby": "タオルは<ruby>借<rt>か</rt></ruby>りられますか？",
+   "en": "Can I rent towels?",
+   "cn": "毛巾可以借吗？",
+   "ja_audio": "audio/2026-08-06/ja5.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en5.mp3?g=1785967995"
+  },
+  {
+   "speaker": "スタッフ",
+   "ja": "はい、無料で貸し出していますよ。",
+   "ruby": "はい、<ruby>無料<rt>むりょう</rt></ruby>で<ruby>貸<rt>か</rt></ruby>し<ruby>出<rt>だ</rt></ruby>していますよ。",
+   "en": "Yes, we lend them out for free.",
+   "cn": "可以，免费出借。",
+   "ja_audio": "audio/2026-08-06/ja6.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en6.mp3?g=1785967995"
+  },
+  {
+   "speaker": "客",
+   "ja": "いいですね。今日、申し込めますか？",
+   "ruby": "いいですね。<ruby>今日<rt>きょう</rt></ruby>、<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>めますか？",
+   "en": "Great. Can I sign up today?",
+   "cn": "不错。今天就能办入会吗？",
+   "ja_audio": "audio/2026-08-06/ja7.mp3?g=1785967995",
+   "en_audio": "audio/2026-08-06/en7.mp3?g=1785967995"
+  }
+ ]
+}
