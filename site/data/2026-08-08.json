@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-08",
+ "scenario": {
+  "title_ja": "新幹線の切符を買う",
+  "title_cn": "买新干线车票",
+  "desc": "在绿色窗口买去大阪的新干线车票",
+  "tip": "指定席／自由席、往復／片道——买票必选的两组词"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "大阪まで、新幹線の切符をお願いします。",
+   "ruby": "<ruby>大阪<rt>おおさか</rt></ruby>まで、<ruby>新幹線<rt>しんかんせん</rt></ruby>の<ruby>切符<rt>きっぷ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "A Shinkansen ticket to Osaka, please.",
+   "cn": "请给我一张到大阪的新干线车票。",
+   "ja_audio": "audio/2026-08-08/ja1.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en1.mp3?g=1786138782"
+  },
+  {
+   "speaker": "係員",
+   "ja": "いつご出発ですか？",
+   "ruby": "いつご<ruby>出発<rt>しゅっぱつ</rt></ruby>ですか？",
+   "en": "When will you be departing?",
+   "cn": "什么时候出发？",
+   "ja_audio": "audio/2026-08-08/ja2.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en2.mp3?g=1786138782"
+  },
+  {
+   "speaker": "客",
+   "ja": "土曜日の朝、九時ごろの列車で。",
+   "ruby": "<ruby>土曜日<rt>どようび</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>九時<rt>くじ</rt></ruby>ごろの<ruby>列車<rt>れっしゃ</rt></ruby>で。",
+   "en": "Saturday morning — a train around nine.",
+   "cn": "周六早上，九点左右的车。",
+   "ja_audio": "audio/2026-08-08/ja3.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en3.mp3?g=1786138782"
+  },
+  {
+   "speaker": "係員",
+   "ja": "指定席と自由席、どちらになさいますか？",
+   "ruby": "<ruby>指定席<rt>していせき</rt></ruby>と<ruby>自由席<rt>じゆうせき</rt></ruby>、どちらになさいますか？",
+   "en": "Would you like a reserved seat or a non-reserved seat?",
+   "cn": "指定席和自由席，您要哪种？",
+   "ja_audio": "audio/2026-08-08/ja4.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en4.mp3?g=1786138782"
+  },
+  {
+   "speaker": "客",
+   "ja": "指定席で、窓側をお願いします。",
+   "ruby": "<ruby>指定席<rt>していせき</rt></ruby>で、<ruby>窓側<rt>まどがわ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "A reserved seat by the window, please.",
+   "cn": "指定席，要靠窗的。",
+   "ja_audio": "audio/2026-08-08/ja5.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en5.mp3?g=1786138782"
+  },
+  {
+   "speaker": "係員",
+   "ja": "往復になさいますか？",
+   "ruby": "<ruby>往復<rt>おうふく</rt></ruby>になさいますか？",
+   "en": "Will that be a round trip?",
+   "cn": "要买往返吗？",
+   "ja_audio": "audio/2026-08-08/ja6.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en6.mp3?g=1786138782"
+  },
+  {
+   "speaker": "客",
+   "ja": "いえ、片道で大丈夫です。",
+   "ruby": "いえ、<ruby>片道<rt>かたみち</rt></ruby>で<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。",
+   "en": "No, one way is fine.",
+   "cn": "不用，单程就好。",
+   "ja_audio": "audio/2026-08-08/ja7.mp3?g=1786138782",
+   "en_audio": "audio/2026-08-08/en7.mp3?g=1786138782"
+  }
+ ]
+}
