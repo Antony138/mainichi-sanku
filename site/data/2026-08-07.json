@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-07",
+ "scenario": {
+  "title_ja": "ホテルのチェックイン",
+  "title_cn": "酒店入住",
+  "desc": "在酒店前台办理入住",
+  "tip": "「予約した◯◯です」报名字即可；拝見=「看」的谦让语"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "チェックインをお願いします。予約したリンです。",
+   "ruby": "チェックインをお<ruby>願<rt>ねが</rt></ruby>いします。<ruby>予約<rt>よやく</rt></ruby>したリンです。",
+   "en": "I'd like to check in. I have a reservation under Lin.",
+   "cn": "我要办理入住。我姓林，有预约。",
+   "ja_audio": "audio/2026-08-07/ja1.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en1.mp3?g=1786064455"
+  },
+  {
+   "speaker": "フロント",
+   "ja": "ご予約、確認できました。パスポートを拝見できますか？",
+   "ruby": "ご<ruby>予約<rt>よやく</rt></ruby>、<ruby>確認<rt>かくにん</rt></ruby>できました。パスポートを<ruby>拝見<rt>はいけん</rt></ruby>できますか？",
+   "en": "I've found your reservation. May I see your passport?",
+   "cn": "已确认到您的预约。可以看一下您的护照吗？",
+   "ja_audio": "audio/2026-08-07/ja2.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en2.mp3?g=1786064455"
+  },
+  {
+   "speaker": "客",
+   "ja": "はい、どうぞ。",
+   "ruby": "はい、どうぞ。",
+   "en": "Yes, here you are.",
+   "cn": "好的，给您。",
+   "ja_audio": "audio/2026-08-07/ja3.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en3.mp3?g=1786064455"
+  },
+  {
+   "speaker": "フロント",
+   "ja": "朝食は七時から、二階のレストランです。",
+   "ruby": "<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>七時<rt>しちじ</rt></ruby>から、<ruby>二階<rt>にかい</rt></ruby>のレストランです。",
+   "en": "Breakfast is from seven o'clock at the restaurant on the second floor.",
+   "cn": "早餐七点开始，在二楼餐厅。",
+   "ja_audio": "audio/2026-08-07/ja4.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en4.mp3?g=1786064455"
+  },
+  {
+   "speaker": "客",
+   "ja": "チェックアウトは何時ですか？",
+   "ruby": "チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？",
+   "en": "What time is checkout?",
+   "cn": "退房是几点？",
+   "ja_audio": "audio/2026-08-07/ja5.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en5.mp3?g=1786064455"
+  },
+  {
+   "speaker": "フロント",
+   "ja": "十一時でございます。お部屋は八階です。",
+   "ruby": "<ruby>十一時<rt>じゅういちじ</rt></ruby>でございます。お<ruby>部屋<rt>へや</rt></ruby>は<ruby>八階<rt>はっかい</rt></ruby>です。",
+   "en": "Eleven o'clock. Your room is on the eighth floor.",
+   "cn": "十一点。您的房间在八楼。",
+   "ja_audio": "audio/2026-08-07/ja6.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en6.mp3?g=1786064455"
+  },
+  {
+   "speaker": "客",
+   "ja": "ありがとうございます。",
+   "ruby": "ありがとうございます。",
+   "en": "Thank you very much.",
+   "cn": "谢谢。",
+   "ja_audio": "audio/2026-08-07/ja7.mp3?g=1786064455",
+   "en_audio": "audio/2026-08-07/en7.mp3?g=1786064455"
+  }
+ ]
+}
