@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-09",
+ "scenario": {
+  "title_ja": "駅で忘れ物を探す",
+  "title_cn": "车站找失物",
+  "desc": "把伞忘在电车上，到车站窗口求助",
+  "tip": "丢东西句型「〜に◯◯を忘れてしまいました」；てしまう带懊悔语气"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "すみません、電車に傘を忘れてしまいました。",
+   "ruby": "すみません、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>傘<rt>かさ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れてしまいました。",
+   "en": "Excuse me, I left my umbrella on the train.",
+   "cn": "不好意思，我把伞忘在电车上了。",
+   "ja_audio": "audio/2026-08-09/ja1.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en1.mp3?g=1786224670"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "何線の電車ですか？",
+   "ruby": "<ruby>何線<rt>なにせん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>ですか？",
+   "en": "Which line was it?",
+   "cn": "是哪条线的电车？",
+   "ja_audio": "audio/2026-08-09/ja2.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en2.mp3?g=1786224670"
+  },
+  {
+   "speaker": "客",
+   "ja": "中央線です。十分ほど前に降りました。",
+   "ruby": "<ruby>中央線<rt>ちゅうおうせん</rt></ruby>です。<ruby>十分<rt>じゅっぷん</rt></ruby>ほど<ruby>前<rt>まえ</rt></ruby>に<ruby>降<rt>お</rt></ruby>りました。",
+   "en": "The Chuo Line. I got off about ten minutes ago.",
+   "cn": "中央线。大概十分钟前下的车。",
+   "ja_audio": "audio/2026-08-09/ja3.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en3.mp3?g=1786224670"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "どんな傘か教えていただけますか？",
+   "ruby": "どんな<ruby>傘<rt>かさ</rt></ruby>か<ruby>教<rt>おし</rt></ruby>えていただけますか？",
+   "en": "Could you tell me what the umbrella looks like?",
+   "cn": "能描述一下是什么样的伞吗？",
+   "ja_audio": "audio/2026-08-09/ja4.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en4.mp3?g=1786224670"
+  },
+  {
+   "speaker": "客",
+   "ja": "紺色の折りたたみ傘です。",
+   "ruby": "<ruby>紺色<rt>こんいろ</rt></ruby>の<ruby>折<rt>お</rt></ruby>りたたみ<ruby>傘<rt>がさ</rt></ruby>です。",
+   "en": "It's a navy-blue folding umbrella.",
+   "cn": "是深蓝色的折叠伞。",
+   "ja_audio": "audio/2026-08-09/ja5.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en5.mp3?g=1786224670"
+  },
+  {
+   "speaker": "駅員",
+   "ja": "確認しますので、少々お待ちください。",
+   "ruby": "<ruby>確認<rt>かくにん</rt></ruby>しますので、<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。",
+   "en": "I'll check for you — one moment, please.",
+   "cn": "我帮您查一下，请稍等。",
+   "ja_audio": "audio/2026-08-09/ja6.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en6.mp3?g=1786224670"
+  },
+  {
+   "speaker": "客",
+   "ja": "よろしくお願いします。",
+   "ruby": "よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "Thank you, I appreciate it.",
+   "cn": "拜托您了。",
+   "ja_audio": "audio/2026-08-09/ja7.mp3?g=1786224670",
+   "en_audio": "audio/2026-08-09/en7.mp3?g=1786224670"
+  }
+ ]
+}
