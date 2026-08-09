@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-10",
+ "scenario": {
+  "title_ja": "服屋で試着",
+  "title_cn": "服装店试穿",
+  "desc": "在服装店试穿并换尺码",
+  "tip": "「試着してもいいですか」；试完店员必问「サイズはいかがですか」"
+ },
+ "lines": [
+  {
+   "speaker": "客",
+   "ja": "すみません、これ、試着してもいいですか？",
+   "ruby": "すみません、これ、<ruby>試着<rt>しちゃく</rt></ruby>してもいいですか？",
+   "en": "Excuse me, may I try this on?",
+   "cn": "不好意思，这件可以试穿吗？",
+   "ja_audio": "audio/2026-08-10/ja1.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en1.mp3?g=1786311181"
+  },
+  {
+   "speaker": "店員",
+   "ja": "はい、どうぞ。試着室はこちらです。",
+   "ruby": "はい、どうぞ。<ruby>試着室<rt>しちゃくしつ</rt></ruby>はこちらです。",
+   "en": "Of course. The fitting room is right this way.",
+   "cn": "可以，请。试衣间在这边。",
+   "ja_audio": "audio/2026-08-10/ja2.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en2.mp3?g=1786311181"
+  },
+  {
+   "speaker": "客",
+   "ja": "ちょっと小さいですね。Lサイズはありますか？",
+   "ruby": "ちょっと<ruby>小<rt>ちい</rt></ruby>さいですね。Lサイズはありますか？",
+   "en": "It's a bit small. Do you have a large?",
+   "cn": "有点小。有L码的吗？",
+   "ja_audio": "audio/2026-08-10/ja3.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en3.mp3?g=1786311181"
+  },
+  {
+   "speaker": "店員",
+   "ja": "お持ちしますね。色は黒でよろしいですか？",
+   "ruby": "お<ruby>持<rt>も</rt></ruby>ちしますね。<ruby>色<rt>いろ</rt></ruby>は<ruby>黒<rt>くろ</rt></ruby>でよろしいですか？",
+   "en": "I'll bring one. Is black okay?",
+   "cn": "我去拿。颜色还是黑色可以吗？",
+   "ja_audio": "audio/2026-08-10/ja4.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en4.mp3?g=1786311181"
+  },
+  {
+   "speaker": "客",
+   "ja": "白もあれば、見せてください。",
+   "ruby": "<ruby>白<rt>しろ</rt></ruby>もあれば、<ruby>見<rt>み</rt></ruby>せてください。",
+   "en": "If you have it in white too, please show me.",
+   "cn": "如果有白色的话，也给我看看。",
+   "ja_audio": "audio/2026-08-10/ja5.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en5.mp3?g=1786311181"
+  },
+  {
+   "speaker": "店員",
+   "ja": "サイズはいかがですか？",
+   "ruby": "サイズはいかがですか？",
+   "en": "How does the size feel?",
+   "cn": "尺码怎么样？",
+   "ja_audio": "audio/2026-08-10/ja6.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en6.mp3?g=1786311181"
+  },
+  {
+   "speaker": "客",
+   "ja": "ぴったりです。これをください。",
+   "ruby": "ぴったりです。これをください。",
+   "en": "It fits perfectly. I'll take this one.",
+   "cn": "正合适。就要这件了。",
+   "ja_audio": "audio/2026-08-10/ja7.mp3?g=1786311181",
+   "en_audio": "audio/2026-08-10/en7.mp3?g=1786311181"
+  }
+ ]
+}
