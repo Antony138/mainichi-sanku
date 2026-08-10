@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-11",
+ "scenario": {
+  "title_ja": "歯医者の予約電話",
+  "title_cn": "电话约牙医",
+  "desc": "打电话第一次预约牙医",
+  "tip": "「しみる」=（冷热刺激）酸痛敏感；电话预约先说「初めてなんですが」"
+ },
+ "lines": [
+  {
+   "speaker": "受付",
+   "ja": "はい、さくら歯科です。",
+   "ruby": "はい、さくら<ruby>歯科<rt>しか</rt></ruby>です。",
+   "en": "Hello, Sakura Dental Clinic.",
+   "cn": "您好，樱花牙科。",
+   "ja_audio": "audio/2026-08-11/ja1.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en1.mp3?g=1786398119"
+  },
+  {
+   "speaker": "患者",
+   "ja": "初めてなんですが、予約をお願いしたいです。",
+   "ruby": "<ruby>初<rt>はじ</rt></ruby>めてなんですが、<ruby>予約<rt>よやく</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いしたいです。",
+   "en": "I'm a first-time patient, and I'd like to make an appointment.",
+   "cn": "我是第一次看诊，想预约一下。",
+   "ja_audio": "audio/2026-08-11/ja2.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en2.mp3?g=1786398119"
+  },
+  {
+   "speaker": "受付",
+   "ja": "ありがとうございます。どうされましたか？",
+   "ruby": "ありがとうございます。どうされましたか？",
+   "en": "Thank you. What seems to be the problem?",
+   "cn": "好的。请问哪里不舒服？",
+   "ja_audio": "audio/2026-08-11/ja3.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en3.mp3?g=1786398119"
+  },
+  {
+   "speaker": "患者",
+   "ja": "右の奥歯が、冷たい物でしみるんです。",
+   "ruby": "<ruby>右<rt>みぎ</rt></ruby>の<ruby>奥歯<rt>おくば</rt></ruby>が、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>物<rt>もの</rt></ruby>でしみるんです。",
+   "en": "One of my back teeth on the right hurts when I have something cold.",
+   "cn": "右边的后槽牙，一碰冷的就酸疼。",
+   "ja_audio": "audio/2026-08-11/ja4.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en4.mp3?g=1786398119"
+  },
+  {
+   "speaker": "受付",
+   "ja": "来週の火曜日、十八時はいかがですか？",
+   "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>火曜日<rt>かようび</rt></ruby>、<ruby>十八時<rt>じゅうはちじ</rt></ruby>はいかがですか？",
+   "en": "How about next Tuesday at six p.m.?",
+   "cn": "下周二晚上六点方便吗？",
+   "ja_audio": "audio/2026-08-11/ja5.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en5.mp3?g=1786398119"
+  },
+  {
+   "speaker": "患者",
+   "ja": "大丈夫です。よろしくお願いします。",
+   "ruby": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。よろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "That works. Thank you very much.",
+   "cn": "可以。那就拜托了。",
+   "ja_audio": "audio/2026-08-11/ja6.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en6.mp3?g=1786398119"
+  },
+  {
+   "speaker": "受付",
+   "ja": "では、保険証をお持ちください。",
+   "ruby": "では、<ruby>保険証<rt>ほけんしょう</rt></ruby>をお<ruby>持<rt>も</rt></ruby>ちください。",
+   "en": "Please bring your insurance card with you.",
+   "cn": "那请当天带好保险证。",
+   "ja_audio": "audio/2026-08-11/ja7.mp3?g=1786398119",
+   "en_audio": "audio/2026-08-11/en7.mp3?g=1786398119"
+  }
+ ]
+}
