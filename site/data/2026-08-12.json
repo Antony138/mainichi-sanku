@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-12",
+ "scenario": {
+  "title_ja": "引っ越しの挨拶",
+  "title_cn": "搬家后拜访邻居",
+  "desc": "搬家后带小礼物拜访隔壁邻居",
+  "tip": "搬家问候送小礼说「ほんの気持ちですが」；顺便问清 ゴミ出し 规则最实用"
+ },
+ "lines": [
+  {
+   "speaker": "自分",
+   "ja": "すみません、隣の302号室に越してきた者です。",
+   "ruby": "すみません、<ruby>隣<rt>となり</rt></ruby>の302<ruby>号室<rt>ごうしつ</rt></ruby>に<ruby>越<rt>こ</rt></ruby>してきた<ruby>者<rt>もの</rt></ruby>です。",
+   "en": "Hello, I just moved in next door, in room 302.",
+   "cn": "您好，我是刚搬到隔壁302室的。",
+   "ja_audio": "audio/2026-08-12/ja1.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en1.mp3?g=1786484984"
+  },
+  {
+   "speaker": "隣人",
+   "ja": "ああ、ご丁寧にどうも。",
+   "ruby": "ああ、ご<ruby>丁寧<rt>ていねい</rt></ruby>にどうも。",
+   "en": "Oh, how thoughtful of you.",
+   "cn": "哎呀，您太客气了。",
+   "ja_audio": "audio/2026-08-12/ja2.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en2.mp3?g=1786484984"
+  },
+  {
+   "speaker": "自分",
+   "ja": "これ、ほんの気持ちですが、どうぞ。",
+   "ruby": "これ、ほんの<ruby>気持<rt>きも</rt></ruby>ちですが、どうぞ。",
+   "en": "This is just a small token — please take it.",
+   "cn": "这是一点小心意，请收下。",
+   "ja_audio": "audio/2026-08-12/ja3.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en3.mp3?g=1786484984"
+  },
+  {
+   "speaker": "隣人",
+   "ja": "わざわざすみません。ありがとうございます。",
+   "ruby": "わざわざすみません。ありがとうございます。",
+   "en": "You really didn't have to. Thank you.",
+   "cn": "让您特意跑一趟，谢谢。",
+   "ja_audio": "audio/2026-08-12/ja4.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en4.mp3?g=1786484984"
+  },
+  {
+   "speaker": "自分",
+   "ja": "ゴミ出しのルールを教えていただけますか？",
+   "ruby": "ゴミ<ruby>出<rt>だ</rt></ruby>しのルールを<ruby>教<rt>おし</rt></ruby>えていただけますか？",
+   "en": "Could you tell me the rules for taking out the trash?",
+   "cn": "能请教一下扔垃圾的规则吗？",
+   "ja_audio": "audio/2026-08-12/ja5.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en5.mp3?g=1786484984"
+  },
+  {
+   "speaker": "隣人",
+   "ja": "燃えるゴミは月曜と木曜ですよ。",
+   "ruby": "<ruby>燃<rt>も</rt></ruby>えるゴミは<ruby>月曜<rt>げつよう</rt></ruby>と<ruby>木曜<rt>もくよう</rt></ruby>ですよ。",
+   "en": "Burnable trash goes out on Mondays and Thursdays.",
+   "cn": "可燃垃圾是周一和周四。",
+   "ja_audio": "audio/2026-08-12/ja6.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en6.mp3?g=1786484984"
+  },
+  {
+   "speaker": "自分",
+   "ja": "助かります。これからよろしくお願いします。",
+   "ruby": "<ruby>助<rt>たす</rt></ruby>かります。これからよろしくお<ruby>願<rt>ねが</rt></ruby>いします。",
+   "en": "That's very helpful. I look forward to being your neighbor.",
+   "cn": "太有帮助了。今后请多关照。",
+   "ja_audio": "audio/2026-08-12/ja7.mp3?g=1786484984",
+   "en_audio": "audio/2026-08-12/en7.mp3?g=1786484984"
+  }
+ ]
+}
