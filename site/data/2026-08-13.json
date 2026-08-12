@@ -1,0 +1,65 @@
+{
+ "date": "2026-08-13",
+ "scenario": {
+  "title_ja": "飲み会を断る",
+  "title_cn": "婉拒酒局",
+  "desc": "同事约今晚喝酒，礼貌地拒绝",
+  "tip": "拒绝三步：道谢→先約があって→また今度——不伤关系"
+ },
+ "lines": [
+  {
+   "speaker": "同僚",
+   "ja": "今夜、みんなで飲みに行くんですが、どうですか？",
+   "ruby": "<ruby>今夜<rt>こんや</rt></ruby>、みんなで<ruby>飲<rt>の</rt></ruby>みに<ruby>行<rt>い</rt></ruby>くんですが、どうですか？",
+   "en": "We're all going out for drinks tonight — want to join?",
+   "cn": "今晚大家要去喝一杯，你来吗？",
+   "ja_audio": "audio/2026-08-13/ja1.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en1.mp3?g=1786571174"
+  },
+  {
+   "speaker": "自分",
+   "ja": "誘ってくれてありがとうございます。",
+   "ruby": "<ruby>誘<rt>さそ</rt></ruby>ってくれてありがとうございます。",
+   "en": "Thanks for inviting me.",
+   "cn": "谢谢你约我。",
+   "ja_audio": "audio/2026-08-13/ja2.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en2.mp3?g=1786571174"
+  },
+  {
+   "speaker": "自分",
+   "ja": "ただ、今夜は先約があって、行けないんです。",
+   "ruby": "ただ、<ruby>今夜<rt>こんや</rt></ruby>は<ruby>先約<rt>せんやく</rt></ruby>があって、<ruby>行<rt>い</rt></ruby>けないんです。",
+   "en": "But I have a prior engagement tonight, so I can't make it.",
+   "cn": "不过今晚已经有约了，去不了。",
+   "ja_audio": "audio/2026-08-13/ja3.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en3.mp3?g=1786571174"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "そうですか、残念です。",
+   "ruby": "そうですか、<ruby>残念<rt>ざんねん</rt></ruby>です。",
+   "en": "I see — that's too bad.",
+   "cn": "这样啊，真遗憾。",
+   "ja_audio": "audio/2026-08-13/ja4.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en4.mp3?g=1786571174"
+  },
+  {
+   "speaker": "自分",
+   "ja": "また今度、ぜひ誘ってください。",
+   "ruby": "また<ruby>今度<rt>こんど</rt></ruby>、ぜひ<ruby>誘<rt>さそ</rt></ruby>ってください。",
+   "en": "Please invite me again next time.",
+   "cn": "下次请一定再叫上我。",
+   "ja_audio": "audio/2026-08-13/ja5.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en5.mp3?g=1786571174"
+  },
+  {
+   "speaker": "同僚",
+   "ja": "もちろんです。楽しんできてください。",
+   "ruby": "もちろんです。<ruby>楽<rt>たの</rt></ruby>しんできてください。",
+   "en": "Of course. Enjoy your evening!",
+   "cn": "当然。祝你今晚愉快！",
+   "ja_audio": "audio/2026-08-13/ja6.mp3?g=1786571174",
+   "en_audio": "audio/2026-08-13/en6.mp3?g=1786571174"
+  }
+ ]
+}
