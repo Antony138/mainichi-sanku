@@ -1,0 +1,74 @@
+{
+ "date": "2026-08-14",
+ "scenario": {
+  "title_ja": "週末の待ち合わせ",
+  "title_cn": "约周末看电影",
+  "desc": "和朋友约周六下午看电影",
+  "tip": "约人问「空いていますか」；定碰头「◯時に◯◯で待ち合わせましょう」"
+ },
+ "lines": [
+  {
+   "speaker": "友達",
+   "ja": "今度の土曜日、空いていますか？",
+   "ruby": "<ruby>今度<rt>こんど</rt></ruby>の<ruby>土曜日<rt>どようび</rt></ruby>、<ruby>空<rt>あ</rt></ruby>いていますか？",
+   "en": "Are you free this Saturday?",
+   "cn": "这周六有空吗？",
+   "ja_audio": "audio/2026-08-14/ja1.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en1.mp3?g=1786657574"
+  },
+  {
+   "speaker": "自分",
+   "ja": "午後なら空いていますよ。どうしたんですか？",
+   "ruby": "<ruby>午後<rt>ごご</rt></ruby>なら<ruby>空<rt>あ</rt></ruby>いていますよ。どうしたんですか？",
+   "en": "I'm free in the afternoon. What's up?",
+   "cn": "下午的话有空。怎么了？",
+   "ja_audio": "audio/2026-08-14/ja2.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en2.mp3?g=1786657574"
+  },
+  {
+   "speaker": "友達",
+   "ja": "新しい映画を見に行きませんか？",
+   "ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きませんか？",
+   "en": "Want to go see that new movie?",
+   "cn": "要不要去看那部新电影？",
+   "ja_audio": "audio/2026-08-14/ja3.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en3.mp3?g=1786657574"
+  },
+  {
+   "speaker": "自分",
+   "ja": "いいですね。何時の回にしますか？",
+   "ruby": "いいですね。<ruby>何時<rt>なんじ</rt></ruby>の<ruby>回<rt>かい</rt></ruby>にしますか？",
+   "en": "Sounds good. Which showing should we go to?",
+   "cn": "好啊。看几点的场？",
+   "ja_audio": "audio/2026-08-14/ja4.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en4.mp3?g=1786657574"
+  },
+  {
+   "speaker": "友達",
+   "ja": "二時の回はどうですか？",
+   "ruby": "<ruby>二時<rt>にじ</rt></ruby>の<ruby>回<rt>かい</rt></ruby>はどうですか？",
+   "en": "How about the two o'clock showing?",
+   "cn": "两点的场怎么样？",
+   "ja_audio": "audio/2026-08-14/ja5.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en5.mp3?g=1786657574"
+  },
+  {
+   "speaker": "自分",
+   "ja": "じゃあ、一時半に駅前で待ち合わせましょう。",
+   "ruby": "じゃあ、<ruby>一時半<rt>いちじはん</rt></ruby>に<ruby>駅前<rt>えきまえ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせましょう。",
+   "en": "Then let's meet at one thirty in front of the station.",
+   "cn": "那我们一点半在站前碰头吧。",
+   "ja_audio": "audio/2026-08-14/ja6.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en6.mp3?g=1786657574"
+  },
+  {
+   "speaker": "友達",
+   "ja": "分かりました。楽しみですね！",
+   "ruby": "<ruby>分<rt>わ</rt></ruby>かりました。<ruby>楽<rt>たの</rt></ruby>しみですね！",
+   "en": "Got it. Looking forward to it!",
+   "cn": "好的。好期待啊！",
+   "ja_audio": "audio/2026-08-14/ja7.mp3?g=1786657574",
+   "en_audio": "audio/2026-08-14/en7.mp3?g=1786657574"
+  }
+ ]
+}
