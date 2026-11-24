@@ -11,7 +11,7 @@
 ```
 GitHub Actions (每天 21:00 UTC = 6:00 JST)
   └─ scripts/generate.py
-       ├─ 从 corpus/corpus.json 按日期轮换取当天场景（30 个场景循环）
+       ├─ 从 corpus/corpus.json 按日期轮换取当天场景（60 个场景循环）
        ├─ edge-tts 逐句合成神经语音 mp3，对话双方自动分配不同声线
        │    日语: Nanami(女)/Keita(男)  英语: Jenny(女)/Guy(男)
        └─ 写入 site/data/YYYY-MM-DD.json + site/audio/YYYY-MM-DD/*.mp3
@@ -40,7 +40,7 @@ GitHub Actions (每天 21:00 UTC = 6:00 JST)
 
 - `ruby` 去掉标签后必须与 `ja` 完全一致（`generate.py` 会校验，不一致直接报错）。
 - 声音按说话人**出场顺序**分配：第 1 位 Nanami/Jenny，第 2 位 Keita/Guy（第 3 位起回绕）。
-- 语料轮完一圈（30 天）自动从头循环；往 `days` 追加新场景即可扩充。
+- 语料轮完一圈（60 天）自动从头循环；往 `days` 追加新场景即可扩充。
 
 ## 常用操作
 
