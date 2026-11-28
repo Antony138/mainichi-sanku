@@ -5,6 +5,9 @@
   python scripts/generate.py            # 生成「今天(JST)」的内容，已存在则跳过
   python scripts/generate.py --force    # 强制重新生成今天
   python scripts/generate.py 2026-07-12 # 生成指定日期（补数据用）
+
+选场景：corpus.json 的 lessons（用上课学过的语法写的场景）优先，每个出一次；
+都出过了就按 days 轮换。已学内容清单在 site/learned.json，页面据此高亮。
 """
 import asyncio
 import json
@@ -42,6 +45,43 @@ def validate(day: dict) -> None:
         assert plain == l["ja"], f"ruby 与 ja 不一致: {l['ja']!r} vs {plain!r}"
 
 
+def load_learned() -> list[tuple[str, "re.Pattern[str]"]]:
+    """site/learned.json：已学语法/词汇清单（页面用它高亮）。这里只校验正则写得对不对。"""
+    f = SITE / "learned.json"
+    if not f.exists():
+        return []
+    items = json.loads(f.read_text(encoding="utf-8"))["items"]
+    out = []
+    for it in items:
+        for k in ("id", "label", "pattern", "note"):
+            assert it.get(k), f"learned.json 条目缺字段 {k}: {it}"
+        out.append((it["id"], re.compile(it["pattern"])))
+    return out
+
+
+def pick_day(corpus: dict, today: date, data_dir: Path) -> dict:
+    """lessons 里还没出过的场景优先（按顺序，每个一次），否则按日期轮换 days。
+
+    「出过」= 今天之前的某天 data 文件用过同名场景；不看今天自己，
+    所以 --force 重新生成今天会选回同一个场景。
+    """
+    lessons = corpus.get("lessons", [])
+    if lessons:
+        used = set()
+        for p in data_dir.glob("????-??-??.json"):
+            if p.stem >= today.isoformat():
+                continue
+            sc = json.loads(p.read_text(encoding="utf-8")).get("scenario")
+            if sc:
+                used.add(sc.get("title_ja"))
+        for d in lessons:
+            if d["scenario"]["title_ja"] not in used:
+                return d
+    start = date.fromisoformat(corpus["start"])
+    days = corpus["days"]
+    return days[(today - start).days % len(days)]
+
+
 async def synth(text: str, voice: str, out: Path, retries: int = 3) -> None:
     for i in range(retries):
         try:
@@ -55,14 +95,20 @@ async def synth(text: str, voice: str, out: Path, retries: int = 3) -> None:
 
 async def main() -> None:
     corpus = json.loads((ROOT / "corpus" / "corpus.json").read_text(encoding="utf-8"))
-    start = date.fromisoformat(corpus["start"])
-    days = corpus["days"]
+    learned = load_learned()
+    for d in corpus.get("lessons", []):
+        # lessons 是为了练已学内容写的：每句先校验，再确认整段至少用上一个已学点
+        validate(d)
+        text = "".join(l["ja"] for l in d["lines"])
+        if learned:
+            assert any(p.search(text) for _, p in learned), \
+                f"lessons 场景没用到任何已学内容: {d['scenario']['title_ja']}"
 
     today = target_date()
-    day = days[(today - start).days % len(days)]
     dstr = today.isoformat()
 
     data_dir = SITE / "data"
+    day = pick_day(corpus, today, data_dir)
     audio_dir = SITE / "audio" / dstr
     data_dir.mkdir(parents=True, exist_ok=True)
     out_file = data_dir / f"{dstr}.json"

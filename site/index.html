@@ -24,6 +24,8 @@
     --accent-ink: #2D55D8;
     --wash: #EDF1FD;
     --shadow: 0 1px 2px rgba(32,36,43,.05);
+    --hl-g: #FFE08A; --hl-g-ink: #8A5A00;
+    --hl-v: #BDEBC9; --hl-v-ink: #1E7A44;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -37,18 +39,22 @@
       --accent-ink: #A9BAFF;
       --wash: #242B40;
       --shadow: none;
+      --hl-g: #6B5313; --hl-g-ink: #F4CD6A;
+      --hl-v: #1F5535; --hl-v-ink: #8FDCA8;
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
     --bg: #14161A; --card: #1D2026; --ink: #E9EBEE; --muted: #99A1AD;
     --line: #2B2F37; --accent: #8FA6FF; --accent-ink: #A9BAFF; --wash: #242B40; --shadow: none;
+    --hl-g: #6B5313; --hl-g-ink: #F4CD6A; --hl-v: #1F5535; --hl-v-ink: #8FDCA8;
   }
   :root[data-theme="light"] {
     color-scheme: light;
     --bg: #F4F6F3; --card: #FFFFFF; --ink: #20242B; --muted: #6C7480;
     --line: #E3E7E1; --accent: #2D55D8; --accent-ink: #2D55D8; --wash: #EDF1FD;
     --shadow: 0 1px 2px rgba(32,36,43,.05);
+    --hl-g: #FFE08A; --hl-g-ink: #8A5A00; --hl-v: #BDEBC9; --hl-v-ink: #1E7A44;
   }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -260,6 +266,40 @@
     padding: 8px 22px calc(18px + env(safe-area-inset-bottom));
     font-size: 12px; color: var(--muted); text-align: center; text-wrap: balance;
   }
+  /* 已学内容高亮：语法=黄色荧光笔，词汇=绿色；点一下看是哪个语法点 */
+  mark.lrn {
+    color: inherit; background: linear-gradient(transparent 58%, var(--hl-g) 58%);
+    border-radius: 2px; padding: 0 1px; cursor: help;
+  }
+  mark.lrn.v { background: linear-gradient(transparent 58%, var(--hl-v) 58%); }
+  .compact mark.lrn { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--hl-g) 70%, transparent) 62%); }
+  .compact mark.lrn.v { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--hl-v) 70%, transparent) 62%); }
+  .learned {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    margin: 0 0 8px; padding: 0 16px;
+  }
+  .learned .lbl { font-size: 11px; font-weight: 700; letter-spacing: .08em; color: var(--muted); }
+  .lchip {
+    border: 0; border-radius: 4px; padding: 3px 7px; cursor: pointer;
+    font: 700 11.5px/1.2 "Hiragino Sans", system-ui, sans-serif;
+    background: color-mix(in srgb, var(--hl-g) 55%, transparent); color: var(--hl-g-ink);
+  }
+  .lchip.v { background: color-mix(in srgb, var(--hl-v) 55%, transparent); color: var(--hl-v-ink); }
+  .lchip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lpop {
+    position: absolute; z-index: 40; width: min(300px, calc(100vw - 32px));
+    background: var(--card); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.16);
+    padding: 11px 13px 12px; font-size: 13px; line-height: 1.55;
+  }
+  .lpop[hidden] { display: none; }
+  .lpop .t { font: 800 14.5px/1.4 "Hiragino Sans", system-ui, sans-serif; margin-bottom: 3px; }
+  .lpop .t .k { font: 700 10px/1 system-ui, sans-serif; letter-spacing: .12em; margin-left: 6px; color: var(--hl-g-ink); }
+  .lpop.v .t .k { color: var(--hl-v-ink); }
+  .lpop .ex { margin-top: 5px; color: var(--muted); font-family: "Hiragino Sans", system-ui, sans-serif; }
+  .lpop .src { margin-top: 6px; font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+
   .loading { padding: 30px 0; text-align: center; color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -290,6 +330,8 @@
     <button class="pill" id="btnCn" aria-pressed="false">隐藏中文</button>
   </div>
 
+  <div class="lpop" id="lpop" role="dialog" aria-live="polite" hidden></div>
+
   <footer>每天 6:00 (JST) 自动更新 · edge-tts 神经语音 · 听过的句子离线可用<span id="visits"></span></footer>
 </div>
 
@@ -314,6 +356,92 @@
   const saveWip = () => { try { localStorage.setItem(WIP_KEY, JSON.stringify(Object.fromEntries(wip))); } catch {} };
 
   const $ = (id) => document.getElementById(id);
+
+  // 已学内容（learned.json）：按顺序匹配，先到先得、不重叠；匹配在去掉振假名的日文上做，
+  // 再映射回 ruby HTML，振假名组只要碰到就整个包进高亮里
+  let learned = [];
+  async function loadLearned() {
+    try {
+      const res = await fetch('learned.json', { cache: 'no-cache' });
+      const j = await res.json();
+      learned = (j.items || []).map((it) => {
+        try { return { ...it, re: new RegExp(it.pattern, 'g') }; } catch { return null; }
+      }).filter(Boolean);
+    } catch { learned = []; }
+  }
+
+  function findLearned(ja) {
+    const hits = [];
+    for (const it of learned) {
+      it.re.lastIndex = 0;
+      let m;
+      while ((m = it.re.exec(ja))) {
+        if (!m[0]) { it.re.lastIndex += 1; continue; }
+        const s = m.index, e = s + m[0].length;
+        if (!hits.some((h) => s < h.e && h.s < e)) hits.push({ s, e, it });
+      }
+    }
+    return hits.sort((a, b) => a.s - b.s);
+  }
+
+  function highlight(ruby, ja) {
+    if (!learned.length || !ja) return { html: ruby, ids: [] };
+    const hits = findLearned(ja);
+    if (!hits.length) return { html: ruby, ids: [] };
+    const units = [];
+    const re = /<ruby>([\s\S]*?)<rt>[\s\S]*?<\/rt><\/ruby>|([\s\S])/g;
+    let m, pos = 0;
+    while ((m = re.exec(ruby))) {
+      const base = m[1] !== undefined ? m[1] : m[2];
+      units.push({ html: m[0], s: pos, e: pos + base.length });
+      pos += base.length;
+    }
+    if (pos !== ja.length) return { html: ruby, ids: [] };   // 对不上就不冒险
+    let out = '', open = null;
+    for (const u of units) {
+      const h = hits.find((x) => u.s < x.e && x.s < u.e) || null;
+      if (h !== open) {
+        if (open) out += '</mark>';
+        if (h) out += `<mark class="lrn${h.it.kind === 'vocab' ? ' v' : ''}" data-lid="${esc(h.it.id)}">`;
+        open = h;
+      }
+      out += u.html;
+    }
+    if (open) out += '</mark>';
+    return { html: out, ids: [...new Set(hits.map((h) => h.it.id))] };
+  }
+
+  function learnedBar(ids, from) {
+    if (!ids.length) return '';
+    const items = learned.filter((it) => ids.includes(it.id));
+    return `<div class="learned"><span class="lbl">已学${from ? ` · ${esc(from)}` : ''}</span>${items.map((it) =>
+      `<button class="lchip${it.kind === 'vocab' ? ' v' : ''}" data-lid="${esc(it.id)}">${esc(it.label.replace(/（.*?）$/, ''))}</button>`).join('')}</div>`;
+  }
+
+  function showPop(el) {
+    const it = learned.find((x) => x.id === el.dataset.lid);
+    const pop = $('lpop');
+    if (!it) return;
+    if (!pop.hidden && pop.dataset.for === it.id && pop._anchor === el) { hidePop(); return; }
+    pop.className = 'lpop' + (it.kind === 'vocab' ? ' v' : '');
+    pop.innerHTML = `<div class="t">${esc(it.label)}<span class="k">${it.kind === 'vocab' ? '词汇' : '语法'}</span></div>
+      <div>${esc(it.note)}</div>
+      ${it.example ? `<div class="ex">例：${esc(it.example)}</div>` : ''}
+      ${it.source ? `<div class="src">${esc(it.source)}</div>` : ''}`;
+    pop.dataset.for = it.id;
+    pop._anchor = el;
+    pop.hidden = false;
+    const r = el.getBoundingClientRect();
+    const w = pop.offsetWidth, vw = document.documentElement.clientWidth;
+    const left = Math.min(Math.max(16, r.left + r.width / 2 - w / 2), vw - w - 16);
+    let top = r.bottom + 8;
+    if (top + pop.offsetHeight > window.innerHeight - 70) top = r.top - pop.offsetHeight - 8;
+    pop.style.left = `${left + window.scrollX}px`;
+    pop.style.top = `${top + window.scrollY}px`;
+  }
+  function hidePop() { $('lpop').hidden = true; $('lpop')._anchor = null; }
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hidePop(); });
+  window.addEventListener('resize', hidePop);
 
   function fmtDate(d) {
     const [y, m, dd] = d.split('-').map(Number);
@@ -351,19 +479,25 @@
   // 新格式：一天 = 一个场景的连续对话
   function scenarioCard(day, tag) {
     const sc = day.scenario;
-    const lines = day.lines.map((l) => `
+    const ids = new Set();
+    const lines = day.lines.map((l) => {
+      const hl = highlight(l.ruby, l.ja);
+      hl.ids.forEach((i) => ids.add(i));
+      return `
       <div class="line">
         <div class="who">${l.speaker}</div>
-        ${rowBtn(l.ja_audio, l.ja, 'ja-JP', 'ja', '日', l.ruby)}
+        ${rowBtn(l.ja_audio, l.ja, 'ja-JP', 'ja', '日', hl.html)}
         ${rowBtn(l.en_audio, l.en, 'en-US', 'en', 'EN', l.en, ' sub')}
         <p class="cn plain" title="点击显示/隐藏">${l.cn}</p>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     return `<section class="card">
       <div class="scene">
         <span class="sceneTxt">${tag ? `<b>${tag}</b> · ${sc.title_ja}` : `場面 · <b>${sc.title_ja}</b>`} · ${sc.title_cn}</span>
         ${starBtn(day.date, sc.title_cn || sc.title_ja)}
       </div>
       ${sc.desc ? `<p class="desc">${sc.desc}</p>` : ''}
+      ${learnedBar([...ids], sc.learned_from)}
       ${lines}
       ${sc.tip ? `<p class="tip">💡 ${sc.tip}</p>` : ''}
     </section>`;
@@ -374,7 +508,7 @@
     return day.scenes.map((s) => `
       <section class="card">
         <div class="scene"><span class="sceneTxt">${tag ? `<b>${tag}</b> · ` : '场景 · '}${s.scene}</span></div>
-        ${rowBtn(s.ja_audio, s.ja, 'ja-JP', 'ja', '日', s.ruby)}
+        ${rowBtn(s.ja_audio, s.ja, 'ja-JP', 'ja', '日', highlight(s.ruby, s.ja).html)}
         ${rowBtn(s.en_audio, s.en, 'en-US', 'en', 'EN', s.en)}
         <p class="cn" title="点击显示/隐藏">${s.cn}</p>
       </section>`).join('');
@@ -446,6 +580,9 @@
   player.addEventListener('play', () => { player.playbackRate = rate; });
 
   document.addEventListener('click', (e) => {
+    const lrn = e.target.closest('mark.lrn, .lchip');
+    if (lrn) { e.preventDefault(); showPop(lrn); return; }
+    if (!e.target.closest('#lpop')) hidePop();
     const starEl = e.target.closest('.star');
     if (starEl) { toggleWip(starEl.dataset.date, starEl.dataset.title); return; }
     const row = e.target.closest('.row');
@@ -564,6 +701,7 @@
 
   async function select(d) {
     stopAudio();
+    hidePop();
     selected = d;
     $('dateLabel').textContent = fmtDate(d);
     $('dayChip').textContent = d === latest ? '今日' : '回看';
@@ -581,7 +719,7 @@
 
   (async function init() {
     try {
-      const res = await fetch('data/index.json', { cache: 'no-cache' });
+      const [res] = await Promise.all([fetch('data/index.json', { cache: 'no-cache' }), loadLearned()]);
       dates = await res.json();
       latest = dates[dates.length - 1];
       await select(latest);
