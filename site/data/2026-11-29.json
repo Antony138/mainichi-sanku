@@ -1,0 +1,75 @@
+{
+ "date": "2026-11-29",
+ "scenario": {
+  "title_ja": "友達を家に招待する",
+  "title_cn": "邀请朋友来家里",
+  "desc": "约朋友来家里吃火锅，对方周六不方便，改到周日",
+  "tip": "邀请万能句「都合がよければ、是非来てください」；单说「よければ」＝不介意的话",
+  "learned_from": "italki 11/26 · 11/19"
+ },
+ "lines": [
+  {
+   "speaker": "自分",
+   "ja": "来週の土曜日、うちで鍋パーティーをするんですが、都合はどうですか？",
+   "ruby": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>土曜日<rt>どようび</rt></ruby>、うちで<ruby>鍋<rt>なべ</rt></ruby>パーティーをするんですが、<ruby>都合<rt>つごう</rt></ruby>はどうですか？",
+   "en": "I'm having a hot-pot party at my place next Saturday. How's your schedule?",
+   "cn": "下周六我在家办火锅聚会，你方便吗？",
+   "ja_audio": "audio/2026-11-29/ja1.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en1.mp3?g=1795885409"
+  },
+  {
+   "speaker": "友達",
+   "ja": "土曜日はちょっと都合が悪いんです。日曜日なら大丈夫なんですが。",
+   "ruby": "<ruby>土曜日<rt>どようび</rt></ruby>はちょっと<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いんです。<ruby>日曜日<rt>にちようび</rt></ruby>なら<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>なんですが。",
+   "en": "Saturday doesn't really work for me. Sunday would be fine, though.",
+   "cn": "周六我不太方便。周日的话就可以。",
+   "ja_audio": "audio/2026-11-29/ja2.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en2.mp3?g=1795885409"
+  },
+  {
+   "speaker": "自分",
+   "ja": "じゃあ、日曜日にしましょう。都合がよければ、是非来てください。",
+   "ruby": "じゃあ、<ruby>日曜日<rt>にちようび</rt></ruby>にしましょう。<ruby>都合<rt>つごう</rt></ruby>がよければ、<ruby>是非<rt>ぜひ</rt></ruby><ruby>来<rt>き</rt></ruby>てください。",
+   "en": "Then let's make it Sunday. If it works for you, please do come.",
+   "cn": "那就改到周日吧。方便的话，请一定来。",
+   "ja_audio": "audio/2026-11-29/ja3.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en3.mp3?g=1795885409"
+  },
+  {
+   "speaker": "友達",
+   "ja": "ありがとうございます。是非行きたいです！何か持っていきましょうか？",
+   "ruby": "ありがとうございます。<ruby>是非<rt>ぜひ</rt></ruby><ruby>行<rt>い</rt></ruby>きたいです！<ruby>何<rt>なに</rt></ruby>か<ruby>持<rt>も</rt></ruby>っていきましょうか？",
+   "en": "Thank you, I'd love to come! Should I bring something?",
+   "cn": "谢谢！我很想去！要我带点什么吗？",
+   "ja_audio": "audio/2026-11-29/ja4.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en4.mp3?g=1795885409"
+  },
+  {
+   "speaker": "自分",
+   "ja": "よければ、飲み物をお願いできますか？",
+   "ruby": "よければ、<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いできますか？",
+   "en": "If you don't mind, could you bring some drinks?",
+   "cn": "方便的话，能带点饮料吗？",
+   "ja_audio": "audio/2026-11-29/ja5.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en5.mp3?g=1795885409"
+  },
+  {
+   "speaker": "友達",
+   "ja": "もちろんです。何時に行けばいいですか？",
+   "ruby": "もちろんです。<ruby>何時<rt>なんじ</rt></ruby>に<ruby>行<rt>い</rt></ruby>けばいいですか？",
+   "en": "Of course. What time should I come?",
+   "cn": "没问题。我几点过去好？",
+   "ja_audio": "audio/2026-11-29/ja6.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en6.mp3?g=1795885409"
+  },
+  {
+   "speaker": "自分",
+   "ja": "六時ごろ来てください。道が分からなければ、駅まで迎えに行きますよ。",
+   "ruby": "<ruby>六時<rt>ろくじ</rt></ruby>ごろ<ruby>来<rt>き</rt></ruby>てください。<ruby>道<rt>みち</rt></ruby>が<ruby>分<rt>わ</rt></ruby>からなければ、<ruby>駅<rt>えき</rt></ruby>まで<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>きますよ。",
+   "en": "Come around six. If you can't find the way, I'll pick you up at the station.",
+   "cn": "六点左右来吧。如果不认识路，我去车站接你。",
+   "ja_audio": "audio/2026-11-29/ja7.mp3?g=1795885409",
+   "en_audio": "audio/2026-11-29/en7.mp3?g=1795885409"
+  }
+ ]
+}
